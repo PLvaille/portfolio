@@ -29,12 +29,14 @@ export default {
 
 <style lang="scss" scoped>
 $orange : #FCB860;
+$darkred : #AB6C82;
 .footer {
     margin-block: 0;
     margin-top: 24px;
     background: #111;
     display: flex;
     justify-content: space-around;
+    border-top:solid 2px $darkred;
     & a{
         text-decoration: none;
         color: inherit;

@@ -9,7 +9,7 @@
 
       </div>
 
-      <div class="cardMore">
+      <div class="cardMore" @click="displayImg">
         <div>
           <p><label>Improved skills :</label> {{ data.skills }}</p>
         </div>
@@ -40,6 +40,9 @@ export default {
     }
   },
   methods: {
+    displayImg(){
+
+    }
   },
   props: {
     cardsData: Array
@@ -68,22 +71,25 @@ $cream : #dbd5ce;
   }
 }
 
+.projectCard {
+  background: darken($dark-main, 10%);
+  width: 42%;
+  border: 4px solid $darkred;
+  border-radius: 8px;
+  margin: 8px;
+
+}
+
 .cardTitle {
   min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  border-bottom: 2px solid $cream;
 }
 
-.projectCard {
-  background: darken($dark-main, 10%);
-  width: 42%;
-  border: 4px solid $darkred;
-  border-radius: 16px;
-  margin: 8px;
-  padding: 8px;
-}
+
 
 .projectName {
   font-family: 'Shadows Into Light', cursive;
@@ -123,13 +129,17 @@ $cream : #dbd5ce;
 }
 
 .cardMore {
-  margin-top: 24px;
+  cursor:pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
   text-align: left;
   white-space: break-spaces;
 
   & label {
-      font-family: 'Bebas Neue', cursive;
-      font-size: large;
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
     color: $red;
     text-decoration: underline;
     text-decoration-color: white;

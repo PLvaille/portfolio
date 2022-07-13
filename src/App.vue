@@ -68,13 +68,11 @@ $orange : #FCB860;
 $cream : #dbd5ce;
 
 #app {
+  background: linear-gradient(#222, #222,#444,#444, #555);
   font-family: 'Bebas Neue', cursive;
   font-family: 'Roboto', sans-serif;
   font-family: 'Rubik Moonrocks', cursive;
   font-family: 'Shadows Into Light', cursive;
-  margin-block: 0;
-  margin-block-end: 0;
-  margin-block-start: 0;
   color: $cream;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
