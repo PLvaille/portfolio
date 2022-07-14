@@ -184,7 +184,8 @@ font-awesome-icon {
   font-family: 'Roboto', sans-serif;
   text-align: start;
   border: solid 4px $darkred;
-  width: 70%;
+  width: 80%;
+  max-width:1200px;
   margin: 0 auto;
   background-color: $cream;
   display: flex;
@@ -193,7 +194,6 @@ font-awesome-icon {
   h2 {
     font-family: 'Bebas Neue', cursive;
   }
-
   & .langs span {
     margin-left: 6px;
   }
@@ -216,7 +216,6 @@ aside {
     width: 86%;
     margin: 0 auto;
     padding: 0;
-
   }
 
   & h2 {
@@ -335,7 +334,6 @@ li {
   margin: 4px 0;
 }
 
-
 main {
   // color:$dark-main;
   color: black;
@@ -402,24 +400,22 @@ main {
   }
 }
 
-//----------------------------------------------------------
+//----------- Media query -----------
 @media screen and (max-width : 1024px) {
   .cv {
     font-family: 'Roboto' !important;
-    width: 98%;
+    width: 94%;
     border: 2px solid $darkred;
   }
 
   aside .contact {
     width: 90%;
     margin: 0 auto;
-
   }
 
   aside {
     justify-content: space-around;
   }
-
   .presentation {
     display: flex;
     flex-direction: column;
@@ -428,5 +424,7 @@ main {
   }
 }
 
-@media screen and (max-width : 580px) {}
+@media screen and (max-width : 600px) {
+
+}
 </style>

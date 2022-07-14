@@ -8,7 +8,8 @@
     "description": "Pour valider ce projet je devais construire un réseau social d'entreprise from scratch.",
     "specs": "\n\nFonctionnelles : Une page de login/signup. Une page d'accueil listant les posts des utilisateurs. Un utilisateur doit avoir la possibilité de se déconnecter. La session de l’utilisateur persiste pendant qu’il est connecté. Les données de connexion doivent être sécurisées. Un utilisateur doit pouvoir créer un post. Un utilisateur doit pouvoir modifier ou supprimer ses posts. Un post doit pouvoir contenir du texte et une image. Un utilisateur doit pouvoir créer et modifier ou supprimer un commentaire sur un post. Un utilisateur doit pouvoir liker un post, une seule fois pour chaque post. Un rôle administrateur doit exister, pouvant modérer les contenus et les utilisateurs.\n\nTechniques : Coder le projet en JS en respectant les standards WCAG. Utiliser un framework front-end JavasScript (de mon choix).",
     "realisation": "Utilisation de MySQL, NodeJS et ExpressJS pour la réalisation du Backend, ainsi que divers modules pour les models et middlewares. Utilisation de VueJS 3 et SASS pour le Frontend.",
-    "img": "",
+    "img": "p7.jpg",
+    "alt": "capture d'écran du projet 7",
     "link": "https://github.com/PLvaille/p7"
   },
   {
@@ -16,11 +17,12 @@
     "projectName": "Hot Takes - Projet 6",
     "summary": "Construire une API sécurisée pour une application d'avis gastronomiques",
     "skills": "JavaScript, NodeJs, ExpressJS, MongoDB",
-    "ressources": "Code frontend du site. Spécifications de l'API.",
+    "ressources": "Code frontend du site et spécifications de l'API.",
     "description": "Pour valider ce projet je devais construire le code Backend pour l'API du site en veillant à respecter les contraites REST.",
     "specs": "\n\nFonctionnelles : Les utilisateur doivent pouvoir créer un compte et s'authentifier sur le site afin de poster et consulter des recettes qu'ils peuvent liker ou disliker.\n\nTechniques : Le mot de passe de l'utilisateur doit être haché. L'authentification doit être renforcée sur les routes requises. Les adresses électroniques dans la base de données sont uniques et un plugin Mongoose approprié est utilisé pour garantir leur unicité et signaler les erreurs. La sécurité de la base de données MongoDB (à partir d'un service tel que MongoDB Atlas) ne doit pas empêcher l'application de se lancer sur la machine d'un utilisateur. Un plugin Mongoose doit assurer la remontée des erreurs issues de la base de données. Les versions les plus récentes des logiciels sont utilisées avec des correctifs de sécurité actualisés.Le contenu du dossier images ne doit pas être téléchargé sur GitHub.",
     "realisation": "Création/utilisation de models, de routes et de middleware dans la mise en place de l'API. Utilisation de NodeJS, d'ExpressJS, de Mongoose, de Multer et de divers autres modules.",
-    "img": "",
+    "img": "p6.jpg",
+    "alt": "capture d'écran du projet 6",
     "link": "https://github.com/PLvaille/projet6"
   },
   {
@@ -32,7 +34,8 @@
     "description": "Pour valider ce projet je devais intégrer les éléments de l'APi dans les pages web fournies avec JavaScript, ainsi que mettre en place un plan d'acceptation du site.",
     "specs": "Une architecture générale à respecter (4pages : acceuil, produit, panier, confirmation). Bonne indentation et commentaire du code JS.",
     "realisation": "Récupérer les données de l'API pour les intégrer dynamiquement au site. Foncitonnalités d'ajout/suppression d'article du panier, de gestion du panier,  de calcul des totaux des prix et des articles, de validation et d'envoie de formulaire. Ajout facultatif de style sur les cards du panier et sur la navigation.",
-    "img": "",
+    "img": "p5.jpg",
+    "alt": "capture d'écran du projet 5",
     "link": "https://github.com/PLvaille/projet5"
   },
   {
@@ -40,11 +43,12 @@
     "projectName": "La Chouette Agence - Projet 4",
     "summary": "Optimiser un site web existant",
     "skills": "Google lightehouse, référencement, accessibilité et best practises",
-    "ressources": "Site web de base de la Chouette Agence",
-    "description": "Pour valider ce projet je devais présenter avec un support de présentation les améliorations apportées au site concernant son référencement ainsi que son accessibilité",
+    "ressources": "Site web de base de la Chouette Agence.",
+    "description": "Pour valider ce projet je devais présenter via un support de présentation les améliorations apportées au site concernant son référencement ainsi que son accessibilité.",
     "specs": "Améliorer le code HTML/CSS tout en conservant les framework bootstrap et JavaScript utilisés. Améliorer les scores SEO et d'accéssibilité du site à l'aide d'un outil de diagnostique",
     "realisation": "Amélioration du score du SEO de 78 à 100 et des scores de performance et d'accessibilité, réalisation d'un support de présentation pour la soutenance du projet",
-    "img": "",
+    "img": "p4.jpg",
+    "alt": "capture d'écran du projet 4",
     "link": "https://github.com/PLvaille/P4-opti"
   },
   {
@@ -53,22 +57,24 @@
     "summary": "Dynamiser une page web avec des animations CSS",
     "skills": "SASS, animations CSS, responsive design",
     "ressources": "Maquette mobile du site (jpg), logo, textes et images des restaurants.",
-    "description": "Pour valider ce proje je devais réaliser des animations pour dynamiser les pages web fournies.",
+    "description": "Pour valider ce projet je devais réaliser des animations pour dynamiser les pages web fournies.",
     "specs": "Pas d'utilisation de JavaScript ni d'aucun framework. Utilisation de SASS. Code versionné sur GitHub et accessible sur GitHub Pages. Site responsive et validé par W3C en HTML et CSS sans erreur. Approche mobile first. Compatible Chrome et Firefox.",
     "realisation": "Utilisation des keyframes SCSS, loading spinner, animation des boutons, des cards, des likes et des articles.",
-    "img": "",
+    "img": "p3.jpg",
+    "alt": "capture d'écran du projet 3",
     "link": "https://plvaille.github.io/projet3/"
   },
   {
     "id": 1,
     "projectName": "Booki - Projet 2",
     "summary": "Transformer une maquette en site web avec HTML & CSS",
-    "skills": "HTML5 / CSS3, responsive design ",
+    "skills": "HTML5 / CSS3, responsive design",
     "ressources": "Maquette (JPG) du site pour les version desktop et mobile.",
-    "description": "Pour valider ce projet je devais présenter un site responsive de reservation en ligne (type air bnb).",
+    "description": "Pour valider ce projet je devais présenter un site responsive de reservation en ligne (type air bnb), en respectant la maquette fournie.",
     "specs": "Réaliser une version responsive du site, compatible chrome et firefox. Aucun framework ne doit être utilisé. Utilisation de flexbox plutôt que grid. Le design défini dans la maquette jpg doit être respecté. Les boutons, liens et filtres ainsi que la barre de recherches ne doivent pas être fonctionnels, ormis les boutons de la navigation en haut de page. Utiliser un CDN pour les icones. Approche desktop first.",
     "realisation": "J'ai inclus 3 breakpoints afin d'avoir un site responsive sur mobile, tablette et ordinateur de bureau. Animations sur filtres et cards réalisées en supplément.",
-    "img": "",
+    "img": "p2.jpg",
+    "alt": "capture d'écran du projet 2",
     "link": "https://plvaille.github.io/p2_booki/"
   }
 ]

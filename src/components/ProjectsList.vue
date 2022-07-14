@@ -9,22 +9,31 @@
 
       </div>
 
-      <div class="cardMore" @click="displayImg">
-        <div>
-          <p><label>Improved skills :</label> {{ data.skills }}</p>
+      <div class="cardMore" :id="data.id" 
+        @mouseenter="mouseInCard($event)" 
+        @mouseleave="mouseOutCard($event)"
+        @click="displayImg()">
+        <Transition name="fade">
+        <img v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt">
+       
+        <div v-else class="cardMore--info">
+          <div>
+            <p><label>Improved skills :</label> {{ data.skills }}</p>
+          </div>
+          <div>
+            <p><label>Resources :</label> {{ data.ressources }}</p>
+          </div>
+          <div>
+            <p><label>Description :</label> {{ data.description }}</p>
+          </div>
+          <div>
+            <p><label>Specifications :</label> {{ data.specs }}</p>
+          </div>
+          <div>
+            <p><label>Realisations :</label> {{ data.realisation }}</p>
+          </div>
         </div>
-        <div>
-          <p><label>Resources :</label> {{ data.ressources }}</p>
-        </div>
-        <div>
-          <p><label>Description :</label> {{ data.description }}</p>
-        </div>
-        <div>
-          <p><label>Specifications :</label> {{ data.specs }}</p>
-        </div>
-        <div>
-          <p><label>Realisations :</label> {{ data.realisation }}</p>
-        </div>
+         </Transition>
       </div>
     </div>
   </div>
@@ -32,26 +41,42 @@
 </template>
 
 <script>
-
-
 export default {
   data() {
     return {
+      isCursorInCard: false,
+      cardId: "",
+      projectImg: "",
     }
   },
   methods: {
-    displayImg(){
+    mouseInCard(e) {
+      if(screen.width > 580){
+      this.cardId = e.target.id;
+      this.isCursorInCard = true;
+      }
+    },
+    mouseOutCard() {
+      this.isCursorInCard = false;
+    },
 
-    }
+    displayImg() {
+      console.log("modale")
+
+    },
   },
   props: {
     cardsData: Array
+  },
+  created() {
+    this.displayImg();
   }
 }
 </script>
 
 
 <style lang="scss">
+// -------- colors --------
 $dark-main: #475C7A;
 $grey : #685D79;
 $darkred : #AB6C82;
@@ -59,7 +84,22 @@ $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
 
+// -------- anim --------
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+// -------- cards --------
+
 .cardsContainer {
+  position : relative;
   margin-top: -8px;
   display: flex;
   flex-wrap: wrap;
@@ -76,20 +116,19 @@ $cream : #dbd5ce;
   width: 42%;
   border: 4px solid $darkred;
   border-radius: 8px;
-  margin: 8px;
+  margin: 16px;
 
 }
 
 .cardTitle {
-  min-height: auto;
+  background: ($dark-main);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
   border-bottom: 2px solid $cream;
+  height:220px;
 }
-
-
 
 .projectName {
   font-family: 'Shadows Into Light', cursive;
@@ -129,13 +168,31 @@ $cream : #dbd5ce;
 }
 
 .cardMore {
-  cursor:pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 8px;
+  position:relative;
+  cursor: pointer;
   text-align: left;
   white-space: break-spaces;
+  height: 580px;
+
+  &--info {
+    padding: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
+  & img {
+    overflow:hidden;
+    position: absolute;
+    top: 0;
+    width:100%;
+    object-fit:contain;
+    display: flex;
+    margin: 0 auto;
+    height: 500px;
+  }
 
   & label {
     font-family: 'Bebas Neue', cursive;
@@ -146,4 +203,45 @@ $cream : #dbd5ce;
     text-underline-offset: 3px;
   }
 }
+
+//----------- Media query -----------
+// ---- laptop ----
+@media screen and (max-width : 1400px) {
+  .projectCard {
+    width:46%;
+  }
+  .cardTitle {
+    height:180px;
+  }
+  .cardMore {
+    height:auto;
+  }
+}
+
+// ----- TABLETTES -----
+@media screen and (max-width : 1024px) {
+  .cardsContainer {
+    flex-direction: column;   
+  }
+  .projectCard {
+    width:88%;
+    margin:16px auto;
+   }
+   .cardMore{
+    height:680px ;   
+   } 
+
+}
+
+// ----- MOBILE -----
+@media screen and (max-width : 600px) {
+  .projectCard {    
+    width:92%;
+    margin:16px auto;
+   }
+   .cardMore{
+    height:auto ;   
+   } 
+}
+
 </style>
