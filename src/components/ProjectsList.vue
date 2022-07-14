@@ -1,6 +1,8 @@
 <template>
+
   <div class="cardsContainer">
     <div class="projectCard" v-for="data in cardsData" :key="data.id">
+    <ImgModal v-if="showModal" :carousel="data.carousel" />
       <div class="cardTitle">
         <h2 class="projectName">{{ data.projectName }}</h2>
         <div class="summary">{{ data.summary }}</div>
@@ -38,13 +40,18 @@
     </div>
   </div>
 
+ 
+
 </template>
 
 <script>
+import ImgModal from './ImgModal.vue'
+
 export default {
   data() {
     return {
       isCursorInCard: false,
+      showModal : false,
       cardId: "",
       projectImg: "",
     }
@@ -62,14 +69,22 @@ export default {
 
     displayImg() {
       console.log("modale")
+      this.showModal = !this.showModal;
 
     },
+    closeModalBtn(){
+      if(this.closeModal)
+      this.showModal = false;
+    }
   },
   props: {
     cardsData: Array
   },
   created() {
-    this.displayImg();
+
+  },
+  components:{
+    ImgModal
   }
 }
 </script>
@@ -126,7 +141,7 @@ $cream : #dbd5ce;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  border-bottom: 2px solid $cream;
+  border-bottom: 1px solid $cream;
   height:220px;
 }
 

@@ -4,12 +4,12 @@
 
             <li>
                 <a href="https://www.linkedin.com/in/pierre-louis-vaille-143877241/" target="_blank">
-                <font-awesome-icon icon="fa-brands fa-linkedin" /><span>Profil LinkedIn</span>
+                <font-awesome-icon icon="fa-brands fa-linkedin" /><span>LinkedIn Profil</span>
                 </a>
             </li>
             <li>
                 <a href="https://github.com/PLvaille?tab=repositories" target="_blank">
-                <font-awesome-icon icon="fa-brands fa-github" /><span>Repository GitHub</span>
+                <font-awesome-icon icon="fa-brands fa-github" /><span>GitHub Repository</span>
                 </a>
             </li>
             <li>
