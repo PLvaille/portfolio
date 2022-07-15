@@ -2,11 +2,11 @@
     <div class="modal-mask">
         <div class="modal-wrapper">
             <div class="modal-container">
-                
-                <button class="carouselBtn carouselBtnPrev">⬅️</button>             
-                <button class="carouselBtn carouselBtnNext">➡️</button>
+
+                <button @click="decrementCarousel()" class="carouselBtn carouselBtnPrev">⬅️</button>
+                <button @click="incrementCarousel()" class="carouselBtn carouselBtnNext">➡️</button>
                 <button class="carouselBtn carouselBtnClose" @click="$parent.displayImg()">X</button>
-                 <div class="modal-body"><img :src="require(`../assets/img/${carousel[0]}`)"/></div>
+                <div class="modal-body"><img :src="require(`../assets/img/${carousel[carouselImgIndex]}`)" /></div>
             </div>
         </div>
     </div>
@@ -14,32 +14,30 @@
 
 <script>
 export default {
-
-    // v if id = id
-
-    //transformer le tableau pour récup chaque image
-
-    props : {
+    props: {
         carousel: {
-            type : Array
+            type: Array
         },
-        // id : {
-        //     type: Number
-        // }
-    },
-    // data(){
-    //     imgtodisplay = []
-    // },
-    methods:{
-        log(){
-            console.log(this.carousel)
-           // this.imgtodisplay = carousel[0];
+        id: {
+            type: Number,
         }
     },
-    created(){
-        this.log();        
-    }
+    data() {
+        return {
+            carouselImgIndex: 0,
+        }
 
+    },
+
+    methods: {
+        incrementCarousel() {
+            this.carouselImgIndex == (this.carousel.length - 1) ? this.carouselImgIndex = 0 : this.carouselImgIndex++
+
+        },
+        decrementCarousel() {
+            this.carouselImgIndex == 0 ? this.carouselImgIndex = (this.carousel.length - 1) : this.carouselImgIndex--
+        }
+    },
 }
 </script>
 
@@ -52,70 +50,127 @@ $orange : #FCB860;
 $cream : #dbd5ce;
 
 .modal-mask {
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  display: table;
-  transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: table;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .modal-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .modal-container {
     /* display:flex;
     flex-direction: column;
     justify-content: center; */
-  width: 83%;
-  margin: 0px auto;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
-  position:relative;
+    width: 88%;
+    margin: 0px auto;
+    padding: 16px 24px;
+    background-color: $cream;
+    border: 4px solid $grey;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .modal-body {
-    width:80%;
-    & img {
-        width:60%;
+       & img {
+        width: 90%;
+        height: 780px;
+        object-fit: contain;
     }
 }
 
 .carouselBtn {
-cursor:pointer;
-border-radius: 4px;
-}
-.carouselBtnNext{
-    position:absolute;
-    top:50%;
-    right:8px;
-}
- .carouselBtnPrev {
-       position:absolute;
-    top:50%;
-    left:8px;
-
-}
-
-.carouselBtnClose {
-    position:absolute;
-    top:8px;
-    right: 8px;
-    background: $darkred;
-    box-shadow: #685D79 2Px 1px;
+    border: solid 2px $dark-main;
+    cursor: pointer;
+    border-radius: 4px;
     &:hover {
-        
-        background:$red;
-        box-shadow: #685D79 1px 0px;
+        box-shadow: 0 0;
     }
 }
 
+.carouselBtnNext {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    box-shadow: -2px 2px rgba(0, 0, 0, 0.33);
+    padding: 12px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.carouselBtnPrev {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.33);
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    padding: 12px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.carouselBtnClose {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: $darkred;
+    border: 2px solid $red;
+    box-shadow: #685D79 2px 2px;
+    padding: 6px 9px;
+
+    &:hover {
+        background: $red ;
+        //box-shadow: #685D79 2px 2px;
+        border: 2px solid $darkred;
+    }
+}
+
+//----------- Media query -----------
+// ---- laptop ----
+@media screen and (max-width : 1400px) {
+    .modal-body {
+        & img {
+            height: 600px;
+        }
+    }
+}
+
+
+// ----- TABLETTES -----
+@media screen and (max-width : 1024px) {
+    .modal-container{
+        width:88%;
+    }
+
+    .modal-body {
+        & img {
+            height: 460px;
+        }
+    }
+}
+
+// ----- MOBILE -----
+@media screen and (max-width : 600px) {
+        .modal-container{
+        width:88%;
+        padding:8px;
+    }
+
+    .modal-body {
+        & img {
+            height: 236px;
+            object-fit: cover;
+        }
+    }
+
+}
 </style>

@@ -185,7 +185,7 @@ font-awesome-icon {
   text-align: start;
   border: solid 4px $darkred;
   width: 80%;
-  max-width:1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: $cream;
   display: flex;
@@ -194,6 +194,7 @@ font-awesome-icon {
   h2 {
     font-family: 'Bebas Neue', cursive;
   }
+
   & .langs span {
     margin-left: 6px;
   }
@@ -416,6 +417,7 @@ main {
   aside {
     justify-content: space-around;
   }
+
   .presentation {
     display: flex;
     flex-direction: column;
@@ -425,6 +427,76 @@ main {
 }
 
 @media screen and (max-width : 600px) {
+
+  .cv {
+    width: 100%;
+    border:none;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    aside {
+      position: absolute;
+      top: 402px;
+      width: 100%;
+      min-width: 100%;
+
+
+      & .img--container {
+        position: absolute;
+        top: -324px;
+        right: 6px;
+        z-index: 9999;
+
+        & img {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+      .contact {
+        margin: 4px auto;
+        width:84%;
+
+        & p {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .presentation {
+      width: 100%;
+      border-top:2px solid $red;
+      position: absolute;
+      top: -1052px;
+      height: 400px;
+      padding: 0;
+      margin: 0;
+  & h1 {
+    margin-left:4%;
+  }
+    }
+
+    main {
+      position: absolute;
+      top: 1052px;
+      h2 {
+        position:initial;
+        margin-bottom:16px;
+      }
+      ul {
+        padding-left:24px;
+      }
+
+    }
+  }
+  .softskills{
+    height:278px;
+    overflow-y:hidden;
+  }
+
+
 
 }
 </style>

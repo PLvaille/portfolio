@@ -2,7 +2,7 @@
 
   <div class="cardsContainer">
     <div class="projectCard" v-for="data in cardsData" :key="data.id">
-    <ImgModal v-if="showModal" :carousel="data.carousel" />
+    <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
       <div class="cardTitle">
         <h2 class="projectName">{{ data.projectName }}</h2>
         <div class="summary">{{ data.summary }}</div>
@@ -14,7 +14,7 @@
       <div class="cardMore" :id="data.id" 
         @mouseenter="mouseInCard($event)" 
         @mouseleave="mouseOutCard($event)"
-        @click="displayImg()">
+        @click="displayImg(data.carousel)">
         <Transition name="fade">
         <img v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt">
        
@@ -54,6 +54,7 @@ export default {
       showModal : false,
       cardId: "",
       projectImg: "",
+      carouselImg: [],
     }
   },
   methods: {
@@ -67,8 +68,8 @@ export default {
       this.isCursorInCard = false;
     },
 
-    displayImg() {
-      console.log("modale")
+    displayImg(carousel) {
+      this.carouselImg = carousel;
       this.showModal = !this.showModal;
 
     },
@@ -143,7 +144,7 @@ $cream : #dbd5ce;
   justify-content: space-around;
   text-align: center;
   border-bottom: 1px solid $cream;
-  height:220px;
+  height:160px;
 }
 
 .projectName {
@@ -188,31 +189,31 @@ $cream : #dbd5ce;
   cursor: pointer;
   text-align: left;
   white-space: break-spaces;
-  height: 580px;
-
+  min-height:470px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   &--info {
+    position:relative;
     padding: 8px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
   }
 
   & img {
-    overflow:hidden;
     position: absolute;
     top: 0;
-    width:100%;
+    width:98%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     object-fit:contain;
-    display: flex;
-    margin: 0 auto;
-    height: 500px;
+    margin:2% 6px;
+
+    
   }
 
   & label {
     font-family: 'Bebas Neue', cursive;
-    font-size: large;
+    font-size: larger;
     color: $red;
     text-decoration: underline;
     text-decoration-color: white;
@@ -225,12 +226,16 @@ $cream : #dbd5ce;
 @media screen and (max-width : 1400px) {
   .projectCard {
     width:46%;
+    margin:8px;
   }
   .cardTitle {
     height:180px;
   }
   .cardMore {
-    height:auto;
+    height:590px;
+    & img {
+      top:20%;
+    }
   }
 }
 
@@ -244,20 +249,35 @@ $cream : #dbd5ce;
     margin:16px auto;
    }
    .cardMore{
-    height:680px ;   
+    height:auto ;   
+    & img {
+      top:8%;
+      margin:0 7px;
+    }
    } 
 
 }
 
 // ----- MOBILE -----
 @media screen and (max-width : 600px) {
-  .projectCard {    
+  .projectName{
+    font-size :x-large;
+  }
+  .summary {
+    font-size : larger;
+    letter-spacing: 0.2px;
+  }
+  .projectCard {   
+    height:auto; 
     width:92%;
     margin:16px auto;
    }
    .cardMore{
     height:auto ;   
    } 
+   .cardTitle{
+    height:180px;
+   }
 }
 
 </style>

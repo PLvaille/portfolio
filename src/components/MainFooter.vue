@@ -61,4 +61,20 @@ $darkred : #AB6C82;
     }
 
 }
+@media screen and (max-width : 600px) {
+    .footer {
+        position: absolute;
+        bottom:-2050px;
+        width:100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width : 420px) {
+    .footer {
+    height:140px;
+    bottom:-2130px;
+    }
+}
+
 </style>

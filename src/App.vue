@@ -68,6 +68,7 @@ $orange : #FCB860;
 $cream : #dbd5ce;
 
 #app {
+  position:relative;
   background: linear-gradient(#222, #222, #444, #444, #555);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
@@ -93,13 +94,16 @@ $cream : #dbd5ce;
   color: whitesmoke;
   min-width: 220px;
   border-radius: 16px;
-  border: 4px solid $darkred;
+  border: 4px solid $red;
   padding: 16px 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 
   &:hover {
     cursor: pointer;
     background: $orange;
     color: black;
+     text-decoration: none;
   }
 }
 </style>
