@@ -17,7 +17,14 @@
                 <font-awesome-icon icon="fa-solid fa-envelope" /><span>Pierrelouis.vaille@gmail.com</span>
                 </a>
             </li>
+            <li> 
+                <a href="https://vuejs.org/">
+                        <span class="vue">Empowered with VueJs<font-awesome-icon icon="fa-brands fa-vuejs" /></span>
+                </a>
+            </li>
         </ul>
+
+        
     </div>
 </template>
 
@@ -30,6 +37,13 @@ export default {
 <style lang="scss" scoped>
 $orange : #FCB860;
 $darkred : #AB6C82;
+
+.vue {
+    font-size:small;
+    position:absolute;
+    bottom:8px;
+    right:0;
+}
 .footer {
     margin-block: 0;
     margin-top: 24px;
