@@ -19,7 +19,7 @@
             </li>
             <li> 
                 <a href="https://vuejs.org/">
-                        <span class="vue">Empowered with VueJs<font-awesome-icon icon="fa-brands fa-vuejs" /></span>
+                        <span class="vue"><font-awesome-icon icon="fa-brands fa-vuejs" /> VueJs Empowered</span>
                 </a>
             </li>
         </ul>
