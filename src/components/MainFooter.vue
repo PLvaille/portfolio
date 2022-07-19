@@ -98,7 +98,7 @@ $darkred : #AB6C82;
 
 @media screen and (max-width : 420px) {
     .footer {
-    display: hidden;
+    display: none;
     }
 }
 
