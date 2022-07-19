@@ -415,6 +415,12 @@ main {
 
   aside {
     justify-content: space-around;
+    & .skills {
+      width:100%;
+      &--list {
+        width:98%;
+      }
+    }
   }
 
   .presentation {
@@ -442,6 +448,12 @@ main {
       top: 300px;
       width: 100%;
       min-width: 100%;
+
+      & .skills {
+        &--list {
+          width:86%;
+        }
+      }
 
 
 
