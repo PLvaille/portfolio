@@ -396,7 +396,7 @@ main {
 
   #poste {
     background: linear-gradient(to left, $dark-main, $darkred, $darkred, $dark-main);
-    margin-right: 42%;
+    margin-right: 30%;
   }
 }
 
@@ -435,19 +435,17 @@ main {
     display: flex;
     flex-direction: column;
 
+
+
     aside {
       position: absolute;
-      top: 402px;
+      top: 300px;
       width: 100%;
       min-width: 100%;
 
 
-      & .img--container {
-        position: absolute;
-        top: -324px;
-        right: 6px;
-        z-index: 9999;
 
+      & .img--container {
         & img {
           width: 160px;
           height: 160px;
@@ -455,7 +453,8 @@ main {
       }
 
       .contact {
-        margin: 4px auto;
+        z-index: 999;
+        margin: 24px auto 8px;
         width: 84%;
 
         & p {
@@ -463,24 +462,30 @@ main {
         }
       }
     }
-
     .presentation {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0 auto;
       width: 100%;
       border-top: 2px solid $red;
       position: absolute;
-      top: -1052px;
-      height: 400px;
+      top: -1180px;
       padding: 0;
       margin: 0;
 
       & h1 {
-        margin-left: 4%;
+        margin: 0 0;
+      }
+
+      & h2 {
+        margin-right: 0 !important;
       }
     }
 
     main {
       position: absolute;
-      top: 1082px;
+      top: 1178px;
 
       h2 {
         position: initial;
