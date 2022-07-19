@@ -415,10 +415,12 @@ main {
 
   aside {
     justify-content: space-around;
+
     & .skills {
-      width:100%;
+      width: 100%;
+
       &--list {
-        width:98%;
+        width: 98%;
       }
     }
   }
@@ -441,21 +443,20 @@ main {
     display: flex;
     flex-direction: column;
 
-
-
     aside {
       position: absolute;
       top: 300px;
       width: 100%;
       min-width: 100%;
+      & .hobbies {
+        padding-bottom: 24px;
+      }
 
       & .skills {
         &--list {
-          width:86%;
+          width: 86%;
         }
       }
-
-
 
       & .img--container {
         & img {
@@ -510,6 +511,5 @@ main {
 
     }
   }
-
 }
 </style>
