@@ -19,7 +19,7 @@
             </li>
             <li> 
                 <a href="https://vuejs.org/">
-                        <span class="vue"><font-awesome-icon icon="fa-brands fa-vuejs" /> VueJs Empowered</span>
+                        <span class="vueCredit"><font-awesome-icon icon="fa-brands fa-vuejs" /> VueJs Empowered</span>
                 </a>
             </li>
         </ul>
@@ -29,22 +29,33 @@
 </template>
 
 <script>
+
 export default {
+    props : {
+        toogleCv : Boolean,
+    },
+    methods : {
+        footerStyle(){
+            this.toogleCv ? (console.log("++++++++++")) : (console.log("************"))
+        }
+    },
+   
 
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 $orange : #FCB860;
 $darkred : #AB6C82;
 
-.vue {
-    font-size:small;
+.vueCredit {
+    font-size:x-small;
     position:absolute;
-    bottom:8px;
-    right:0;
+    bottom:4px;
+    right:8px;
 }
 .footer {
+
     margin-block: 0;
     margin-top: 24px;
     background: #111;
@@ -75,6 +86,7 @@ $darkred : #AB6C82;
     }
 
 }
+
 @media screen and (max-width : 600px) {
     .footer {
         position: absolute;
@@ -86,8 +98,7 @@ $darkred : #AB6C82;
 
 @media screen and (max-width : 420px) {
     .footer {
-    height:140px;
-    bottom:-2130px;
+    display: hidden;
     }
 }
 

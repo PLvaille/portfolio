@@ -3,22 +3,23 @@
     <MainHeader />
   </header>
 
+  <div classs="mainContainer">
 
+    <div class="navContainer">
+      <h2 v-if="toogleProjects" class="navBtn" @click="mainToogleSwitch()">Voir mon CV</h2>
+      <h2 v-if="toogleCv" class="navBtn" @click="mainToogleSwitch()">Voir mes projets</h2>
+    </div>
+    <div v-if="toogleCv">
+      <CurriculumVitae />
+    </div>
+    <div v-if="toogleProjects">
+      <ProjectsList :cardsData="projectsData" />
+    </div>
 
-  <div class="navContainer">
-    <h2 v-if="toogleProjects" class="navBtn" @click="mainToogleSwitch()">Voir mon CV</h2>
-    <h2 v-if="toogleCv" class="navBtn" @click="mainToogleSwitch()">Voir mes projets</h2>
+    <footer>
+      <MainFooter :toogleCv="toogleCv" />
+    </footer>
   </div>
-  <div v-if="toogleCv">
-    <CurriculumVitae />
-  </div>
-  <div v-if="toogleProjects">
-    <ProjectsList :cardsData="projectsData" />
-  </div>
-
-  <footer>
-    <MainFooter />
-  </footer>
 </template>
 
 <script>
@@ -56,7 +57,6 @@ export default {
   }
 }
 
-
 </script>
 
 <style lang="scss">
@@ -67,8 +67,12 @@ $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
 
+.mainContainer {
+  position: relative;
+}
+
 #app {
-  position:relative;
+  position: relative;
   background: linear-gradient(#222, #222, #444, #444, #555);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
@@ -76,14 +80,13 @@ $cream : #dbd5ce;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   & .headerWelcome {
     font-family: 'Shadows Into Light';
   }
 }
 
 .navContainer {
-  margin-block: 4px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -95,15 +98,24 @@ $cream : #dbd5ce;
   min-width: 220px;
   border-radius: 16px;
   border: 4px solid $red;
-  padding: 16px 0;
+  padding: 1.5% 0.5%;
   text-decoration: underline;
   text-underline-offset: 3px;
+  margin:1% auto;
 
   &:hover {
     cursor: pointer;
     background: $orange;
     color: black;
-     text-decoration: none;
+    text-decoration: none;
+    border: 4px solid $grey;
   }
+}
+
+footer {
+  @media screen and (max-width : 600px) {
+    display: none;
+  }
+
 }
 </style>

@@ -1,5 +1,4 @@
 <template>
-
   <div class="cv">
     <aside>
       <div class="img--container">
@@ -186,7 +185,7 @@ font-awesome-icon {
   border: solid 4px $darkred;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1.5% auto 0;
   background-color: $cream;
   display: flex;
 
@@ -430,7 +429,7 @@ main {
 
   .cv {
     width: 100%;
-    border:none;
+    border: none;
     height: 100%;
     position: relative;
     display: flex;
@@ -457,7 +456,7 @@ main {
 
       .contact {
         margin: 4px auto;
-        width:84%;
+        width: 84%;
 
         & p {
           margin: 0 auto;
@@ -467,36 +466,33 @@ main {
 
     .presentation {
       width: 100%;
-      border-top:2px solid $red;
+      border-top: 2px solid $red;
       position: absolute;
       top: -1052px;
       height: 400px;
       padding: 0;
       margin: 0;
-  & h1 {
-    margin-left:4%;
-  }
+
+      & h1 {
+        margin-left: 4%;
+      }
     }
 
     main {
       position: absolute;
-      top: 1052px;
+      top: 1082px;
+
       h2 {
-        position:initial;
-        margin-bottom:16px;
+        position: initial;
+        margin-bottom: 16px;
       }
+
       ul {
-        padding-left:24px;
+        padding-left: 24px;
       }
 
     }
   }
-  .softskills{
-    height:278px;
-    overflow-y:hidden;
-  }
-
-
 
 }
 </style>

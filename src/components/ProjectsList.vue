@@ -1,8 +1,9 @@
 <template>
-
+  <hr>
+  <h2>Projets OpenClassrooms</h2>
   <div class="cardsContainer">
     <div class="projectCard" v-for="data in cardsData" :key="data.id">
-    <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
+      <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
       <div class="cardTitle">
         <h2 class="projectName">{{ data.projectName }}</h2>
         <div class="summary">{{ data.summary }}</div>
@@ -11,36 +12,35 @@
 
       </div>
 
-      <div class="cardMore" :id="data.id" 
-        @mouseenter="mouseInCard($event)" 
-        @mouseleave="mouseOutCard($event)"
+      <div class="cardMore" :id="data.id" @mouseenter="mouseInCard($event)" @mouseleave="mouseOutCard($event)"
         @click="displayImg(data.carousel)">
         <Transition name="fade">
-        <img v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt">
-       
-        <div v-else class="cardMore--info">
-          <div>
-            <p><label>Improved skills :</label> {{ data.skills }}</p>
+          <img v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)"
+            :alt="data.alt">
+
+          <div v-else class="cardMore--info">
+            <div>
+              <p><label>Improved skills :</label> {{ data.skills }}</p>
+            </div>
+            <div>
+              <p><label>Resources :</label> {{ data.ressources }}</p>
+            </div>
+            <div>
+              <p><label>Description :</label> {{ data.description }}</p>
+            </div>
+            <div>
+              <p><label>Specifications :</label> {{ data.specs }}</p>
+            </div>
+            <div>
+              <p><label>Realisations :</label> {{ data.realisation }}</p>
+            </div>
           </div>
-          <div>
-            <p><label>Resources :</label> {{ data.ressources }}</p>
-          </div>
-          <div>
-            <p><label>Description :</label> {{ data.description }}</p>
-          </div>
-          <div>
-            <p><label>Specifications :</label> {{ data.specs }}</p>
-          </div>
-          <div>
-            <p><label>Realisations :</label> {{ data.realisation }}</p>
-          </div>
-        </div>
-         </Transition>
+        </Transition>
       </div>
     </div>
   </div>
 
- 
+
 
 </template>
 
@@ -51,7 +51,7 @@ export default {
   data() {
     return {
       isCursorInCard: false,
-      showModal : false,
+      showModal: false,
       cardId: "",
       projectImg: "",
       carouselImg: [],
@@ -59,9 +59,9 @@ export default {
   },
   methods: {
     mouseInCard(e) {
-      if(screen.width > 580){
-      this.cardId = e.target.id;
-      this.isCursorInCard = true;
+      if (screen.width > 580) {
+        this.cardId = e.target.id;
+        this.isCursorInCard = true;
       }
     },
     mouseOutCard() {
@@ -73,19 +73,19 @@ export default {
       this.showModal = !this.showModal;
 
     },
-    closeModalBtn(){
-      if(this.closeModal)
-      this.showModal = false;
+    closeModalBtn() {
+      if (this.closeModal)
+        this.showModal = false;
     }
   },
   props: {
     cardsData: Array
   },
   created() {
-   
+
 
   },
-  components:{
+  components: {
     ImgModal
   }
 }
@@ -112,11 +112,18 @@ $cream : #dbd5ce;
   opacity: 0;
 }
 
+// -------- banner OC --------
+h2 {
+  font-size:xx-large;
+  color: $grey;
+  font-family: 'Bebas Neue', cursive;
+  margin:16px;
+}
 
 // -------- cards --------
 
 .cardsContainer {
-  position : relative;
+  position: relative;
   margin-top: -8px;
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +151,7 @@ $cream : #dbd5ce;
   justify-content: space-around;
   text-align: center;
   border-bottom: 1px solid $cream;
-  height:160px;
+  height: 160px;
 }
 
 .projectName {
@@ -152,13 +159,13 @@ $cream : #dbd5ce;
   //font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 800;
   margin: 4px 0;
-  color: whitesmoke;
+  color: $orange;
   font-size: xx-large,
 }
 
 .summary {
   font-family: 'Bebas Neue', cursive;
-  color: $orange;
+  color:whitesmoke;
   font-size: x-large;
   // margin-bottom: 24px;
 }
@@ -185,30 +192,32 @@ $cream : #dbd5ce;
 }
 
 .cardMore {
-  position:relative;
+  position: relative;
   cursor: pointer;
   text-align: left;
   white-space: break-spaces;
-  min-height:470px;
-  display:flex;
+  min-height: 470px;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
   &--info {
-    position:relative;
+    position: relative;
     padding: 8px;
   }
 
   & img {
     position: absolute;
     top: 0;
-    width:98%;
-    display:flex;
+    max-height:450px;
+    width: 98%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    object-fit:contain;
-    margin:2% 6px;
+    object-fit: contain;
+    margin: 2% 6px;
 
-    
+
   }
 
   & label {
@@ -225,16 +234,19 @@ $cream : #dbd5ce;
 // ---- laptop ----
 @media screen and (max-width : 1400px) {
   .projectCard {
-    width:46%;
-    margin:8px;
+    width: 46%;
+    margin: 8px;
   }
+
   .cardTitle {
-    height:180px;
+    height: 180px;
   }
+
   .cardMore {
-    height:590px;
+    height: 590px;
+
     & img {
-      top:20%;
+      top: 20%;
     }
   }
 }
@@ -242,42 +254,48 @@ $cream : #dbd5ce;
 // ----- TABLETTES -----
 @media screen and (max-width : 1024px) {
   .cardsContainer {
-    flex-direction: column;   
+    flex-direction: column;
   }
+
   .projectCard {
-    width:88%;
-    margin:16px auto;
-   }
-   .cardMore{
-    height:auto ;   
+    width: 88%;
+    margin: 16px auto;
+  }
+
+  .cardMore {
+    height: auto;
+
     & img {
-      top:8%;
-      margin:0 7px;
+      top: 8%;
+      margin: 0 7px;
     }
-   } 
+  }
 
 }
 
 // ----- MOBILE -----
 @media screen and (max-width : 600px) {
-  .projectName{
-    font-size :x-large;
+  .projectName {
+    font-size: x-large;
   }
+
   .summary {
-    font-size : larger;
+    font-size: larger;
     letter-spacing: 0.2px;
   }
-  .projectCard {   
-    height:auto; 
-    width:92%;
-    margin:16px auto;
-   }
-   .cardMore{
-    height:auto ;   
-   } 
-   .cardTitle{
-    height:180px;
-   }
-}
 
+  .projectCard {
+    height: auto;
+    width: 92%;
+    margin: 16px auto;
+  }
+
+  .cardMore {
+    height: auto;
+  }
+
+  .cardTitle {
+    height: 180px;
+  }
+}
 </style>

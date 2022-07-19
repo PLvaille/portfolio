@@ -7,7 +7,19 @@
         <div class="dot dot2">•</div>
         <div class="dot dot1">•</div>
     </h1>
-    <p>(en cours de réalisation)</p>
+
+    <div class="links">
+
+        <a href="https://www.linkedin.com/in/pierre-louis-vaille-143877241/" target="_blank">
+            <font-awesome-icon icon="fa-brands fa-linkedin" />
+        </a>
+        <a href="https://github.com/PLvaille?tab=repositories" target="_blank">
+            <font-awesome-icon icon="fa-brands fa-github" />
+        </a>
+        <a href="mailto: pierrelouis.vaille@gmail.com">
+            <font-awesome-icon icon="fa-solid fa-envelope" />
+        </a>
+    </div>
 
 </template>
 
@@ -25,18 +37,33 @@ $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
 
+.links {
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+
+    & a {
+        text-decoration: none;
+        color: $cream;
+        margin: 16px;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
 p {
     margin: 0;
 }
 
 h1 {
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
     color: white;
-    // text-decoration: underline overline;
-    // text-decoration-color: $grey;
-    // text-underline-offset: 8px;
+    font-size: xxx-large;
 }
 
 .dot1 {
@@ -62,5 +89,19 @@ h1 {
 
 .dot4 {
     margin-left: 4px;
+}
+
+@media screen and (max-width : 600px) {
+    h1 {
+        font-size: xx-large;
+    }
+
+    .links {
+
+
+        & a {
+            margin: 12px 24px;
+        }
+    }
 }
 </style>
