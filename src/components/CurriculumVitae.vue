@@ -25,7 +25,7 @@
             <font-awesome-icon icon="fa-brands fa-css3" /><span>Css3 </span>
           </label>
           <div class="progress" id="css">
-            <div class="progress--8"></div>
+            <div class="progress--9"></div>
           </div>
         </div>
         <div class="skills--list">
@@ -33,7 +33,7 @@
             <font-awesome-icon icon="fa-brands fa-sass" /><span>Sass </span>
           </label>
           <div class="progress" id="sass">
-            <div class="progress--7"></div>
+            <div class="progress--8"></div>
           </div>
         </div>
         <div class="skills--list">
@@ -50,7 +50,7 @@
 
           </label>
           <div class="progress" id="js">
-            <div class="progress--7"></div>
+            <div class="progress--8"></div>
           </div>
         </div>
         <div class="skills--list">
@@ -66,7 +66,7 @@
             <font-awesome-icon icon="fa-brands fa-vuejs" /><span>VueJS</span>
           </label>
           <div class="progress" id="vue">
-            <div class="progress--5"></div>
+            <div class="progress--7"></div>
           </div>
         </div>
         <div class="skills--list">
