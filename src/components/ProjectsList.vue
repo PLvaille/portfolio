@@ -15,7 +15,7 @@
       <div class="cardMore" :id="data.id" @mouseenter="mouseInCard($event)" @mouseleave="mouseOutCard($event)"
         @click="displayImg(data.carousel)">
         <Transition name="fade">
-          <img v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)"
+          <img title="Cliquez moi !" v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)"
             :alt="data.alt">
 
           <div v-else class="cardMore--info">
@@ -38,7 +38,7 @@
         </Transition>
 
 
-        <div class="btnMore">
+        <div class="btnMore" @click="displayImg(data.carousel)">
           +
         </div>
 

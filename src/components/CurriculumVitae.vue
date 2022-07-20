@@ -6,8 +6,8 @@
       </div>
       <div class="contact">
         <p class="contact--list">Lille, 30 ans</p>
-        <p class="contact--list">0659012487</p>
-        <p class="contact--list"> <a href="mailto: pierrelouis.vaille@gmail.com">Pierrelouis.vaille@gmail.com</a></p>
+        <p class="contact--list">06.59.01.24.87</p>
+        <p class="contact--list"> <a href="mailto: pierrelouis.vaille@gmail.com">pierrelouis.vaille@gmail.com</a></p>
 
       </div>
       <div class="skills">
