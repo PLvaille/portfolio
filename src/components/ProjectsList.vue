@@ -38,12 +38,14 @@
         </Transition>
 
 
+        <div class="btnMore">
+          +
+        </div>
+
 
       </div> <!-- fin cardmore -->
 
-      <div class="btnMore" @click="displayImg(data.carousel)">
-        +
-      </div>
+
 
     </div>
   </div>
@@ -77,6 +79,7 @@ export default {
     },
 
     displayImg(carousel) {
+      
       this.carouselImg = carousel;
       this.showModal = !this.showModal;
 
@@ -216,20 +219,20 @@ h2 {
 
   &--info {
     position: relative;
-    padding: 8px;
+    padding: 0 8px;
   }
 
   & img {
     z-index: 9999;
     position: absolute;
-    top: 2%;
+    top: 8px;
     max-height: 450px;
     width: 98%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     object-fit: contain;
-    margin: 2% 6px;
+    margin: 0 6px;
 
 
   }
@@ -247,6 +250,7 @@ h2 {
 //----------- Media query -----------
 // ---- laptop ----
 @media screen and (max-width : 1400px) {
+
   .projectCard {
     width: 46%;
     margin: 8px;
@@ -271,20 +275,12 @@ h2 {
     border: 2px solid $red;
     color: $orange;
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 8px 12px;
     font-size: xx-large;
-    position: relative;
-    bottom: 24px;
     z-index: 9990;
     display: initial;
     background: darken($dark-main, 20%);
-
-    &:hover {
-      color: $orange;
-      border: 2px solid $cream;
-      background: $grey;
-      cursor: pointer;
-    }
+    margin:8px auto;
 
   }
 
