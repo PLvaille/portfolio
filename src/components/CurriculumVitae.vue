@@ -238,8 +238,8 @@ aside {
   background-color: $dark-main;
 
   & .faContainer {
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     object-fit: cover;
   }
 
@@ -287,7 +287,6 @@ aside {
     border-radius: 8px;
     padding: 8px;
     overflow: hidden;
-
 
     &--list {
       display: flex;
