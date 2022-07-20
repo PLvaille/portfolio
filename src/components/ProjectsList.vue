@@ -36,7 +36,15 @@
             </div>
           </div>
         </Transition>
+
+
+
+      </div> <!-- fin cardmore -->
+
+      <div class="btnMore" @click="displayImg(data.carousel)">
+        +
       </div>
+
     </div>
   </div>
 
@@ -114,10 +122,10 @@ $cream : #dbd5ce;
 
 // -------- banner OC --------
 h2 {
-  font-size:xx-large;
+  font-size: xx-large;
   color: $grey;
   font-family: 'Bebas Neue', cursive;
-  margin:16px;
+  margin: 16px;
 }
 
 // -------- cards --------
@@ -165,19 +173,24 @@ h2 {
 
 .summary {
   font-family: 'Bebas Neue', cursive;
-  color:whitesmoke;
+  color: whitesmoke;
   font-size: x-large;
   // margin-bottom: 24px;
+}
+
+.btnMore {
+  display: none;
 }
 
 .cardLink {
   //@debugfont-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family: 'Shadows Into Light', cursive;
   font-weight: 400;
-  border: 1px solid $red;
+  border: 2px solid $red;
   border-radius: 8px;
   padding: 8px;
   text-decoration: none;
+  text-align: center;
   font-size: large;
   color: $orange;
   width: 120px;
@@ -186,7 +199,7 @@ h2 {
 
   &:hover {
     color: $orange;
-    border: 1px solid $cream;
+    border: 2px solid $cream;
     background: $grey;
   }
 }
@@ -207,9 +220,10 @@ h2 {
   }
 
   & img {
+    z-index: 9999;
     position: absolute;
-    top: 0;
-    max-height:450px;
+    top: 2%;
+    max-height: 450px;
     width: 98%;
     display: flex;
     flex-direction: column;
@@ -243,7 +257,7 @@ h2 {
   }
 
   .cardMore {
-    height: 590px;
+    height: 610px;
 
     & img {
       top: 20%;
@@ -253,6 +267,27 @@ h2 {
 
 // ----- TABLETTES -----
 @media screen and (max-width : 1024px) {
+  .btnMore {
+    border: 2px solid $red;
+    color: $orange;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: xx-large;
+    position: relative;
+    bottom: 24px;
+    z-index: 9990;
+    display: initial;
+    background: darken($dark-main, 20%);
+
+    &:hover {
+      color: $orange;
+      border: 2px solid $cream;
+      background: $grey;
+      cursor: pointer;
+    }
+
+  }
+
   .cardsContainer {
     flex-direction: column;
   }
@@ -263,8 +298,6 @@ h2 {
   }
 
   .cardMore {
-    height: auto;
-
     & img {
       top: 8%;
       margin: 0 7px;
@@ -275,6 +308,8 @@ h2 {
 
 // ----- MOBILE -----
 @media screen and (max-width : 600px) {
+
+
   .projectName {
     font-size: x-large;
   }

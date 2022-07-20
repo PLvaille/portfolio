@@ -2,7 +2,7 @@
   <div class="cv">
     <aside>
       <div class="img--container">
-        <img class="img" src="../../public/me.jpg">
+        <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille" src="../../public/me.jpg">
       </div>
       <div class="contact">
         <p class="contact--list">Lille, 30 ans</p>
@@ -11,10 +11,13 @@
 
       </div>
       <div class="skills">
-        <h2>Compétences</h2>
+        <h2><strong>Compétences</strong></h2>
         <div class="skills--list">
           <label for="html">
-            <font-awesome-icon icon="fa-brands fa-html5" /><span>Html5 </span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-html5" />
+            </div>
+            <span><strong> Html5</strong></span>
           </label>
           <div class="progress" id="html">
             <div class="progress--9"></div>
@@ -22,7 +25,10 @@
         </div>
         <div class="skills--list">
           <label for="css">
-            <font-awesome-icon icon="fa-brands fa-css3" /><span>Css3 </span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-css3" />
+            </div>
+            <span><strong>Css3</strong></span>
           </label>
           <div class="progress" id="css">
             <div class="progress--9"></div>
@@ -30,7 +36,10 @@
         </div>
         <div class="skills--list">
           <label for="sass">
-            <font-awesome-icon icon="fa-brands fa-sass" /><span>Sass </span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-sass" />
+            </div>
+            <span><strong>Sass</strong></span>
           </label>
           <div class="progress" id="sass">
             <div class="progress--8"></div>
@@ -38,7 +47,10 @@
         </div>
         <div class="skills--list">
           <label for="bootsrap">
-            <font-awesome-icon icon="fa-brands fa-bootstrap" /><span>Bootsrap </span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-bootstrap" />
+            </div>
+            <span><strong>Bootsrap</strong></span>
           </label>
           <div class="progress" id="bootsrap">
             <div class="progress--4"></div>
@@ -46,7 +58,10 @@
         </div>
         <div class="skills--list">
           <label for="js">
-            <font-awesome-icon icon="fa-brands fa-js" /> <span>JavaScript </span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-js" />
+            </div>
+            <span><strong>JavaScript</strong></span>
 
           </label>
           <div class="progress" id="js">
@@ -54,24 +69,30 @@
           </div>
         </div>
         <div class="skills--list">
-          <label for="node">
-            <font-awesome-icon icon="fa-brands fa-node-js" /><span>NodeJS </span>
-          </label>
-          <div class="progress" id="node">
-            <div class="progress--6"></div>
-          </div>
-        </div>
-        <div class="skills--list">
           <label for="vue">
-            <font-awesome-icon icon="fa-brands fa-vuejs" /><span>VueJS</span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-vuejs" />
+            </div>
+            <span><strong>VueJS</strong></span>
           </label>
           <div class="progress" id="vue">
             <div class="progress--7"></div>
           </div>
         </div>
         <div class="skills--list">
+          <label for="node">
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-node-js" />
+            </div>
+            <span><strong>NodeJS</strong></span>
+          </label>
+          <div class="progress" id="node">
+            <div class="progress--6"></div>
+          </div>
+        </div>
+        <div class="skills--list">
           <label id="mysqlLabel" for="mysql">
-            <div><img src="mysql.png" /></div><span>MySQL</span>
+            <div class="faContainer"><img src="mysql.png" /></div><span><strong>MySQL</strong></span>
           </label>
           <div class="progress" id="mysql">
             <div class="progress--6"></div>
@@ -79,7 +100,10 @@
         </div>
         <div class="skills--list">
           <label for="seo">
-            <font-awesome-icon icon="fa-solid fa-eye" /><span>SEO</span>
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-solid fa-eye" />
+            </div>
+            <span><strong>SEO</strong></span>
           </label>
           <div class="progress" id="seo">
             <div class="progress--6"></div>
@@ -87,12 +111,12 @@
         </div>
       </div>
       <div class="langs">
-        <h2>Langues</h2>
+        <h2><strong>Langues</strong></h2>
         <ul>
 
-          <li>🇫🇷 <span>Français maternel</span></li>
-          <li>🇬🇧 <span>Anglais courant</span></li>
-          <li>🇪🇸 <span>Espagnol basique</span></li>
+          <li>🇫🇷 <span><strong>Français</strong> maternel</span></li>
+          <li>🇬🇧 <span><strong>Anglais</strong> courant</span></li>
+          <li>🇪🇸 <span><strong>Espagnol</strong> basique</span></li>
         </ul>
 
       </div>
@@ -111,26 +135,29 @@
     <main>
 
       <div class="presentation">
-        <h1>Vaille Pierre-Louis</h1>
-        <h2 id="poste">Développeur Web Fullstack</h2>
-        <span>Nouveau diplomé d'OpenClassrooms, parcours Développeur Web Fullstack, diplôme de niveau 5 (bac+2), je
-          cherche à intégrer une équipe
+        <h1><strong>Vaille Pierre-Louis</strong></h1>
+        <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
+        <span>Nouveau diplomé d'<strong>OpenClassrooms</strong>, parcours <strong>Développeur Web Fullstack</strong>,
+          diplôme de niveau 5 (bac+2), je
+          cherche à intégrer une équipez
           dynamique dès que possible afin
           d'approfondir mes connaissances, en acquérir de nouvelles et contribuer à de beaux projets.
         </span>
       </div>
       <div class="transition"></div>
       <div class="experience block">
-        <h2>Expérience Professionnelle</h2>
+        <h2><strong>Expérience Professionnelle</strong></h2>
         <ul>
           <li><strong>Commercial VRP</strong>, Stratygo, Hauts-de-france : 2019-2020</li>
           <li><strong>Commercial VRP</strong>, Ranger, Hauts-de-france : 2018-2019</li>
           <li><strong>Employé en vente</strong>, Auchan, Arras : 2017</li>
           <li><strong>Préparateur de commande</strong>, Dispeo, Wasquehal : 2016</li>
           <li><strong>Recruteur de donnateur</strong>, ONG Conseil, Lille : 2015</li>
-          <li><strong>Employé de Rayon</strong>, Auchan, Leclerc : 2014</li>
+          <li><strong>Employé de Rayon</strong>, Auchan, Leclerc, V.d'ascq, Templeuve : 2014</li>
           <li><strong>Vendanges</strong>, Domaine Carage, Beaujolais : 2013</li>
-          <li><strong>Manutention</strong> et Employé Polyvalent, Phildar, Auchan, Quick : 2010-2012</li>
+          <li><strong>Volontaire</strong>, Service Civique, AFEV Lille, V.d'ascq : 2012</li>
+          <li><strong>Manutention</strong> et <strong>Employé Polyvalent</strong>, Phildar, Auchan, Quick : 2010-2011
+          </li>
         </ul>
       </div>
       <div class="transition"></div>
@@ -138,23 +165,22 @@
         <h2>Formation</h2>
         <ul>
           <li><strong>Dev Web (bac+2)</strong>, OpenClassrooms : Nomvembre 2021 - Juin 2022</li>
-          <li>Formation interne Commercial, Ranger France : Janvier 2018</li>
+          <li>Formation commerciale interne, Ranger France : Janvier 2018</li>
           <li>DUT Informatique, IUT A Lille 1 (non validé) : 2011</li>
           <li>Baccalauréat Scientifique, Lycée R. Queneau : Juin 2009</li>
         </ul>
       </div>
       <div class="transition"></div>
       <div class="softskills block">
-        <h2>Soft-skills</h2>
+        <h2><strong>Soft-skills</strong></h2>
         <ul>
           <li>Sociabilité</li>
           <li>Curiosité</li>
           <li>Polyvalence</li>
-          <li>Patience</li>
           <li>Autonomie</li>
+          <li>Esprit Critique</li>
         </ul>
       </div>
-
     </main>
   </div>
 
@@ -210,6 +236,12 @@ aside {
   max-width: 500px;
   min-width: 236px;
   background-color: $dark-main;
+
+  & .faContainer {
+    width:20px;
+    height:20px;
+    object-fit: cover;
+  }
 
   & ul {
     list-style-type: none;
@@ -287,15 +319,13 @@ aside {
     }
 
     & label {
-      display: block;
+      display: flex;
       width: 80%;
-      margin-left: 1%;
-
     }
 
     & .progress {
       border: none;
-      width: 100%;
+      width: 90%;
       height: 24px;
       background-color: $cream;
       border-radius: 2px;
@@ -448,6 +478,7 @@ main {
       top: 300px;
       width: 100%;
       min-width: 100%;
+
       & .hobbies {
         padding-bottom: 24px;
       }
@@ -475,6 +506,7 @@ main {
         }
       }
     }
+
     .presentation {
       display: flex;
       flex-direction: column;

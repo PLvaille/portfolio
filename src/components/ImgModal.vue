@@ -70,6 +70,7 @@ $cream : #dbd5ce;
     /* display:flex;
     flex-direction: column;
     justify-content: center; */
+    z-index: 9999;
     width: 88%;
     margin: 0px auto;
     padding: 16px 24px;
