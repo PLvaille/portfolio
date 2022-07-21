@@ -109,6 +109,16 @@
             <div class="progress--6"></div>
           </div>
         </div>
+        <div class="skills--list">
+          <label id="gitLabel" for="git">
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-git-alt" />
+            </div><span><strong>Git</strong></span>
+          </label>
+          <div class="progress" id="git">
+            <div class="progress--5"></div>
+          </div>
+        </div>
       </div>
       <div class="langs">
         <h2><strong>Langues</strong></h2>
@@ -139,7 +149,7 @@
         <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
         <span>Nouveau diplomé d'<strong>OpenClassrooms</strong>, parcours <strong>Développeur Web Fullstack</strong>,
           diplôme de niveau 5 (bac+2), je
-          cherche à intégrer une équipez
+          cherche à intégrer une équipe
           dynamique dès que possible afin
           d'approfondir mes connaissances, en acquérir de nouvelles et contribuer à de beaux projets.
         </span>
@@ -164,7 +174,7 @@
       <div class="formation block">
         <h2>Formation</h2>
         <ul>
-          <li><strong>Dev Web (bac+2)</strong>, OpenClassrooms : Nomvembre 2021 - Juin 2022</li>
+          <li><strong>Dev Web (bac+2)</strong>, OpenClassrooms : Novembre 2021 - Juin 2022</li>
           <li>Formation commerciale interne, Ranger France : Janvier 2018</li>
           <li>DUT Informatique, IUT A Lille 1 (non validé) : 2011</li>
           <li>Baccalauréat Scientifique, Lycée R. Queneau : Juin 2009</li>
