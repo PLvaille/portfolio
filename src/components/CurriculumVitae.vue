@@ -147,7 +147,7 @@
       <div class="presentation">
         <h1><strong>Vaille Pierre-Louis</strong></h1>
         <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
-        <span>Nouveau diplomé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
+        <span>Diplomé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
           diplôme de niveau 5 (bac+2), je
           cherche à intégrer une équipe
           dynamique dès que possible afin
