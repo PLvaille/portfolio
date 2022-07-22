@@ -126,7 +126,7 @@
 
           <li>🇫🇷 <span><strong>Français</strong> maternel</span></li>
           <li>🇬🇧 <span><strong>Anglais</strong> courant</span></li>
-          <li>🇪🇸 <span><strong>Espagnol</strong> basique</span></li>
+          <li>🇪🇸 <span><strong>Espagnol</strong> débutant</span></li>
         </ul>
 
       </div>
@@ -147,7 +147,7 @@
       <div class="presentation">
         <h1><strong>Vaille Pierre-Louis</strong></h1>
         <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
-        <span>Nouveau diplomé d'<strong>OpenClassrooms</strong>, parcours <strong>Développeur Web Fullstack</strong>,
+        <span>Nouveau diplomé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
           diplôme de niveau 5 (bac+2), je
           cherche à intégrer une équipe
           dynamique dès que possible afin
@@ -174,9 +174,9 @@
       <div class="formation block">
         <h2>Formation</h2>
         <ul>
-          <li><strong>Dev Web (bac+2)</strong>, OpenClassrooms : Novembre 2021 - Juin 2022</li>
+          <li><strong>Développeur Web</strong>, titre RNCP niveau 5 (bac+2), remote : Novembre 2021 - Juin 2022</li>
           <li>Formation commerciale interne, Ranger France : Janvier 2018</li>
-          <li>DUT Informatique, IUT A Lille 1 (non validé) : 2011</li>
+          <li>DUT Informatique, IUT A Lille 1 (1<sup>ere</sup> année) : 2011</li>
           <li>Baccalauréat Scientifique, Lycée R. Queneau : Juin 2009</li>
         </ul>
       </div>
@@ -219,7 +219,7 @@ font-awesome-icon {
   font-family: 'Roboto', sans-serif;
   text-align: start;
   border: solid 4px $darkred;
-  width: 80%;
+  width: 827px;
   max-width: 1200px;
   margin: 1.5% auto 0;
   background-color: $cream;

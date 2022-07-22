@@ -4,17 +4,17 @@
 
             <li>
                 <a href="https://www.linkedin.com/in/pierre-louis-vaille-143877241/" target="_blank">
-                <font-awesome-icon icon="fa-brands fa-linkedin" /><span>LinkedIn Profil</span>
+                <font-awesome-icon icon="fa-brands fa-linkedin" /><span>• Profil Linkedin</span>
                 </a>
             </li>
             <li>
                 <a href="https://github.com/PLvaille?tab=repositories" target="_blank">
-                <font-awesome-icon icon="fa-brands fa-github" /><span>GitHub Repository</span>
+                <font-awesome-icon icon="fa-brands fa-github" /><span>• Dépôt GitHub</span>
                 </a>
             </li>
             <li>
                 <a href = "mailto: pierrelouis.vaille@gmail.com">
-                <font-awesome-icon icon="fa-solid fa-envelope" /><span>Pierrelouis.vaille@gmail.com</span>
+                <font-awesome-icon icon="fa-solid fa-envelope" /><span>• Pierrelouis.vaille@gmail.com</span>
                 </a>
             </li>
             <li> 

@@ -76,7 +76,7 @@
     "skills": "HTML5 / CSS3, responsive design",
     "ressources": "Maquette (JPG) du site pour les version desktop et mobile.",
     "description": "Pour valider ce projet je devais présenter un site responsive de réservation en ligne (type air bnb), en respectant la maquette fournie.",
-    "specs": "Réaliser une version responsive du site, compatible chrome et firefox. Aucun framework ne doit être utilisé. Utilisation de flexbox plutôt que grid. Le design défini dans la maquette jpg doit être respecté. Les boutons, liens et filtres ainsi que la barre de recherches ne doivent pas être fonctionnels, ormis les boutons de la navigation en haut de page. Utiliser un CDN pour les icones. Approche desktop first.",
+    "specs": "Réaliser une version responsive du site, compatible chrome et firefox. Aucun framework ne doit être utilisé. Utilisation de flexbox plutôt que grid. Le design défini dans la maquette jpg doit être respecté. Les boutons, liens et filtres ainsi que la barre de recherche ne doivent pas être fonctionnels, hormis les boutons de la navigation en haut de page. Utiliser un CDN pour les icones. Approche desktop first.",
     "realisation": "J'ai inclus 3 breakpoints afin d'avoir un site responsive sur mobile, tablette et ordinateur de bureau. Animations sur filtres et cards réalisées en supplément.",
     "img": "p2.jpg",
     "alt": "capture d'écran du projet 2",

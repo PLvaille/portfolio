@@ -223,7 +223,7 @@ h2 {
   }
 
   & img {
-    z-index: 9999;
+    z-index: 2;
     position: absolute;
     top: 8px;
     max-height: 450px;
