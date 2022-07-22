@@ -62,7 +62,6 @@
               <font-awesome-icon icon="fa-brands fa-js" />
             </div>
             <span><strong>JavaScript</strong></span>
-
           </label>
           <div class="progress" id="js">
             <div class="progress--8"></div>
@@ -109,6 +108,7 @@
             <div class="progress--6"></div>
           </div>
         </div>
+
         <div class="skills--list">
           <label id="gitLabel" for="git">
             <div class="faContainer">
@@ -120,16 +120,16 @@
           </div>
         </div>
       </div>
+
       <div class="langs">
         <h2><strong>Langues</strong></h2>
         <ul>
-
           <li>🇫🇷 <span><strong>Français</strong> maternel</span></li>
           <li>🇬🇧 <span><strong>Anglais</strong> courant</span></li>
           <li>🇪🇸 <span><strong>Espagnol</strong> débutant</span></li>
         </ul>
-
       </div>
+
       <div class="hobbies">
         <h2>Loisirs</h2>
         <ul>
@@ -138,12 +138,9 @@
           <li>🎲 <span>Jeux de Société</span></li>
         </ul>
       </div>
-
     </aside>
 
-
     <main>
-
       <div class="presentation">
         <h1><strong>Vaille Pierre-Louis</strong></h1>
         <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>

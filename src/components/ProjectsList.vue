@@ -38,15 +38,11 @@
         </Transition>
 
 
-        <div class="btnMore" @click="displayImg(data.carousel)">
+        <div class="btnMore">
           +
         </div>
 
-
       </div> <!-- fin cardmore -->
-
-
-
     </div>
   </div>
 
@@ -91,10 +87,6 @@ export default {
   },
   props: {
     cardsData: Array
-  },
-  created() {
-
-
   },
   components: {
     ImgModal
