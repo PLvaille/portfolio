@@ -1,6 +1,6 @@
 <template>
   <hr>
-  <h2>Projets OpenClassrooms</h2>
+  <h2>Projets professionnalisants</h2>
   <div class="cardsContainer">
     <div class="projectCard" v-for="data in cardsData" :key="data.id">
       <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
@@ -226,12 +226,14 @@ h2 {
     z-index: 2;
     position: absolute;
     top: 8px;
+    min-height:450px;
+    height:450px;
     max-height: 450px;
     width: 98%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    object-fit: contain;
+    object-fit: cover;
     margin: 0 6px;
 
 
