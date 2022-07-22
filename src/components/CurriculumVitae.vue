@@ -199,7 +199,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $dark-main: darken(#475C7A, 10%);
 $grey : #685D79;
 $darkred : #AB6C82;
@@ -371,7 +371,6 @@ li {
 }
 
 main {
-  // color:$dark-main;
   color: black;
   margin-block: 0;
   background: $cream;
@@ -504,7 +503,7 @@ main {
 
       .contact {
         z-index: 999;
-        margin: 24px auto 8px;
+        margin: 12px auto 8px;
         width: 84%;
 
         & p {
@@ -521,7 +520,7 @@ main {
       width: 100%;
       border-top: 2px solid $red;
       position: absolute;
-      top: -1180px;
+      top: -1206px;
       padding: 0;
       margin: 0;
 
@@ -536,7 +535,7 @@ main {
 
     main {
       position: absolute;
-      top: 1178px;
+      top: 1206px;
 
       h2 {
         position: initial;
