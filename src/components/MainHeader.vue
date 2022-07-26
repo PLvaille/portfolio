@@ -59,7 +59,7 @@ $cream : #dbd5ce;
 
         & p {
             text-align: left;
-            font-size: small;
+            font-size: x-small;
         }
     }
 }
@@ -85,7 +85,6 @@ h1 {
 .dot2 {
     margin: -1px 1px;
     color: $red;
-
 }
 
 .dot3,
@@ -108,8 +107,6 @@ h1 {
     }
 
     .links {
-
-
         & a {
             margin: 12px 24px;
         }
