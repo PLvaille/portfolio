@@ -150,7 +150,7 @@
 
     <main>
       <div class="presentation">
-        <h1><strong>Vaille Pierre-Louis</strong></h1>
+        <h1><strong>Vaille</strong> <strong>Pierre-Louis</strong></h1>
         <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
         <span>Diplomé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
           diplôme de niveau 5 (bac+2), je
@@ -533,7 +533,7 @@ main {
       width: 100%;
       border-top: 2px solid $red;
       position: absolute;
-      top: -1206px;
+      top: -1214px;
       padding: 0;
       margin: 0;
 
@@ -548,7 +548,7 @@ main {
 
     main {
       position: absolute;
-      top: 1206px;
+      top: 1214px;
 
       h2 {
         position: initial;
