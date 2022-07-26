@@ -58,7 +58,7 @@ $cream : #dbd5ce;
         }
 
         & p {
-            text-align: left;
+            text-align: center;
             font-size: x-small;
         }
     }
