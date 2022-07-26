@@ -2,7 +2,7 @@
     <h1 class="headerWelcome">
         <div class="dot dot1">•</div>
         <div class="dot dot2">•</div>
-        <div class="dot dot3">•</div> Bienvenue sur mon&nbsp;<strong>Portfolio</strong>
+        <div class="dot dot3">•</div> Bienvenue sur mon Portfolio
         <div class="dot dot4">•</div>
         <div class="dot dot2">•</div>
         <div class="dot dot1">•</div>
