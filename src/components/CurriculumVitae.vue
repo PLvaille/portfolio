@@ -98,6 +98,14 @@
           </div>
         </div>
         <div class="skills--list">
+          <label id="mongodbLabel" for="mongodb">
+            <div class="faContainer"><img src="mongodb.png" /></div><span><strong>MongoDB</strong></span>
+          </label>
+          <div class="progress" id="mongodb">
+            <div class="progress--6"></div>
+          </div>
+        </div>
+        <div class="skills--list">
           <label for="seo">
             <div class="faContainer">
               <font-awesome-icon icon="fa-solid fa-eye" />
@@ -245,9 +253,9 @@ aside {
   background-color: $dark-main;
 
   & .faContainer {
+    display: flex;
+    flex-direction: column;
     width: 20px;
-    height: 20px;
-    object-fit: cover;
   }
 
   & ul {
@@ -322,6 +330,16 @@ aside {
       & span {
         margin-left: 4px;
       }
+
+      & img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: 18px;
+      }
+
+      & .svg-inline--fa {
+        height: 20px;
+      }
     }
 
     & label {
@@ -355,11 +373,6 @@ aside {
 
 #mysqlLabel {
   display: flex;
-
-  & img {
-    width: 17px;
-    height: 16px;
-  }
 }
 
 ul {
