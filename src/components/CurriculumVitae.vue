@@ -498,7 +498,7 @@ main {
       min-width: 100%;
 
       & .hobbies {
-        padding-bottom: 24px;
+        padding-bottom: 30px;
       }
 
       & .skills {
