@@ -8,10 +8,10 @@
     "description": "Pour valider ce projet je devais construire un réseau social d'entreprise from scratch.",
     "specs": "\n\nFonctionnelles : Une page de login/signup. Une page d'accueil listant les posts des utilisateurs. Un utilisateur peut se déconnecter, sa session persiste pendant qu’il est connecté. Les données de connexion doivent être sécurisées. Un utilisateur doit pouvoir créer, modifier et supprimer ses posts. Un post doit pouvoir contenir du texte et une image. Un utilisateur doit pouvoir créer et modifier ou supprimer un commentaire sur un post. Un utilisateur doit pouvoir liker un post, une seule fois pour chaque post. Un rôle administrateur doit exister, pouvant modérer les contenus et les utilisateurs.\n\nTechniques : Coder le projet en JS en respectant les standards WCAG. Utiliser un framework front-end JavasScript (de mon choix).",
     "realisation": "Utilisation de MySQL, NodeJS et ExpressJS pour la réalisation du Backend, ainsi que divers modules pour les models et middlewares. Utilisation de VueJS 3 et SASS pour le Frontend.",
-    "img": "p7.jpg",
+    "img": "p7.webp",
     "alt": "capture d'écran du projet 7",
     "link": "https://github.com/PLvaille/p7",
-    "carousel":["p7_00.jpg","p7_01.jpg", "p7_02.jpg", "p7_03.jpg", "p7_04.jpg"]
+    "carousel":["p7_00.webp","p7_01.webp", "p7_02.webp", "p7_03.webp", "p7_04.webp"]
   },
   {
     "id": 5,
@@ -22,10 +22,10 @@
     "description": "Pour valider ce projet je devais construire le code Backend pour l'API du site en veillant à respecter les contraites REST.",
     "specs": "\n\nFonctionnelles : Les utilisateurs doivent pouvoir créer un compte et s'authentifier sur le site afin de poster et consulter des recettes qu'ils peuvent liker ou disliker.\n\nTechniques : mot de passe haché. Authentification renforcée sur les routes requises. Adresses électroniques uniques dans la DB, plugin Mongoose pour garantir l'unicité et signaler les erreurs. Plugin Mongoose doit assurer la remontée des erreurs issues de la base de données. Les versions les plus récentes des logiciels sont utilisées avec des correctifs de sécurité actualisés. Contenu du dossier images ne doit pas être téléchargé sur GitHub.",
     "realisation": "Création/utilisation de models, de routes et de middleware dans la mise en place de l'API. Utilisation de NodeJS, d'ExpressJS, de Mongoose, de Multer et de divers autres modules.",
-    "img": "p6.jpg",
+    "img": "p6.webp",
     "alt": "capture d'écran du projet 6",
     "link": "https://github.com/PLvaille/projet6",
-    "carousel":["p6_00.jpg","p6_01.jpg", "p6_02.jpg", "p6_03.jpg"]
+    "carousel":["p6_00.webp","p6_01.webp", "p6_02.webp", "p6_03.webp"]
   },
   {
     "id": 4,
@@ -36,10 +36,10 @@
     "description": "Pour valider ce projet je devais intégrer les éléments de l'APi dans les pages web fournies avec JavaScript, ainsi que mettre en place un plan d'acceptation du site.",
     "specs": "Une architecture générale à respecter (4pages : acceuil, produit, panier, confirmation). Bonne indentation et commentaire du code JS.",
     "realisation": "Récupérer les données de l'API pour les intégrer dynamiquement au site. Foncitonnalités d'ajout/suppression d'articles du panier, de gestion du panier,  de calcul des totaux des prix et des articles, de validation et d'envoi de formulaire. Ajout facultatif de style sur les cards du panier et sur la navigation.",
-    "img": "p5.jpg",
+    "img": "p5.webp",
     "alt": "capture d'écran du projet 5",
     "link": "https://github.com/PLvaille/projet5",
-    "carousel":["p5_00.jpg","p5_01.jpg", "p5_02.jpg", "p5_03.jpg", "p5_04.jpg"]
+    "carousel":["p5_00.webp","p5_01.webp", "p5_02.webp", "p5_03.webp", "p5_04.webp"]
   },
   {
     "id": 3,
@@ -50,37 +50,37 @@
     "description": "Pour valider ce projet je devais présenter via un support de présentation les améliorations apportées au site concernant son référencement ainsi que son accessibilité.",
     "specs": "Améliorer le code HTML/CSS tout en conservant les framework bootstrap et JavaScript utilisés. Améliorer les scores SEO et d'accessibilité du site à l'aide d'un outil de diagnostic",
     "realisation": "Amélioration du score du SEO de 78 à 100 et des scores de performance et d'accessibilité, réalisation d'un support de présentation pour la soutenance du projet",
-    "img": "p4.jpg",
+    "img": "p4.webp",
     "alt": "capture d'écran du projet 4",
     "link": "https://github.com/PLvaille/P4-opti",
-    "carousel":["p4_00.jpg","p4_01.jpg", "p4_02.jpg", "p4_03.jpg", "p4_04.jpg"]
+    "carousel":["p4_00.webp","p4_01.webp", "p4_02.webp", "p4_03.webp", "p4_04.webp"]
   },
   {
     "id": 2,
     "projectName": "• Oh my food - Projet 3 •",
     "summary": "Dynamiser une page web avec des animations CSS",
     "skills": "SASS, animations CSS, responsive design",
-    "ressources": "Maquette mobile du site (jpg), logo, textes et images des restaurants.",
+    "ressources": "Maquette mobile du site (image), logo, textes et images des restaurants.",
     "description": "Pour valider ce projet je devais réaliser des animations pour dynamiser les pages web fournies.",
     "specs": "Pas d'utilisation de JavaScript ni d'aucun framework. Utilisation de SASS. Code versionné sur GitHub et accessible sur GitHub Pages. Site responsive et validé par W3C en HTML et CSS sans erreur. Approche mobile first. Compatible Chrome et Firefox.",
     "realisation": "Utilisation des keyframes SCSS, loading spinner, animation des boutons, des cards, des likes et des articles.",
-    "img": "p3.jpg",
+    "img": "p3.webp",
     "alt": "capture d'écran du projet 3",
     "link": "https://plvaille.github.io/projet3/",
-    "carousel":["p3_01.jpg", "p3_02.jpg", "p3_03.jpg", "p3_04.jpg"]
+    "carousel":["p3_01.webp", "p3_02.webp", "p3_03.webp", "p3_04.webp"]
   },
   {
     "id": 1,
     "projectName": "• Booki - Projet 2 •",
     "summary": "Transformer une maquette en site web avec HTML & CSS",
     "skills": "HTML5 / CSS3, responsive design",
-    "ressources": "Maquette (JPG) du site pour les version desktop et mobile.",
+    "ressources": "Maquette (image) du site pour les version desktop et mobile.",
     "description": "Pour valider ce projet je devais présenter un site responsive de réservation en ligne (type air bnb), en respectant la maquette fournie.",
     "specs": "Réaliser une version responsive du site, compatible chrome et firefox. Aucun framework ne doit être utilisé. Utilisation de flexbox plutôt que grid. Le design défini dans la maquette jpg doit être respecté. Les boutons, liens et filtres ainsi que la barre de recherche ne doivent pas être fonctionnels, hormis les boutons de la navigation en haut de page. Utiliser un CDN pour les icones. Approche desktop first.",
     "realisation": "J'ai inclus 3 breakpoints afin d'avoir un site responsive sur mobile, tablette et ordinateur de bureau. Animations sur filtres et cards réalisées en supplément.",
-    "img": "p2.jpg",
+    "img": "p2.webp",
     "alt": "capture d'écran du projet 2",
     "link": "https://plvaille.github.io/p2_booki/",
-    "carousel":["p2_01.jpg", "p2_02.jpg"]
+    "carousel":["p2_01.webp", "p2_02.webp"]
   }
 ]

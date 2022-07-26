@@ -2,7 +2,7 @@
   <div class="cv">
     <aside>
       <div class="img--container">
-        <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille" src="../../public/me.jpg">
+        <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille" src="../../public/me.webp">
       </div>
       <div class="contact">
         <p class="contact--list">Lille, 30 ans</p>
@@ -91,7 +91,7 @@
         </div>
         <div class="skills--list">
           <label id="mysqlLabel" for="mysql">
-            <div class="faContainer"><img src="mysql.png" /></div><span><strong>MySQL</strong></span>
+            <div class="faContainer"><img src="mysql.webp" alt="mysql logo" /></div><span><strong>MySQL</strong></span>
           </label>
           <div class="progress" id="mysql">
             <div class="progress--6"></div>
@@ -99,7 +99,8 @@
         </div>
         <div class="skills--list">
           <label id="mongodbLabel" for="mongodb">
-            <div class="faContainer"><img src="mongodb.png" /></div><span><strong>MongoDB</strong></span>
+            <div class="faContainer"><img src="mongodb.webp" alt="mongodb logo" /></div>
+            <span><strong>MongoDB</strong></span>
           </label>
           <div class="progress" id="mongodb">
             <div class="progress--6"></div>
@@ -280,8 +281,8 @@ aside {
     margin: 0 auto;
     margin-top: 8px;
     object-fit: cover;
-    width: 180px;
-    height: 180px;
+    width: 148px;
+    height: 148px;
     border-radius: 50%;
     filter: brightness(1.8);
 
@@ -335,6 +336,7 @@ aside {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
         width: 18px;
+        height: 18px;
       }
 
       & .svg-inline--fa {
@@ -425,12 +427,12 @@ main {
 }
 
 .presentation {
-  padding-left: 4%;
   color: $cream;
   background-color: $dark-main;
   padding-bottom: 3%;
 
   & span {
+    padding-left: 4%;
     display: block;
     width: 91%;
     margin: 0 auto;

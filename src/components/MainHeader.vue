@@ -2,7 +2,7 @@
     <h1 class="headerWelcome">
         <div class="dot dot1">•</div>
         <div class="dot dot2">•</div>
-        <div class="dot dot3">•</div> Bienvenue sur mon&nbsp;<strong>Portfolio</strong> 
+        <div class="dot dot3">•</div> Bienvenue sur mon&nbsp;<strong>Portfolio</strong>
         <div class="dot dot4">•</div>
         <div class="dot dot2">•</div>
         <div class="dot dot1">•</div>
@@ -12,12 +12,15 @@
 
         <a href="https://www.linkedin.com/in/pierre-louis-vaille-143877241/" target="_blank">
             <font-awesome-icon icon="fa-brands fa-linkedin" />
+            <p>Linkedin</p>
         </a>
         <a href="https://github.com/PLvaille?tab=repositories" target="_blank">
             <font-awesome-icon icon="fa-brands fa-github" />
+            <p>Repo github</p>
         </a>
         <a href="mailto: pierrelouis.vaille@gmail.com">
             <font-awesome-icon icon="fa-solid fa-envelope" />
+            <p>Contact</p>
         </a>
     </div>
 
@@ -43,12 +46,20 @@ $cream : #dbd5ce;
     font-size: xxx-large;
 
     & a {
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
         color: $cream;
         margin: 16px;
+        height:42px;
 
         &:hover {
             color: $orange;
+        }
+
+        & p {
+            text-align: left;
+            font-size: small;
         }
     }
 }
