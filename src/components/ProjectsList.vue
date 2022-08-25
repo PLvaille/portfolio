@@ -1,53 +1,84 @@
 <template>
   <hr>
-  <h2>Projets professionnalisants</h2>
+  <h2 class="projects-type">Projets d'autoformation</h2>
   <div class="cardsContainer">
-    <div class="projectCard" v-for="data in cardsData" :key="data.id">
+    <div class="projectCard" v-for="data in cardsDataSolo" :key="data.id">
       <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
-      <div class="cardTitle">
-        <h2 class="projectName">{{ data.projectName }}</h2>
-        <div class="summary">{{ data.summary }}</div>
-        <a class="cardLink" v-if="data.link.includes('.io')" :href="data.link" target="_blank">Voir le site</a>
-        <a class="cardLink" v-if="!data.link.includes('.io')" :href="data.link" target="_blank">Repo git</a>
 
+      <div class="cardTitle">
+        <div class="card-head">
+          <h2 class="projectName">{{ data.projectName }}</h2>
+          <div class="summary">{{ data.summary }}</div>
+          <div class="cardLink-container">
+            <a class="cardLink" v-if="data.site" :href="data.site" target="_blank">Voir le
+              site</a>
+            <a class="cardLink" v-if="data.github" :href="data.github" target="_blank">Repo
+              git</a>
+          </div>
+        </div>
+        <img title="Cliquez moi !" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt"
+          @click="displayImg(data.carousel)" />
       </div>
 
-      <div class="cardMore" :id="data.id" @mouseenter="mouseInCard($event)" @mouseleave="mouseOutCard($event)"
-        @click="displayImg(data.carousel)">
-        <Transition name="fade">
-          <img title="Cliquez moi !" v-if="isCursorInCard && data.id == cardId" :src="require(`../assets/preview/${data.img}`)"
-            :alt="data.alt">
-
-          <div v-else class="cardMore--info">
-            <div>
-              <p><label>Improved skills :</label> {{ data.skills }}</p>
-            </div>
-            <div>
-              <p><label>Resources :</label> {{ data.ressources }}</p>
-            </div>
-            <div>
-              <p><label>Description :</label> {{ data.description }}</p>
-            </div>
-            <div>
-              <p><label>Specifications :</label> {{ data.specs }}</p>
-            </div>
-            <div>
-              <p><label>Realisations :</label> {{ data.realisation }}</p>
-            </div>
+      <div class="cardMore--info">
+        <div class="cardMore">
+          <div>
+            <p><label>Improved skills :</label> {{ data.skills }}</p>
           </div>
-        </Transition>
-
-
-        <div class="btnMore">
-          +
+          <div>
+            <p><label>Description :</label> {{ data.description }}</p>
+          </div>
+          <div v-if="data.realisation">
+            <p><label>Réalisation :</label> {{ data.realisation }}</p>
+          </div>
         </div>
-
-      </div> <!-- fin cardmore -->
-    </div>
+      </div>
+    </div> <!-- fin cardmore -->
   </div>
 
+  <hr>
+  <h2 class="projects-type">Projets professionnalisants soumis à l'évaluation lors de ma formation</h2>
+  <div class="cardsContainer">
+    <div class="projectCard" v-for="data in cardsDataPro" :key="data.id">
+      <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
+      <div class="cardTitle">
+        <div class="card-head">
+        <h2 class="projectName">{{ data.projectName }}</h2>
+        <div class="summary">{{ data.summary }}</div>
+        <div class="cardLink-container">
+          <a class="cardLink" v-if="data.site" :href="data.site" target="_blank">Voir le site</a>
+          <a class="cardLink" v-if="data.github" :href="data.github" target="_blank">Repo git</a>
+        </div>
+      </div>
+      <img :src="require(`../assets/preview/${data.img}`)" :alt="data.alt" @click="displayImg(data.carousel)" />
+    </div>
 
+    <div class="cardMore">
+      <div class="cardMore--info">
+        <div>
+          <p><label>Improved skills :</label> {{ data.skills }}</p>
+        </div>
+        <div>
+          <p><label>Resources :</label> {{ data.ressources }}</p>
+        </div>
+        <div>
+          <p><label>Description :</label> {{ data.description }}</p>
+        </div>
+        <div>
+          <p><label>Specifications :</label> {{ data.specs }}</p>
+        </div>
+        <div>
+          <p><label>Realisations :</label> {{ data.realisation }}</p>
+        </div>
+      </div>
 
+      <div class="btn-more" @click="displayImg(data.carousel)">
+        +
+      </div>
+
+    </div> <!-- fin cardmore -->
+  </div>
+  </div>
 </template>
 
 <script>
@@ -61,24 +92,17 @@ export default {
       cardId: "",
       projectImg: "",
       carouselImg: [],
+      toogleMoreDetails: false,
     }
   },
   methods: {
-    mouseInCard(e) {
-      if (screen.width > 580) {
-        this.cardId = e.target.id;
-        this.isCursorInCard = true;
-      }
+    cardMore(e) {
+      this.cardId = e.target.id;
+      this.toogleMoreDetails = !this.toogleMoreDetails
     },
-    mouseOutCard() {
-      this.isCursorInCard = false;
-    },
-
     displayImg(carousel) {
-      
       this.carouselImg = carousel;
       this.showModal = !this.showModal;
-
     },
     closeModalBtn() {
       if (this.closeModal)
@@ -86,7 +110,8 @@ export default {
     }
   },
   props: {
-    cardsData: Array
+    cardsDataPro: Array,
+    cardsDataSolo: Array,
   },
   components: {
     ImgModal
@@ -97,30 +122,23 @@ export default {
 
 <style lang="scss">
 // -------- colors --------
-$dark-main: #475C7A;
+$dark-main : #444;
+// $dark-main: darken(#475C7A, 10%);
 $grey : #685D79;
-$darkred : #AB6C82;
+// $darkred : #AB6C82;
+$darkred: #475C7A;
+$red: darken(#475C7A, 10%);
 $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
 
-// -------- anim --------
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease-out;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
 // -------- banner OC --------
-h2 {
+.projects-type {
   font-size: xx-large;
-  color: $grey;
+  color: $red;
   font-family: 'Bebas Neue', cursive;
-  margin: 16px;
+  margin: 32px auto;
+  padding:16px 0 0;
 }
 
 // -------- cards --------
@@ -138,23 +156,42 @@ h2 {
   }
 }
 
+.card-head {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 180px;
+}
+
 .projectCard {
-  background: darken($dark-main, 10%);
+  box-shadow: 12px 16px #111;
+  display: flex;
+  flex-direction: column;
+  background: $dark-main;
   width: 42%;
   border: 4px solid $darkred;
-  border-radius: 8px;
+  border-radius: 24px;
+  border-top-left-radius: 0;
   margin: 16px;
-
 }
 
 .cardTitle {
+  border-top-right-radius: 20px;
   background: ($dark-main);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  border-bottom: 1px solid $cream;
-  height: 160px;
+
+  & img {
+    height: 360px;
+    min-height: 280px;
+    object-fit: cover;
+    border-top: $darkred 4px solid;
+    border-bottom: $darkred 4px solid;
+    cursor: pointer;
+  }
 }
 
 .projectName {
@@ -173,8 +210,13 @@ h2 {
   // margin-bottom: 24px;
 }
 
-.btnMore {
+.btn-more {
   display: none;
+}
+
+.cardLink-container {
+  display: flex;
+  justify-content: center;
 }
 
 .cardLink {
@@ -189,10 +231,11 @@ h2 {
   font-size: large;
   color: $orange;
   width: 120px;
-  margin: 16px auto;
+  margin: 16px 3%;
   background: darken($dark-main, 20%);
 
   &:hover {
+    cursor: pointer;
     color: $orange;
     border: 2px solid $cream;
     background: $grey;
@@ -200,26 +243,25 @@ h2 {
 }
 
 .cardMore {
-  position: relative;
-  cursor: pointer;
   text-align: left;
   white-space: break-spaces;
-  min-height: 470px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
+  &-btn {
+    width: 40%;
+    margin: 0 auto;
+  }
+
   &--info {
-    position: relative;
     padding: 0 8px;
   }
 
   & img {
     z-index: 2;
-    position: absolute;
-    top: 8px;
-    min-height:450px;
-    height:450px;
+    min-height: 450px;
+    height: 450px;
     max-height: 450px;
     width: 98%;
     display: flex;
@@ -227,8 +269,6 @@ h2 {
     justify-content: center;
     object-fit: cover;
     margin: 0 6px;
-
-
   }
 
   & label {
@@ -241,26 +281,27 @@ h2 {
   }
 }
 
+.more-detail-btn {
+  width: 100px;
+}
+
 //----------- Media query -----------
 // ---- laptop ----
 @media screen and (max-width : 1400px) {
 
   .projectCard {
-    width: 46%;
-    margin: 8px;
+    width: 80%;
+    margin: 32px 0;
   }
 
   .cardTitle {
-    height: 180px;
-  }
-
-  .cardMore {
-    height: 610px;
-
     & img {
-      top: 20%;
+      height: auto;
+      background: #222;
+
     }
   }
+
 }
 
 // ----- TABLETTES -----
@@ -274,7 +315,7 @@ h2 {
     z-index: 9990;
     display: initial;
     background: darken($dark-main, 20%);
-    margin:8px auto;
+    margin: 8px auto;
 
   }
 
@@ -310,17 +351,17 @@ h2 {
   }
 
   .projectCard {
-    height: auto;
+
     width: 92%;
     margin: 16px auto;
   }
 
-  .cardMore {
-    height: auto;
-  }
+
 
   .cardTitle {
-    height: 180px;
+    & img {
+      object-fit: contain;
+    }
   }
 }
 </style>

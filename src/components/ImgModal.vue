@@ -3,8 +3,8 @@
         <div class="modal-wrapper">
             <div class="modal-container">
 
-                <button @click="decrementCarousel()" class="carouselBtn carouselBtnPrev">⬅️</button>
-                <button @click="incrementCarousel()" class="carouselBtn carouselBtnNext">➡️</button>
+                <button v-if="carousel.length > 1" @click="decrementCarousel()" class="carouselBtn carouselBtnPrev">⬅️</button>
+                <button v-if="carousel.length > 1" @click="incrementCarousel()" class="carouselBtn carouselBtnNext">➡️</button>
                 <button class="carouselBtn carouselBtnClose" @click="$parent.displayImg()">X</button>
                 <div class="modal-body"><img :src="require(`../assets/img/${carousel[carouselImgIndex]}`)" /></div>
             </div>
@@ -26,13 +26,11 @@ export default {
         return {
             carouselImgIndex: 0,
         }
-
     },
 
     methods: {
         incrementCarousel() {
             this.carouselImgIndex == (this.carousel.length - 1) ? this.carouselImgIndex = 0 : this.carouselImgIndex++
-
         },
         decrementCarousel() {
             this.carouselImgIndex == 0 ? this.carouselImgIndex = (this.carousel.length - 1) : this.carouselImgIndex--
@@ -67,9 +65,6 @@ $cream : #dbd5ce;
 }
 
 .modal-container {
-    /* display:flex;
-    flex-direction: column;
-    justify-content: center; */
     z-index: 9999;
     width: 88%;
     margin: 0px auto;
@@ -84,7 +79,7 @@ $cream : #dbd5ce;
 
 .modal-body {
        & img {
-        width: 90%;
+        width: 100%;
         height: 780px;
         object-fit: contain;
     }
@@ -101,7 +96,7 @@ $cream : #dbd5ce;
 
 .carouselBtnNext {
     position: absolute;
-    top: 50%;
+    bottom:20%;
     right: 2%;
     box-shadow: -2px 2px rgba(0, 0, 0, 0.33);
     padding: 12px;
@@ -112,7 +107,7 @@ $cream : #dbd5ce;
 .carouselBtnPrev {
     box-shadow: 2px 2px rgba(0, 0, 0, 0.33);
     position: absolute;
-    top: 50%;
+    bottom:20%;
     left: 2%;
     padding: 12px;
     border-top-left-radius: 16px;
@@ -121,8 +116,8 @@ $cream : #dbd5ce;
 
 .carouselBtnClose {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     background: $darkred;
     border: 2px solid $red;
     box-shadow: #685D79 2px 2px;

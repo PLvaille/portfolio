@@ -10,7 +10,8 @@
     "realisation": "Utilisation de MySQL, NodeJS et ExpressJS pour la réalisation du Backend, ainsi que divers modules pour les models et middlewares. Utilisation de VueJS 3 et SASS pour le Frontend.",
     "img": "p7.webp",
     "alt": "capture d'écran du projet 7",
-    "link": "https://github.com/PLvaille/p7",
+    "site" : "",
+    "github": "https://github.com/PLvaille/p7",
     "carousel":["p7_00.webp","p7_01.webp", "p7_02.webp", "p7_03.webp", "p7_04.webp"]
   },
   {
@@ -24,7 +25,8 @@
     "realisation": "Création/utilisation de models, de routes et de middleware dans la mise en place de l'API. Utilisation de NodeJS, d'ExpressJS, de Mongoose, de Multer et de divers autres modules.",
     "img": "p6.webp",
     "alt": "capture d'écran du projet 6",
-    "link": "https://github.com/PLvaille/projet6",
+    "site" : "",
+    "github": "https://github.com/PLvaille/projet6",
     "carousel":["p6_00.webp","p6_01.webp", "p6_02.webp", "p6_03.webp"]
   },
   {
@@ -38,7 +40,8 @@
     "realisation": "Récupérer les données de l'API pour les intégrer dynamiquement au site. Foncitonnalités d'ajout/suppression d'articles du panier, de gestion du panier,  de calcul des totaux des prix et des articles, de validation et d'envoi de formulaire. Ajout facultatif de style sur les cards du panier et sur la navigation.",
     "img": "p5.webp",
     "alt": "capture d'écran du projet 5",
-    "link": "https://github.com/PLvaille/projet5",
+    "site" : "",
+    "github": "https://github.com/PLvaille/projet5",
     "carousel":["p5_00.webp","p5_01.webp", "p5_02.webp", "p5_03.webp", "p5_04.webp"]
   },
   {
@@ -52,7 +55,8 @@
     "realisation": "Amélioration du score du SEO de 78 à 100 et des scores de performance et d'accessibilité, réalisation d'un support de présentation pour la soutenance du projet",
     "img": "p4.webp",
     "alt": "capture d'écran du projet 4",
-    "link": "https://github.com/PLvaille/P4-opti",
+    "site" : "",
+    "github": "https://github.com/PLvaille/P4-opti",
     "carousel":["p4_00.webp","p4_01.webp", "p4_02.webp", "p4_03.webp", "p4_04.webp"]
   },
   {
@@ -66,7 +70,8 @@
     "realisation": "Utilisation des keyframes SCSS, loading spinner, animation des boutons, des cards, des likes et des articles.",
     "img": "p3.webp",
     "alt": "capture d'écran du projet 3",
-    "link": "https://plvaille.github.io/projet3/",
+    "site" : "https://plvaille.github.io/projet3/",
+    "github":"https://github.com/PLvaille/projet3",
     "carousel":["p3_01.webp", "p3_02.webp", "p3_03.webp", "p3_04.webp"]
   },
   {
@@ -80,7 +85,8 @@
     "realisation": "J'ai inclus 3 breakpoints afin d'avoir un site responsive sur mobile, tablette et ordinateur de bureau. Animations sur filtres et cards réalisées en supplément.",
     "img": "p2.webp",
     "alt": "capture d'écran du projet 2",
-    "link": "https://plvaille.github.io/p2_booki/",
+    "site": "https://plvaille.github.io/p2_booki/",
+    "github" : "https://github.com/PLvaille/p2_booki",
     "carousel":["p2_01.webp", "p2_02.webp"]
   }
 ]

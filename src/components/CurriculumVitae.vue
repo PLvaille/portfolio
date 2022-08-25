@@ -79,6 +79,17 @@
           </div>
         </div>
         <div class="skills--list">
+          <label for="react">
+            <div class="faContainer">
+              <font-awesome-icon icon="fa-brands fa-react" />
+            </div>
+            <span><strong>React</strong></span>
+          </label>
+          <div class="progress" id="react">
+            <div class="progress--5"></div>
+          </div>
+        </div>
+        <div class="skills--list">
           <label for="node">
             <div class="faContainer">
               <font-awesome-icon icon="fa-brands fa-node-js" />
@@ -144,7 +155,7 @@
         <ul>
           <li>🏸 <span>Pratique sportive</span></li>
           <li>🎹 <span>M.A.O. </span></li>
-          <li>🎲 <span>Jeux de Société</span></li>
+          <li>🎲 <span>Jeux de société</span></li>
         </ul>
       </div>
     </aside>
@@ -164,15 +175,15 @@
       <div class="experience block">
         <h2><strong>Expérience Professionnelle</strong></h2>
         <ul>
-          <li><strong>Commercial VRP</strong>, Stratygo, Hauts-de-france : 2019-2020</li>
-          <li><strong>Commercial VRP</strong>, Ranger, Hauts-de-france : 2018-2019</li>
-          <li><strong>Employé en vente</strong>, Auchan, Arras : 2017</li>
-          <li><strong>Préparateur de commande</strong>, Dispeo, Wasquehal : 2016</li>
-          <li><strong>Recruteur de donnateur</strong>, ONG Conseil, Lille : 2015</li>
-          <li><strong>Employé de Rayon</strong>, Auchan, Leclerc, V.d'ascq, Templeuve : 2014</li>
-          <li><strong>Vendanges</strong>, Domaine Carage, Beaujolais : 2013</li>
-          <li><strong>Volontaire</strong>, Service Civique, AFEV Lille, V.d'ascq : 2012</li>
-          <li><strong>Manutention</strong> et <strong>Employé Polyvalent</strong>, Phildar, Auchan, Quick : 2010-2011
+          <li><strong>Commercial VRP</strong>, <span>Ranger, Stratygo, DMF</span>, Hauts-de-france : 2018-2021</li>
+          <li><strong>Employé en vente</strong>, <span>Auchan</span>, Arras : 2017</li>
+          <li><strong>Préparateur de commande</strong>, <span>Dispeo</span>, Wasquehal : 2016</li>
+          <li><strong>Recruteur de donnateur</strong>, <span>ONG Conseil</span>, Lille : 2015</li>
+          <li><strong>Employé de Rayon</strong>, <span>Auchan, Leclerc</span>, V.d'ascq, Templeuve : 2014</li>
+          <li><strong>Vendanges</strong>, <span>Domaine Carage</span>, Beaujolais : 2013</li>
+          <li><strong>Volontaire</strong>, Service Civique, <span>AFEV Lille</span>, V.d'ascq : 2012</li>
+          <li><strong>Manutention</strong>, <strong>Employé Polyvalent</strong>, <span>Phildar, Auchan, Quick</span>,
+            Métropole Lilloise : 2010-2011
           </li>
         </ul>
       </div>
@@ -183,18 +194,18 @@
           <li><strong>Développeur Web</strong>, titre RNCP niveau 5 (bac+2), remote : Novembre 2021 - Juin 2022</li>
           <li>Formation commerciale interne, Ranger France : Janvier 2018</li>
           <li>DUT Informatique, IUT A Lille 1 (1<sup>ere</sup> année) : 2011</li>
-          <li>Baccalauréat Scientifique, Lycée R. Queneau : Juin 2009</li>
+          <li>Baccalauréat Scientifique (spé. bio.), Lycée R. Queneau : Juin 2009</li>
         </ul>
       </div>
       <div class="transition"></div>
       <div class="softskills block">
         <h2><strong>Soft-skills</strong></h2>
         <ul>
-          <li>Sociabilité</li>
           <li>Curiosité</li>
+          <li>Sociabilité</li>
           <li>Polyvalence</li>
           <li>Autonomie</li>
-          <li>Esprit Critique</li>
+          <li>Communication</li>
         </ul>
       </div>
     </main>
@@ -209,9 +220,12 @@ export default {
 </script>
 
 <style lang="scss">
-$dark-main: darken(#475C7A, 10%);
+$dark-main : #444;
+// $dark-main: darken(#475C7A, 10%);
 $grey : #685D79;
-$darkred : #AB6C82;
+// $darkred : #AB6C82;
+$darkred:  #475C7A;
+$red: darken(#475C7A, 10%);
 $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
@@ -222,6 +236,7 @@ font-awesome-icon {
 }
 
 .cv {
+  box-shadow:12px 16px #111;
   font-family: 'Roboto', sans-serif;
   text-align: start;
   border: solid 4px $darkred;
@@ -240,6 +255,30 @@ font-awesome-icon {
     margin-left: 6px;
   }
 }
+
+.experience>ul>li>span {
+  text-decoration: underline;
+}
+
+.block {
+  margin-top: 0;
+  &>ul {
+    list-style: none;
+    border-left: 2px solid $darkred;
+    padding-left: 6px;
+
+    & li::before {
+      content: "\2022";
+      color: $dark-main;
+      font-size: x-large;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: -12px;
+      width: 10px;
+    }
+  }
+}
+
 
 aside {
   margin: 0;
@@ -264,6 +303,7 @@ aside {
     width: 86%;
     margin: 0 auto;
     padding: 0;
+
   }
 
   & h2 {
@@ -419,11 +459,6 @@ main {
   background: linear-gradient(to right, $grey, $darkred);
   border-top-right-radius: 16px;
 
-}
-
-.block {
-  margin-top: 0;
-  margin-bottom: 8px;
 }
 
 .presentation {

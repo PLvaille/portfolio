@@ -4,12 +4,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
-import { faHtml5, faCss3,  faSass, faBootstrap, faJs, faNodeJs, faVuejs, faGithub, faLinkedin, faGitAlt, } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faCss3,  faSass, faBootstrap, faJs, faNodeJs, faVuejs, faGithub, faLinkedin, faGitAlt, faReact } from '@fortawesome/free-brands-svg-icons'
 
 import { faEye, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
-library.add(faHtml5, faCss3, faSass, faBootstrap, faJs, faNodeJs, faVuejs, faEye, faGithub, faLinkedin, faEnvelope, faGitAlt  )
+library.add(faHtml5, faCss3, faSass, faBootstrap, faJs, faNodeJs, faVuejs, faEye, faGithub, faLinkedin, faEnvelope, faGitAlt, faReact  )
 
 
 

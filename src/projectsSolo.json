@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2,
+    "projectName": "• La maison jungle •",
+    "summary": "Débuter avec React",
+    "skills": "React, CSS, Responsive Design",
+    "ressources": "",
+    "description": "Projet d'apprentissage des bases de React réalisé en autonomie",
+    "specs": "\n\n",
+    "realisation": "Première utilisation de React pour construire une App e-commerce de plantes. Récupération et mise en forme dynamique des données. Bouton d'ajout au panier et de détail ouvrant une fenêtre modale. Filtres de recherche réinitialisables. Panier dynamique avec boutons de suppression d'article et bouton de vidange, calcul et mise à jour du prix dynamique du panier et du titre de l'onglet. Formulaire de commande. Désign responsive.",
+    "img": "lmj.webp",
+    "alt": "capture d'écran du projet la maison jungle",
+    "site": "https://plvaille.github.io/lmj-react/",
+    "github" : "https://github.com/PLvaille/lmj-react",
+    "carousel": ["lmj00.webp","lmj01.webp", "lmj02.webp", "lmj03.webp"]
+  },
+  {
+    "id": 1,
+    "projectName": "• Portfolio •",
+    "summary": "Realisation d'un CV et d'un Portfolio",
+    "skills": "VueJs, SASS, Responsive Design",
+    "ressources": "",
+    "description": "Réalisation d'une App en Vue JS regroupant mon CV et mes différentes réalisations",
+    "specs": "\n\n",
+    "realisation": "Création d'un CV et d'une page regroupant mes projets en VUEJS. Récupération et mise en forme dynamique de données. Composants conditionnels. Fenêtre modale contenant un carousel de captures d'écran des projets.",
+    "img": "CV.webp",
+    "alt": "capture d'écran du projet la maison jungle",
+    "site": "",
+    "github" : "",
+    "carousel": ["CV.webp"]
+  }
+]

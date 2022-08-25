@@ -44,6 +44,7 @@ $cream : #dbd5ce;
     display: flex;
     justify-content: center;
     font-size: xxx-large;
+    margin-bottom:16px;
 
     & a {
         display: flex;

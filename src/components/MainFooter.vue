@@ -55,7 +55,7 @@ $darkred : #AB6C82;
     right:8px;
 }
 .footer {
-
+    padding-top:32px;
     margin-block: 0;
     margin-top: 24px;
     background: #111;
