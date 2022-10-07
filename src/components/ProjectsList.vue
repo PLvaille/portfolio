@@ -183,11 +183,10 @@ $cream : #dbd5ce;
 }
 
 .projectCard {
-  background-color:#333;
   box-shadow: 12px 16px #111;
   display: flex;
   flex-direction: column;
-  background: $dark-main;
+  background: #333;
   width: 46%;
   border: 4px solid $orange;
   border-radius: 4px;
