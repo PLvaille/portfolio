@@ -1,7 +1,6 @@
 <template>
     <div class="footer">
         <ul>
-
             <li>
                 <a href="https://www.linkedin.com/in/pierre-louis-vaille-143877241/" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-linkedin" /><span>• Profil Linkedin</span>
@@ -22,9 +21,7 @@
                         <span class="vueCredit"><font-awesome-icon icon="fa-brands fa-vuejs" /> VueJs Empowered</span>
                 </a>
             </li>
-        </ul>
-
-        
+        </ul>      
     </div>
 </template>
 
@@ -35,12 +32,7 @@ export default {
         toogleCv : Boolean,
     },
     methods : {
-        footerStyle(){
-            this.toogleCv ? (console.log("++++++++++")) : (console.log("************"))
-        }
     },
-   
-
 }
 </script>
 
@@ -87,19 +79,18 @@ $darkred : #AB6C82;
 
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 730px) {
     .footer {
-        position: absolute;
-        bottom:-2050px;
+        margin-top:2px;
         width:100%;
         height: 200px;
     }
 }
 
-@media screen and (max-width : 420px) {
-    .footer {
-    display: none;
-    }
-}
+// @media screen and (max-width : 420px) {
+//     .footer {
+//     display: none;
+//     }
+// }
 
 </style>

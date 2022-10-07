@@ -1,147 +1,98 @@
 <template>
   <div class="cv">
     <aside>
+
       <div class="img--container">
         <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille" src="../../public/me.webp">
       </div>
+
       <div class="contact">
         <p class="contact--list">Lille, 30 ans</p>
         <p class="contact--list">06.59.01.24.87</p>
         <p class="contact--list"> <a href="mailto: pierrelouis.vaille@gmail.com">pierrelouis.vaille@gmail.com</a></p>
-
-      </div>
-      <div class="skills">
-        <h2><strong>Compétences</strong></h2>
-        <div class="skills--list">
-          <label for="html">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-html5" />
-            </div>
-            <span><strong> Html5</strong></span>
-          </label>
-          <div class="progress" id="html">
-            <div class="progress--9"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="css">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-css3" />
-            </div>
-            <span><strong>Css3</strong></span>
-          </label>
-          <div class="progress" id="css">
-            <div class="progress--9"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="sass">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-sass" />
-            </div>
-            <span><strong>Sass</strong></span>
-          </label>
-          <div class="progress" id="sass">
-            <div class="progress--8"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="bootsrap">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-bootstrap" />
-            </div>
-            <span><strong>Bootsrap</strong></span>
-          </label>
-          <div class="progress" id="bootsrap">
-            <div class="progress--4"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="js">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-js" />
-            </div>
-            <span><strong>JavaScript</strong></span>
-          </label>
-          <div class="progress" id="js">
-            <div class="progress--8"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="vue">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-vuejs" />
-            </div>
-            <span><strong>VueJS</strong></span>
-          </label>
-          <div class="progress" id="vue">
-            <div class="progress--7"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="react">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-react" />
-            </div>
-            <span><strong>React</strong></span>
-          </label>
-          <div class="progress" id="react">
-            <div class="progress--5"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="node">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-node-js" />
-            </div>
-            <span><strong>NodeJS</strong></span>
-          </label>
-          <div class="progress" id="node">
-            <div class="progress--6"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label id="mysqlLabel" for="mysql">
-            <div class="faContainer"><img src="mysql.webp" alt="mysql logo" /></div><span><strong>MySQL</strong></span>
-          </label>
-          <div class="progress" id="mysql">
-            <div class="progress--6"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label id="mongodbLabel" for="mongodb">
-            <div class="faContainer"><img src="mongodb.webp" alt="mongodb logo" /></div>
-            <span><strong>MongoDB</strong></span>
-          </label>
-          <div class="progress" id="mongodb">
-            <div class="progress--6"></div>
-          </div>
-        </div>
-        <div class="skills--list">
-          <label for="seo">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-solid fa-eye" />
-            </div>
-            <span><strong>SEO</strong></span>
-          </label>
-          <div class="progress" id="seo">
-            <div class="progress--6"></div>
-          </div>
-        </div>
-
-        <div class="skills--list">
-          <label id="gitLabel" for="git">
-            <div class="faContainer">
-              <font-awesome-icon icon="fa-brands fa-git-alt" />
-            </div><span><strong>Git</strong></span>
-          </label>
-          <div class="progress" id="git">
-            <div class="progress--5"></div>
-          </div>
-        </div>
       </div>
 
-      <div class="langs">
+      <div class="skills aside-block">
+        <h2><strong>Stack</strong></h2>
+      
+        <div class="skills-container">
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-html5" /> -->
+              <img src="Html5.svg" alt="Html5 logo" />
+              <span>HTML5</span>
+            </div>
+          
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-css3" /> -->
+              <img src="Css3.svg" alt="Css3 logo" />
+              <span>CSS3</span>
+            </div>
+            
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-sass" /> -->
+              <img src="Sass.svg" alt="Sass logo" />
+              <span>SASS</span>
+            </div>
+            
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-bootstrap" /> -->
+              <img src="Bootstrap.svg" alt="Bootstrap logo" />
+              <span>Bootstrap</span>
+            </div>
+            
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-js" /> -->
+              <img src="JavaScript.svg" alt="JavaScript logo" />
+              <span>JavaScript</span>
+              
+            </div>
+            
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-vuejs" /> -->
+              <img src="Vue.svg" alt="VueJS logo" />
+              <span>VueJS</span>
+            </div>
+           
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-react" /> -->
+              <img src="React.svg" alt="ReactJS logo" />
+              <span>ReactJS</span>
+            </div>
+            
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-node-js" /> -->
+              <img src="Nodejs.svg" alt="NodeJS logo" />
+              <span>NodeJS</span>
+            </div>
+            
+            <div class="iconContainer">
+              <img src="Mysql.svg" alt="Mysql logo" />
+              <span>MySQL</span>
+            </div>
+    
+            <div class="iconContainer">
+              <img src="Mongo.svg" alt="Mongodb logo" />
+              <span>MongoDB</span>
+            </div>
+      
+        
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-solid fa-eye" /> -->
+              <img src="Seo.svg" alt="SEO logo" />
+              <span>SEO</span>
+            </div>
+            
+            <div class="iconContainer">
+              <!-- <font-awesome-icon icon="fa-brands fa-git-alt" /> -->
+              <img src="Git.svg" alt="Git logo" />
+              <span>Git</span>
+            </div>
+
+          </div>
+
+      </div>
+
+      <div class="langs aside-block">
         <h2><strong>Langues</strong></h2>
         <ul>
           <li>🇫🇷 <span><strong>Français</strong> maternel</span></li>
@@ -150,7 +101,7 @@
         </ul>
       </div>
 
-      <div class="hobbies">
+      <div class="hobbies aside-block">
         <h2>Loisirs</h2>
         <ul>
           <li>🏸 <span>Pratique sportive</span></li>
@@ -158,6 +109,7 @@
           <li>🎲 <span>Jeux de société</span></li>
         </ul>
       </div>
+
     </aside>
 
     <main>
@@ -171,7 +123,7 @@
           d'approfondir mes connaissances, en acquérir de nouvelles et contribuer à de beaux projets.
         </span>
       </div>
-      <div class="transition"></div>
+      <div class="color-band-accent"></div>
       <div class="experience block">
         <h2><strong>Expérience Professionnelle</strong></h2>
         <ul>
@@ -187,7 +139,7 @@
           </li>
         </ul>
       </div>
-      <div class="transition"></div>
+      <div class="color-band-accent"></div>
       <div class="formation block">
         <h2>Formation</h2>
         <ul>
@@ -197,7 +149,7 @@
           <li>Baccalauréat Scientifique (spé. bio.), Lycée R. Queneau : Juin 2009</li>
         </ul>
       </div>
-      <div class="transition"></div>
+      <div class="color-band-accent"></div>
       <div class="softskills block">
         <h2><strong>Soft-skills</strong></h2>
         <ul>
@@ -220,12 +172,12 @@ export default {
 </script>
 
 <style lang="scss">
-$dark-main : #444;
+$dark-main : #555;
 // $dark-main: darken(#475C7A, 10%);
 $grey : #685D79;
-// $darkred : #AB6C82;
-$darkred:  #475C7A;
-$red: darken(#475C7A, 10%);
+//$darkred : #AB6C82;
+ $darkred:  #475C7A;
+//$red: darken(#475C7A, 10%);
 $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
@@ -239,12 +191,13 @@ font-awesome-icon {
   box-shadow:12px 16px #111;
   font-family: 'Roboto', sans-serif;
   text-align: start;
-  border: solid 4px $darkred;
+  border: solid 4px $orange;
   width: 827px;
   max-width: 1200px;
   margin: 1.5% auto 0;
   background-color: $cream;
   display: flex;
+  border-radius:4px;
 
   & h1,
   h2 {
@@ -264,8 +217,8 @@ font-awesome-icon {
   margin-top: 0;
   &>ul {
     list-style: none;
-    border-left: 2px solid $darkred;
-    padding-left: 6px;
+    border-left: 4px solid $darkred;
+    padding-left: 7px;
 
     & li::before {
       content: "\2022";
@@ -279,24 +232,15 @@ font-awesome-icon {
   }
 }
 
-
 aside {
   margin: 0;
   color: $cream;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
+  justify-content: space-around;
   width: 50%;
-  max-width: 500px;
-  min-width: 236px;
-  background-color: $dark-main;
+  background: linear-gradient(to right, #333, #555);
 
-  & .faContainer {
-    display: flex;
-    flex-direction: column;
-    width: 20px;
-  }
 
   & ul {
     list-style-type: none;
@@ -338,7 +282,6 @@ aside {
     width: 76%;
     height: 80px;
     margin: 0 auto;
-    margin-bottom: 8px;
     border: 2px solid $cream;
     border-radius: 8px;
     padding: 8px;
@@ -352,69 +295,42 @@ aside {
       & a {
         text-decoration: none;
         color: $cream;
-
       }
     }
   }
 
   .skills {
-    text-align: left;
-    margin: 0;
-    margin-top: -8px;
 
-    &--list {
-      width: 86%;
-      display: flex;
-      justify-content: space-between;
-      margin: 2px auto;
+    & .iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    margin:16px;
 
-      & span {
-        margin-left: 4px;
+    & span {
+      font-size:12px;
+    }
+  }
+
+      &-container {
+    
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-right:12px;
       }
 
       & img {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        width: 18px;
-        height: 18px;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
       }
 
       & .svg-inline--fa {
-        height: 20px;
+        height: 40px;
       }
     }
-
-    & label {
-      display: flex;
-      width: 80%;
-    }
-
-    & .progress {
-      border: none;
-      width: 90%;
-      height: 24px;
-      background-color: $cream;
-      border-radius: 2px;
-
-      //chaque progress--i   
-      @for $i from 1 through 10 {
-        &--#{$i} {
-          height: 24px;
-          background-color: $darkred;
-          width: 1%* (10*$i);
-        }
-      }
-    }
-
-  }
-
-  & .hobbies {
-    padding-bottom: 8px;
-  }
-}
-
-#mysqlLabel {
-  display: flex;
 }
 
 ul {
@@ -451,7 +367,7 @@ main {
   }
 }
 
-.transition {
+.color-band-accent {
   min-width: 248px;
   z-index: 1;
   margin: 0 25% 0 0;
@@ -463,7 +379,7 @@ main {
 
 .presentation {
   color: $cream;
-  background-color: $dark-main;
+ background: linear-gradient(to right, #555, #333);
   padding-bottom: 3%;
 
   & span {
@@ -490,12 +406,16 @@ main {
   .cv {
     font-family: 'Roboto' !important;
     width: 94%;
-    border: 2px solid $darkred;
   }
 
   aside .contact {
-    width: 90%;
+    align-items:center;
     margin: 0 auto;
+    padding:4%;
+    width:84%;
+    & :last-child {
+      align-self: flex-start;
+    }
   }
 
   aside {
@@ -518,21 +438,20 @@ main {
   }
 }
 
-@media screen and (max-width : 600px) {
-
+@media screen and (max-width : 730px) {
   .cv {
     width: 100%;
     border: none;
-    height: 100%;
-    position: relative;
-    display: flex;
     flex-direction: column;
+    box-shadow: none;
 
     aside {
-      position: absolute;
-      top: 300px;
+      background: linear-gradient(to bottom, #333, #555);
       width: 100%;
-      min-width: 100%;
+      
+      & .aside-block {
+        margin: 16px 0 0;
+      }
 
       & .hobbies {
         padding-bottom: 30px;
@@ -541,6 +460,9 @@ main {
       & .skills {
         &--list {
           width: 86%;
+        }
+        &-container {
+          justify-content: center;
         }
       }
 
@@ -554,7 +476,8 @@ main {
       .contact {
         z-index: 999;
         margin: 12px auto 8px;
-        width: 84%;
+        width: 64%;
+        min-width: 260px;
 
         & p {
           margin: 0 auto;
@@ -584,16 +507,13 @@ main {
     }
 
     main {
-      position: absolute;
-      top: 1214px;
-
       h2 {
         position: initial;
         margin-bottom: 16px;
       }
 
       ul {
-        padding-left: 24px;
+        padding-left: 8px;
       }
 
     }

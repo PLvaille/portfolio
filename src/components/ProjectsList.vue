@@ -1,6 +1,9 @@
 <template>
+
   <hr>
   <h2 class="projects-type">Projets d'autoformation</h2>
+
+
   <div class="cardsContainer">
     <div class="projectCard" v-for="data in cardsDataSolo" :key="data.id">
       <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
@@ -16,14 +19,20 @@
               git</a>
           </div>
         </div>
-        <img title="Cliquez moi !" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt"
+        <img class="img-preview" title="Cliquez moi !" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt"
           @click="displayImg(data.carousel)" />
       </div>
 
       <div class="cardMore--info">
         <div class="cardMore">
-          <div>
-            <p><label>Improved skills :</label> {{ data.skills }}</p>
+          <div class="improved-skill">
+            <label>Improved skills :</label>
+            <div class="improved-skill-img-container">
+              <div class="improved-skill-element" v-for="skill in data.skills" :key="skill">
+                <img class="improved-skill-img" :src='skill + ".svg"' :alt="skill + ' logo'" />
+                <p class="improved-skill-label">{{skill}}</p>
+              </div>
+            </div>
           </div>
           <div>
             <p><label>Description :</label> {{ data.description }}</p>
@@ -38,46 +47,55 @@
 
   <hr>
   <h2 class="projects-type">Projets professionnalisants soumis à l'évaluation lors de ma formation</h2>
+
+
   <div class="cardsContainer">
     <div class="projectCard" v-for="data in cardsDataPro" :key="data.id">
       <ImgModal v-if="showModal" :carousel="carouselImg" :id="data.id" />
       <div class="cardTitle">
         <div class="card-head">
-        <h2 class="projectName">{{ data.projectName }}</h2>
-        <div class="summary">{{ data.summary }}</div>
-        <div class="cardLink-container">
-          <a class="cardLink" v-if="data.site" :href="data.site" target="_blank">Voir le site</a>
-          <a class="cardLink" v-if="data.github" :href="data.github" target="_blank">Repo git</a>
+          <h2 class="projectName">{{ data.projectName }}</h2>
+          <div class="summary">{{ data.summary }}</div>
+          <div class="cardLink-container">
+            <a class="cardLink" v-if="data.site" :href="data.site" target="_blank">Voir le site</a>
+            <a class="cardLink" v-if="data.github" :href="data.github" target="_blank">Repo git</a>
+          </div>
         </div>
+        <img class="img-preview" :src="require(`../assets/preview/${data.img}`)" :alt="data.alt"
+          @click="displayImg(data.carousel)" />
       </div>
-      <img :src="require(`../assets/preview/${data.img}`)" :alt="data.alt" @click="displayImg(data.carousel)" />
+
+      <div class="cardMore">
+        <div class="cardMore--info">
+          <div class="improved-skill">
+            <label>Improved skills :</label>
+            <div class="improved-skill-img-container">
+              <div class="improved-skill-element" v-for="skill in data.skills" :key="skill">
+                <img class="improved-skill-img" :src='skill + ".svg"' :alt="skill + ' logo'" />
+                <p class="improved-skill-label">{{skill}}</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p><label>Resources :</label> {{ data.ressources }}</p>
+          </div>
+          <div>
+            <p><label>Description :</label> {{ data.description }}</p>
+          </div>
+          <div>
+            <p><label>Specifications :</label> {{ data.specs }}</p>
+          </div>
+          <div>
+            <p><label>Realisations :</label> {{ data.realisation }}</p>
+          </div>
+        </div>
+
+        <div class="btn-more" @click="displayImg(data.carousel)">
+          +
+        </div>
+
+      </div> <!-- fin cardmore -->
     </div>
-
-    <div class="cardMore">
-      <div class="cardMore--info">
-        <div>
-          <p><label>Improved skills :</label> {{ data.skills }}</p>
-        </div>
-        <div>
-          <p><label>Resources :</label> {{ data.ressources }}</p>
-        </div>
-        <div>
-          <p><label>Description :</label> {{ data.description }}</p>
-        </div>
-        <div>
-          <p><label>Specifications :</label> {{ data.specs }}</p>
-        </div>
-        <div>
-          <p><label>Realisations :</label> {{ data.realisation }}</p>
-        </div>
-      </div>
-
-      <div class="btn-more" @click="displayImg(data.carousel)">
-        +
-      </div>
-
-    </div> <!-- fin cardmore -->
-  </div>
   </div>
 </template>
 
@@ -134,11 +152,11 @@ $cream : #dbd5ce;
 
 // -------- banner OC --------
 .projects-type {
-  font-size: xx-large;
+  font-size: xxx-large;
   color: $red;
   font-family: 'Bebas Neue', cursive;
   margin: 32px auto;
-  padding:16px 0 0;
+  padding: 16px 0 0;
 }
 
 // -------- cards --------
@@ -157,7 +175,7 @@ $cream : #dbd5ce;
 }
 
 .card-head {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
@@ -165,31 +183,32 @@ $cream : #dbd5ce;
 }
 
 .projectCard {
+  background-color:#333;
   box-shadow: 12px 16px #111;
   display: flex;
   flex-direction: column;
   background: $dark-main;
-  width: 42%;
-  border: 4px solid $darkred;
-  border-radius: 24px;
-  border-top-left-radius: 0;
+  width: 46%;
+  border: 4px solid $orange;
+  border-radius: 4px;
+  border-top-right-radius: 24px;
   margin: 16px;
 }
 
 .cardTitle {
   border-top-right-radius: 20px;
-  background: ($dark-main);
+  background: #333;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 
-  & img {
+  & .img-preview {
     height: 360px;
     min-height: 280px;
     object-fit: cover;
-    border-top: $darkred 4px solid;
-    border-bottom: $darkred 4px solid;
+    border-top: $orange 4px solid;
+    border-bottom: $orange 4px solid;
     cursor: pointer;
   }
 }
@@ -255,20 +274,7 @@ $cream : #dbd5ce;
   }
 
   &--info {
-    padding: 0 8px;
-  }
-
-  & img {
-    z-index: 2;
-    min-height: 450px;
-    height: 450px;
-    max-height: 450px;
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    object-fit: cover;
-    margin: 0 6px;
+    padding: 0 12px;
   }
 
   & label {
@@ -278,6 +284,34 @@ $cream : #dbd5ce;
     text-decoration: underline;
     text-decoration-color: white;
     text-underline-offset: 3px;
+  }
+}
+
+.improved-skill {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+
+  &-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4px;
+  }
+
+  &-img {
+    height: 62px;
+    width: 62px;
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &-label {
+    margin: 2px 0 !important;
+    font-size: small !important;
   }
 }
 
@@ -300,6 +334,11 @@ $cream : #dbd5ce;
       background: #222;
 
     }
+  }
+
+  .improved-skill-img {
+    height: 62px;
+    width: 62px;
   }
 
 }
@@ -328,19 +367,15 @@ $cream : #dbd5ce;
     margin: 16px auto;
   }
 
-  .cardMore {
-    & img {
-      top: 8%;
-      margin: 0 7px;
-    }
+  .improved-skill-img {
+    height: 52px;
+    width: 52px;
   }
 
 }
 
 // ----- MOBILE -----
-@media screen and (max-width : 600px) {
-
-
+@media screen and (max-width : 730px) {
   .projectName {
     font-size: x-large;
   }
@@ -351,17 +386,19 @@ $cream : #dbd5ce;
   }
 
   .projectCard {
-
     width: 92%;
     margin: 16px auto;
   }
-
-
 
   .cardTitle {
     & img {
       object-fit: contain;
     }
+  }
+
+  .improved-skill-img {
+    height: 42px;
+    width: 42px;
   }
 }
 </style>

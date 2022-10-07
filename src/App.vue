@@ -96,14 +96,16 @@ $cream : #dbd5ce;
 
 .navBtn {
   font-family: 'Shadows Into Light';
-  color: whitesmoke;
+  color: #111;
   min-width: 220px;
   border-radius: 16px;
-  border: 4px solid $red;
+  border: 4px solid white;
   padding: 1.5% 0.5%;
   text-decoration: underline;
   text-underline-offset: 3px;
   margin:1% auto;
+  background-color: $red;
+  box-shadow:4px 8px #111;
 
   &:hover {
     cursor: pointer;
@@ -111,13 +113,8 @@ $cream : #dbd5ce;
     color: black;
     text-decoration: none;
     border: 4px solid $grey;
+    box-shadow: none;
   }
 }
 
-footer {
-  @media screen and (max-width : 600px) {
-    display: none;
-  }
-
-}
 </style>
