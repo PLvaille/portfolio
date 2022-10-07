@@ -291,6 +291,7 @@ $cream : #dbd5ce;
   padding: 12px 0;
   display: flex;
   align-items: center;
+  flex-wrap:wrap;
 
   &-element {
     display: flex;
@@ -306,12 +307,13 @@ $cream : #dbd5ce;
     &-container {
       display: flex;
       flex-direction: row;
+      flex-wrap:wrap;
     }
   }
 
   &-label {
     margin: 2px 0 !important;
-    font-size: small !important;
+    font-size: smaller;
   }
 }
 
@@ -395,10 +397,15 @@ $cream : #dbd5ce;
       object-fit: contain;
     }
   }
-
+  .improved-skill-label {
+    font-size:10px;
+  }
   .improved-skill-img {
     height: 42px;
     width: 42px;
   }
 }
+
+
+
 </style>
