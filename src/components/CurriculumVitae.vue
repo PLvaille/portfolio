@@ -42,7 +42,7 @@
             
             <div class="iconContainer">
               <!-- <font-awesome-icon icon="fa-brands fa-js" /> -->
-              <img src="JavaScript.svg" alt="JavaScript logo" />
+              <img src="Javascript.svg" alt="JavaScript logo" />
               <span>JavaScript</span>
               
             </div>
