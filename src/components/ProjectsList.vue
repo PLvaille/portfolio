@@ -125,10 +125,8 @@ $cream : #dbd5ce;
 // -------- cards --------
 .cards-container {
   //anim
-
-  transform-origin: top;
   animation: project_pop ease-out 0.6s forwards;
-  animation-iteration-count: 1;
+  transition: all ease 2s;
   position: relative;
   margin: 12px 0 28px;
   display: flex;
@@ -153,23 +151,26 @@ $cream : #dbd5ce;
 .project-card {
   height: fit-content;
   max-height: fit-content;
-  box-shadow: 4px 8px #111;
+  max-width: fit-content;
+  width: 40%;
+
   display: flex;
   flex-direction: column;
+
   background: linear-gradient(190deg, $cream, #222 17%);
-  width: 40%;
-  max-width: fit-content;
+  box-shadow: 4px 8px #111;
+
+
   border: 4px solid $orange;
   border-radius: 4px;
   border-top-right-radius: 24px;
-  margin: 28px auto;
-  scale: 1;
-  transition: scale linear 3s;
-  animation-iteration-count: 1;
 
-  transition: all ease 1s;
+  margin: 28px auto;
+
+ 
   // anim hover off
-  animation: project_hover_reverse ease-out 0.7s forwards 0.2s;
+  animation: project_hover_reverse ease-out 0.7s forwards;
+  transition: all ease 2s;
 
   &:hover {
     animation: project_hover ease-out 0.7s forwards 0.2s;
@@ -192,8 +193,10 @@ $cream : #dbd5ce;
     margin: 12px 12px;
     object-position: 50% 0%;
     cursor: pointer;
-    transition: all linear 1s;
+   
+
     //img anim hover off
+    transition: all linear 2s;
     border: $red 4px solid;
     animation: img_pop_reverse 0.8s ease-in-out forwards;
 
@@ -319,7 +322,7 @@ $cream : #dbd5ce;
 
   .project-card {
     width: 80%;
-    margin: 32px 0;
+    margin: 32px auto;
   }
 
   .card-title {
@@ -379,7 +382,7 @@ $cream : #dbd5ce;
 
   .project-card {
     width: 92%;
-    margin: 16px auto;
+    margin: 32px auto;
   }
 
   .card-title {
