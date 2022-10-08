@@ -6,8 +6,8 @@
   <div classs="mainContainer">
 
     <div class="navContainer">
-      <h2 v-if="toogleProjects" class="navBtn" @click="mainToogleSwitch()">Voir mon CV</h2>
-      <h2 v-if="toogleCv" class="navBtn" @click="mainToogleSwitch()">Voir mes projets</h2>
+      <h2 v-if="toogleProjects" class="nav-btn" @click="mainToogleSwitch()">Voir mon CV</h2>
+      <h2 v-if="toogleCv" class="nav-btn" @click="mainToogleSwitch()">Voir mes projets</h2>
     </div>
     <div v-if="toogleCv">
       <CurriculumVitae />
@@ -92,7 +92,7 @@ $cream : #dbd5ce;
   justify-content: center;
 }
 
-.navBtn {
+.nav-btn {
   font-family: 'Shadows Into Light';
   color: #111;
   min-width: 220px;
@@ -104,6 +104,7 @@ $cream : #dbd5ce;
   margin:1% auto;
   background-color: $red;
   box-shadow:4px 8px #111;
+  transition: all ease 0.6s;
 
   &:hover {
     cursor: pointer;

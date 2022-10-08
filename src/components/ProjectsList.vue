@@ -50,7 +50,7 @@
         </div> <!-- fin card-more -->
       </div>
     </div>
-
+    <button class="nav-btn" @click="topFunction()" id="topBtn" title="Go to top">⬆️ Haut de page ⬆️</button> 
   </div>
 </template>
 
@@ -74,6 +74,12 @@ export default {
     //   this.cardId = e.target.id;
     //   this.toogleMoreDetails = !this.toogleMoreDetails
     // },
+
+    topFunction(){
+      console.log("top")
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    },
 
     displayImg(carousel) {
       this.position = event.clientY;
@@ -109,6 +115,10 @@ $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
 
+// btn back to top
+#topBtn {
+  font-size:x-large;
+}
 
 // -------- cards --------
 .cards-container {
