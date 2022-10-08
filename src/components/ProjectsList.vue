@@ -2,7 +2,6 @@
   <ImgModal v-if="showModal" :carousel="carouselImg" :position="position" />
 
   <div class="projects-main">
-    <h2 class="projects-type">Projets </h2>
     <div class="cards-container">
       <div class="project-card" v-for="data in cardsData" :key="data.id">
 
@@ -110,22 +109,11 @@ $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
 
-// -------- banner OC --------
-.projects-type {
-  overflow: hidden;
-  position: sticky;
-  z-index: 999;
-  font-size: xxx-large;
-  color: $red;
-  font-family: 'Bebas Neue', cursive;
-  margin: 0 auto;
-  padding: 48px 0;
-}
 
 // -------- cards --------
 .cards-container {
   //anim
-  animation: project_pop ease-out 0.6s forwards;
+  animation: project_pop ease-out 0.3s forwards;
   transition: all ease 2s;
   position: relative;
   margin: 12px 0 28px;
