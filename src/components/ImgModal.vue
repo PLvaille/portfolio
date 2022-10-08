@@ -2,9 +2,12 @@
     <div class="modal-mask">
         <div class="modal-wrapper">
             <div class="modal-container">
+                <!-- :style="{top: position + 'px'}" -->
 
-                <button v-if="carousel.length > 1" @click="decrementCarousel()" class="carouselBtn carouselBtnPrev">⬅️</button>
-                <button v-if="carousel.length > 1" @click="incrementCarousel()" class="carouselBtn carouselBtnNext">➡️</button>
+                <button v-if="carousel.length > 1" @click="decrementCarousel()"
+                    class="carouselBtn carouselBtnPrev">⬅️</button>
+                <button v-if="carousel.length > 1" @click="incrementCarousel()"
+                    class="carouselBtn carouselBtnNext">➡️</button>
                 <button class="carouselBtn carouselBtnClose" @click="$parent.displayImg()">X</button>
                 <div class="modal-body"><img :src="require(`../assets/img/${carousel[carouselImgIndex]}`)" /></div>
             </div>
@@ -16,11 +19,14 @@
 export default {
     props: {
         carousel: {
-            type: Array
+            type: Array,
         },
         id: {
             type: Number,
-        }
+        },
+        position: {
+            type: Number,
+        },
     },
     data() {
         return {
@@ -29,6 +35,7 @@ export default {
     },
 
     methods: {
+
         incrementCarousel() {
             this.carouselImgIndex == (this.carousel.length - 1) ? this.carouselImgIndex = 0 : this.carouselImgIndex++
         },
@@ -54,19 +61,20 @@ $cream : #dbd5ce;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.4);
     display: table;
     transition: opacity 0.3s ease-in-out;
 }
 
 .modal-wrapper {
+    backdrop-filter: blur(8px);
     display: table-cell;
     vertical-align: middle;
 }
 
 .modal-container {
     z-index: 9999;
-    width: 88%;
+    width: 60%;
     margin: 0px auto;
     padding: 16px 24px;
     background-color: $cream;
@@ -78,9 +86,12 @@ $cream : #dbd5ce;
 }
 
 .modal-body {
-       & img {
+    margin: 0 auto;
+
+    & img {
+        max-height: 1000px;
         width: 100%;
-        height: 780px;
+        height: fit-content;
         object-fit: contain;
     }
 }
@@ -89,6 +100,7 @@ $cream : #dbd5ce;
     border: solid 2px $dark-main;
     cursor: pointer;
     border-radius: 4px;
+
     &:hover {
         box-shadow: 0 0;
     }
@@ -96,7 +108,7 @@ $cream : #dbd5ce;
 
 .carouselBtnNext {
     position: absolute;
-    bottom:20%;
+    bottom: 30%;
     right: 2%;
     box-shadow: -2px 2px rgba(0, 0, 0, 0.33);
     padding: 12px;
@@ -107,7 +119,7 @@ $cream : #dbd5ce;
 .carouselBtnPrev {
     box-shadow: 2px 2px rgba(0, 0, 0, 0.33);
     position: absolute;
-    bottom:20%;
+    bottom: 30%;
     left: 2%;
     padding: 12px;
     border-top-left-radius: 16px;
@@ -118,15 +130,16 @@ $cream : #dbd5ce;
     position: absolute;
     top: 10px;
     right: 10px;
-    background: $darkred;
-    border: 2px solid $red;
-    box-shadow: #685D79 2px 2px;
-    padding: 6px 9px;
+    background: $red;
+    border: 2px solid $darkred;
+    border-radius: 50%;
+    box-shadow: #685D79 3px 3px;
+    padding: 10px 13px;
 
     &:hover {
-        background: $red ;
+        background: $darkred ;
         //box-shadow: #685D79 2px 2px;
-        border: 2px solid $darkred;
+        border: 2px solid $red;
     }
 }
 
@@ -134,38 +147,40 @@ $cream : #dbd5ce;
 // ---- laptop ----
 @media screen and (max-width : 1400px) {
     .modal-body {
+
         & img {
-            height: 600px;
+            max-height: 700px;
         }
     }
 }
 
-
 // ----- TABLETTES -----
 @media screen and (max-width : 1024px) {
-    .modal-container{
-        width:88%;
-    }
-
     .modal-body {
+
         & img {
-            height: 460px;
+            max-height: 500px;
         }
     }
+
+    .modal-container {
+        width: 88%;
+    }
+
 }
 
 // ----- MOBILE -----
 @media screen and (max-width : 600px) {
-        .modal-container{
-        width:88%;
-        padding:8px;
+    .modal-body {
+
+        & img {
+            max-height: 400px;
+        }
     }
 
-    .modal-body {
-        & img {
-            height: 236px;
-            object-fit: cover;
-        }
+    .modal-container {
+        width: 88%;
+        padding: 8px;
     }
 
 }

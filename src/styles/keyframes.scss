@@ -1,0 +1,72 @@
+@keyframes cv_pop {
+  from {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes project_pop {
+  from {
+    transform: translateY(60%);
+    scale: 0.3;
+  }
+  to {
+    transform: translateY(0%);
+    scale: 1;
+  }
+}
+
+@keyframes project_hover {
+  from {
+    scale: 1;
+  }
+  to {
+    box-shadow: 10px 14px #111;
+    scale: 1.05;
+  }
+}
+@keyframes project_hover_reverse {
+  from {
+    scale: 1.05;
+  }
+  to {
+    box-shadow: 4px 8px #111;
+    scale: 1;
+  }
+}
+
+@keyframes img_pop {
+  to {
+    margin: 0 4px;
+    height: 500px;
+  }
+}
+@keyframes img_pop_reverse {
+  to {
+    margin: 12px 12px;
+    height: 430px;
+  }
+}
+
+@keyframes img_scroll {
+  to {
+    object-position: 50% 100%;
+  }
+}
+
+@keyframes card_anim {
+  from {
+    height: 0;
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(100%);
+    height: fit-content;
+
+    max-height: fit-content;
+  }
+}

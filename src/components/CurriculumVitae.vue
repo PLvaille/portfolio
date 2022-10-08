@@ -1,5 +1,7 @@
 <template>
+  <div class="main-container">
   <div class="cv">
+    
     <aside>
 
       <div class="img--container">
@@ -16,73 +18,73 @@
         <h2><strong>Stack</strong></h2>
       
         <div class="skills-container">
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-html5" /> -->
               <img src="Html5.svg" alt="Html5 logo" />
               <span>HTML5</span>
             </div>
           
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-css3" /> -->
               <img src="Css3.svg" alt="Css3 logo" />
               <span>CSS3</span>
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-sass" /> -->
               <img src="Sass.svg" alt="Sass logo" />
               <span>SASS</span>
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-bootstrap" /> -->
               <img src="Bootstrap.svg" alt="Bootstrap logo" />
               <span>Bootstrap</span>
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-js" /> -->
               <img src="Javascript.svg" alt="JavaScript logo" />
               <span>JavaScript</span>
               
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-vuejs" /> -->
               <img src="Vue.svg" alt="VueJS logo" />
               <span>VueJS</span>
             </div>
            
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-react" /> -->
               <img src="React.svg" alt="ReactJS logo" />
               <span>ReactJS</span>
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-node-js" /> -->
               <img src="Nodejs.svg" alt="NodeJS logo" />
               <span>NodeJS</span>
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <img src="Mysql.svg" alt="Mysql logo" />
               <span>MySQL</span>
             </div>
     
-            <div class="iconContainer">
+            <div class="icon-container">
               <img src="Mongo.svg" alt="Mongodb logo" />
               <span>MongoDB</span>
             </div>
       
         
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-solid fa-eye" /> -->
               <img src="Seo.svg" alt="SEO logo" />
               <span>SEO</span>
             </div>
             
-            <div class="iconContainer">
+            <div class="icon-container">
               <!-- <font-awesome-icon icon="fa-brands fa-git-alt" /> -->
               <img src="Git.svg" alt="Git logo" />
               <span>Git</span>
@@ -162,6 +164,8 @@
       </div>
     </main>
   </div>
+  <!-- fin main container -->
+</div> 
 
 </template>
 
@@ -175,8 +179,8 @@ export default {
 $dark-main : #555;
 // $dark-main: darken(#475C7A, 10%);
 $grey : #685D79;
-//$darkred : #AB6C82;
- $darkred:  #475C7A;
+$darkred1 : #AB6C82;
+$darkred:  #475C7A;
 //$red: darken(#475C7A, 10%);
 $red : #D8737F;
 $orange : #FCB860;
@@ -187,12 +191,25 @@ font-awesome-icon {
   height: 18px;
 }
 
+.main-container {
+    overflow-x: hidden;
+    transform: translateX(20%);
+    opacity: 0;
+    //voir styles/keyframes
+    animation : cv_pop ease-in 0.8s forwards;
+    width:60%;
+    min-width:867px;
+    margin:0 auto;
+    padding:12px;
+}
+
 .cv {
   box-shadow:12px 16px #111;
   font-family: 'Roboto', sans-serif;
   text-align: start;
   border: solid 4px $orange;
   width: 827px;
+  min-width: 827px;
   max-width: 1200px;
   margin: 1.5% auto 0;
   background-color: $cream;
@@ -300,8 +317,7 @@ aside {
   }
 
   .skills {
-
-    & .iconContainer {
+    & .icon-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,9 +419,20 @@ main {
 
 //----------- Media query -----------
 @media screen and (max-width : 1024px) {
+  .main-container {
+    min-width:unset;
+    width:100%;
+    margin:0;
+    margin-block:0;
+    padding:0;
+  }
+
   .cv {
+    width:auto;
+    min-width:auto;
+    max-width:auto;
     font-family: 'Roboto' !important;
-    width: 94%;
+    margin:16px auto 8px;
   }
 
   aside .contact {
@@ -434,14 +461,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 300px;
   }
 }
 
 @media screen and (max-width : 730px) {
   .cv {
+    margin-bottom: 0;
     width: 100%;
     border: none;
+    border-top:2px solid $orange;
     flex-direction: column;
     box-shadow: none;
 

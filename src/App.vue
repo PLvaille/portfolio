@@ -13,7 +13,7 @@
       <CurriculumVitae />
     </div>
     <div v-if="toogleProjects">
-      <ProjectsList :cardsDataPro="projectsProData" :cardsDataSolo="projectsSolo" />
+      <ProjectsList :cardsData="projectsData" />
     </div>
 
     <footer>
@@ -26,8 +26,7 @@
 import CurriculumVitae from "./components/CurriculumVitae.vue";
 import ProjectsList from './components/ProjectsList.vue';
 import MainHeader from './components/MainHeader.vue';
-import projectsProData from './projectsProData.json';
-import projectsSolo from './projectsSolo.json';
+import projectsData from './projectsData.json';
 import MainFooter from "./components/MainFooter.vue";
 
 export default {
@@ -41,7 +40,7 @@ export default {
     return {
       toogleCv: true,
       toogleProjects: false,
-      projectsProData: []
+      projectsData: []
     }
   },
   methods: {
@@ -50,8 +49,7 @@ export default {
       this.toogleProjects = !this.toogleProjects;
     },
     fetchProjectsData() {
-      this.projectsProData = projectsProData;
-      this.projectsSolo = projectsSolo;
+      this.projectsData = projectsData;
     }
   },
   created() {

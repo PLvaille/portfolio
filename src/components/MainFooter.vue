@@ -81,6 +81,7 @@ $darkred : #AB6C82;
 
 @media screen and (max-width : 730px) {
     .footer {
+        border-top:solid 2px $orange;
         margin-top:2px;
         width:100%;
         height: 200px;
