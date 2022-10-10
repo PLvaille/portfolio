@@ -1,14 +1,21 @@
+$cream : #dbd5ce;
+
 @keyframes cv_pop {
   from {
     opacity: 0;
-    transform: translateX(40%);
+    transform: translateY(60%);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
+@keyframes translateY_bg {
+  to {
+    background-position: 80%;
 
+  }
+}
 @keyframes project_pop {
   from {
     transform: translateY(60%);
@@ -22,19 +29,21 @@
 
 @keyframes project_hover {
   from {
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.5);
     scale: 1;
   }
   to {
-    box-shadow: 10px 14px #111;
-    scale: 1.05;
+    box-shadow: 6px 10px rgba(0, 0, 0, 0.5);
+    scale: 1.03;
   }
 }
 @keyframes project_hover_reverse {
   from {
-    scale: 1.05;
+    box-shadow: 6px 10px rgba(0, 0, 0, 0.5);
+    scale: 1.03;
   }
   to {
-    box-shadow: 4px 8px #111;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.5);
     scale: 1;
   }
 }
@@ -70,3 +79,48 @@
     max-height: fit-content;
   }
 }
+
+@keyframes about_anim {
+  from {
+    height:40px;
+    width: 400px;
+    color:transparent;
+  }
+  70% {
+    color:transparent;
+  }
+  to {
+    height:500px;
+    color:$cream;
+    width: 800px;
+  }
+}
+
+@keyframes skill_pop {
+  from {
+    transform: translateY(400px);
+  }
+  to {
+    transform: translateY(0);
+  }
+
+
+}
+
+@media screen and (max-width : 1100px) { 
+  @keyframes about_anim {
+    to {
+      height:620px;
+    }
+  }
+}
+
+
+@media screen and (max-width : 1024px) {
+  @keyframes about_anim {
+    to {
+      width: 500px;
+    }
+  }
+ }
+

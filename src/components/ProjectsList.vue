@@ -32,16 +32,16 @@
               </div>
             </div>
             <div class="card-more-anim">
-              <div>
+              <div v-if="data.ressources && data.ressources.length > 3">
                 <p><label>Resources :</label> {{ data.ressources }}</p>
               </div>
-              <div>
+              <div v-if="data.description && data.ressources.description > 3">
                 <p><label>Description :</label> {{ data.description }}</p>
               </div>
-              <div>
+              <div v-if="data.specs && data.ressources.specs > 3">
                 <p><label>Specifications :</label> {{ data.specs }}</p>
               </div>
-              <div>
+              <div v-if="data.realisation && data.realisation.length > 3">
                 <p><label>Realisations :</label> {{ data.realisation }}</p>
               </div>
             </div>
@@ -50,7 +50,7 @@
         </div> <!-- fin card-more -->
       </div>
     </div>
-    <button class="nav-btn" @click="topFunction()" id="topBtn" title="Go to top">⬆️ Haut de page ⬆️</button> 
+    <button class="btn" @click="topFunction()" id="topBtn" title="Go to top"> Haut de page </button>
   </div>
 </template>
 
@@ -75,8 +75,7 @@ export default {
     //   this.toogleMoreDetails = !this.toogleMoreDetails
     // },
 
-    topFunction(){
-      console.log("top")
+    topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     },
@@ -114,22 +113,38 @@ $red: darken(#475C7A, 10%);
 $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
+$bgcolor : #e8d0b6;
 
 // btn back to top
 #topBtn {
-  font-size:x-large;
+  background: rgba(252, 184, 96, 1) !important;
+  font-size: x-large;
+  border-radius:24px;
+  padding:8px;
+  margin:24px auto;
+
+  &:hover {
+    width:220px;
+    border-radius:28px;
+    background: #e8d0b6 !important;
+  }
 }
+
+//---
 
 // -------- cards --------
 .cards-container {
   //anim
+
   animation: project_pop ease-out 0.3s forwards;
   transition: all ease 2s;
-  position: relative;
-  margin: 12px 0 28px;
+
+  padding:32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+
 
   & p {
     font-family: 'Roboto', sans-serif;
@@ -147,25 +162,24 @@ $cream : #dbd5ce;
 
 
 .project-card {
+  padding:24px;
   height: fit-content;
   max-height: fit-content;
   max-width: fit-content;
-  width: 40%;
+  width: 26%;
 
   display: flex;
   flex-direction: column;
 
-  background: linear-gradient(190deg, $cream, #222 17%);
-  box-shadow: 4px 8px #111;
+  background: linear-gradient(190deg,  #e8d0b6, #222 17%);
+  box-shadow: 4px 8px rgba(0, 0, 0, .5);
 
-
-  border: 4px solid $orange;
   border-radius: 4px;
   border-top-right-radius: 24px;
 
-  margin: 28px auto;
+  margin:42px auto;
 
- 
+
   // anim hover off
   animation: project_hover_reverse ease-out 0.7s forwards;
   transition: all ease 2s;
@@ -187,21 +201,18 @@ $cream : #dbd5ce;
     height: 430px;
     min-height: 280px;
     object-fit: cover;
-    border-radius: 32px;
     margin: 12px 12px;
     object-position: 50% 0%;
     cursor: pointer;
-   
+
 
     //img anim hover off
     transition: all linear 2s;
-    border: $red 4px solid;
     animation: img_pop_reverse 0.8s ease-in-out forwards;
 
     &:hover {
       //img anim
       animation: img_pop 0.8s ease-in-out forwards, img_scroll 3s ease-in-out alternate infinite;
-      border: solid 4px darken($red, 10%);
     }
   }
 }
@@ -232,7 +243,7 @@ $cream : #dbd5ce;
   //@debugfont-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family: 'Shadows Into Light', cursive;
   font-weight: 400;
-  border: 2px solid $red;
+  border: 1px solid $orange;
   border-radius: 8px;
   padding: 8px;
   text-decoration: none;
@@ -270,10 +281,7 @@ $cream : #dbd5ce;
   & label {
     font-family: 'Bebas Neue', cursive;
     font-size: larger;
-    color: $red;
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-underline-offset: 3px;
+    color: $orange;
   }
 
 }
@@ -319,8 +327,9 @@ $cream : #dbd5ce;
 @media screen and (max-width : 1400px) {
 
   .project-card {
-    width: 80%;
-    margin: 32px auto;
+    width: 70%;
+    margin: 32px auto 24px;
+    padding:2px;
   }
 
   .card-title {
@@ -356,8 +365,9 @@ $cream : #dbd5ce;
   }
 
   .project-card {
-    width: 88%;
-    margin: 16px auto;
+  
+    width: 74%;
+    margin: 32px auto;
   }
 
   .improved-skill-img {
@@ -369,6 +379,9 @@ $cream : #dbd5ce;
 
 // ----- MOBILE -----
 @media screen and (max-width : 730px) {
+  .img-preview {
+    animation :none !important;
+  }
   .project-name {
     font-size: x-large;
   }
@@ -379,7 +392,9 @@ $cream : #dbd5ce;
   }
 
   .project-card {
-    width: 92%;
+    padding:0;
+    width:55%;
+    background: linear-gradient(190deg, #dbd5ce, #222 10%);
     margin: 32px auto;
   }
 
@@ -396,6 +411,22 @@ $cream : #dbd5ce;
   .improved-skill-img {
     height: 42px;
     width: 42px;
+  }
+}
+
+@media screen and (max-width : 520px) {
+  .project-card {
+    width:45%;
+  }
+}
+@media screen and (max-width : 438px) {
+  .project-card {
+    width:40%;
+  }
+}
+@media screen and (max-width : 384px) {
+  .project-card {
+    width:32%;
   }
 }
 </style>

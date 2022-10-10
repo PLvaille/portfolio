@@ -1,19 +1,29 @@
 <template>
-  <header>
+  <header class="header">
     <MainHeader />
   </header>
 
-  <div classs="mainContainer">
-
+  <div classs="fullContainer">
     <div class="navContainer">
-      <h2 v-if="toogleProjects" class="nav-btn" @click="mainToogleSwitch()">Voir mon CV</h2>
-      <h2 v-if="toogleCv" class="nav-btn" @click="mainToogleSwitch()">Voir mes projets</h2>
+      <button class="btn filter-btn" id="btn-main" @click="handleMain(), btnColorFilter()">Portfolio</button>
+      <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">CV</button>
+      <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projets</button>
+      <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">Infos</button>
+      <!-- <h2 class="btn" id="btn-link" @click="handleLink(), btnColorFilter()">Liens</h2> -->
     </div>
-    <div v-if="toogleCv">
+
+
+    <div class="landing-container bg-img2" v-if="toogleMain">
+      <LandingPage />
+    </div>
+    <div class="cv-container bg-img " v-if="toogleCv">
       <CurriculumVitae />
     </div>
-    <div v-if="toogleProjects">
+    <div class="projects-container bg-img " v-if="toogleProjects">
       <ProjectsList :cardsData="projectsData" />
+    </div>
+    <div class="bg-img " v-if="toogleInfo">
+      <InfoPage />
     </div>
 
     <footer>
@@ -28,25 +38,82 @@ import ProjectsList from './components/ProjectsList.vue';
 import MainHeader from './components/MainHeader.vue';
 import projectsData from './projectsData.json';
 import MainFooter from "./components/MainFooter.vue";
+import LandingPage from "./components/LandingPage.vue";
+import InfoPage from "./components/InfoPage.vue";
 
 export default {
   components: {
     CurriculumVitae,
     ProjectsList,
     MainHeader,
-    MainFooter
+    MainFooter,
+    LandingPage,
+    InfoPage,
+
   },
   data() {
     return {
-      toogleCv: true,
+      toogleMain: true,
+      toogleCv: false,
       toogleProjects: false,
+      toogleInfo: false,
+      toogleLink: false,
       projectsData: []
     }
   },
   methods: {
-    mainToogleSwitch() {
-      this.toogleCv = !this.toogleCv;
-      this.toogleProjects = !this.toogleProjects;
+    btnColorFilter() {
+      let butons = document.querySelectorAll(".btn");
+      butons.forEach(buton => {
+        buton.classList.remove("filter-btn");
+      });
+      let butonToStyle = document.querySelector(`#${event.target.id}`);
+      butonToStyle.classList.add("filter-btn");
+    },
+    handleMain() {
+
+      if (this.toogleMain == false)
+        this.toogleMain = !this.toogleMain;
+      this.toogleInfo = false;
+      this.toogleCv = false;
+      this.toogleProjects = false;
+      this.toogleLink = false;
+
+    },
+    handleCV() {
+      if (this.toogleCv == false)
+        this.toogleCv = !this.toogleCv;
+      this.toogleInfo = false;
+      this.toogleMain = false;
+      this.toogleProjects = false;
+      this.toogleLink = false;
+
+    },
+    handleProject() {
+      if (this.toogleProjects == false)
+        this.toogleProjects = !this.toogleProjects;
+      this.toogleInfo = false;
+      this.toogleMain = false;
+      this.toogleCv = false;
+      this.toogleLink = false;
+    },
+    handleInfo() {
+      if (this.toogleInfo == false)
+        this.toogleInfo = !this.toogleInfo;
+      this.toogleProjects = false;
+      this.toogleMain = false;
+      this.toogleCv = false;
+      this.toogleLink = false;
+
+    },
+    handleLink() {
+      if (this.toogleLink == false)
+        this.toogleLink = !this.toogleLink;
+      this.toogleProjects = false;
+      this.toogleMain = false;
+      this.toogleCv = false;
+      this.toogleInfo = false;
+
     },
     fetchProjectsData() {
       this.projectsData = projectsData;
@@ -65,55 +132,137 @@ $grey : #685D79;
 $darkred : #AB6C82;
 $red : #D8737F;
 $orange : #FCB860;
+// orange = rgba(252, 184, 96, 1)
 $cream : #dbd5ce;
+$bgcolor : #e8d0b6;
+$bgcolor2: whitesmoke;
 
-.mainContainer {
-  position: relative;
+
+.fullContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-container,
+.cv-container {
+  background-position: 0%;
+  animation: translateY_bg 1.2s ease forwards;
+  width: 100%;
+
+}
+
+.bg-img {
+  display: flex;
+  justify-content: center;
+  background-clip: content-box;
+  background-image: url("../public/test02.jpg");
+  background-size: cover;
+}
+
+.bg-img2 {
+
+  background-image: url("../public/test03.jpg");
+  background-size: cover;
+}
+
+.projects-container {
+  background-image: url("../public/test02.jpg");
+  background-size: cover;
+}
+
+.header {
+  background: #e8d0b6;
+  // rgb(246, 171, 74)
+  background: linear-gradient(to top, #e8d0b6, white 99%);
+  padding-bottom: 42px;
 }
 
 #app {
+  background: #e8d0b6;
   position: relative;
-  background: linear-gradient(#222, #222, #444, #444, #555);
+  //background: linear-gradient(#222, #222, #444, #444, #555);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: $cream;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  & .headerWelcome {
-    font-family: 'Shadows Into Light';
-  }
 }
 
 .navContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  // background: $bgcolor;
+  padding: 2px 0;
+  background: linear-gradient(to left, $bgcolor, whitesmoke 50%, $bgcolor);
+  margin: 0 auto 24px;
+  max-width: 1100px;
 }
 
-.nav-btn {
-  font-family: 'Shadows Into Light';
-  color: #111;
-  min-width: 220px;
-  border-radius: 16px;
-  border: 4px solid white;
-  padding: 1.5% 0.5%;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  margin:1% auto;
-  background-color: $red;
-  box-shadow:4px 8px #111;
+
+//-----------btns---
+
+.filter-btn {
+  background: rgba(252, 184, 96, 1) !important;
+  border: 1px solid white !important;
+  color:#333 !important;
+  text-shadow: 1px 1px transparent;
+}
+
+.btn {
+  font-size:large;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  //flex-grow: 1;
+  width: 240px;
+  //font-family: 'Shadows Into Light';
+  font-family: 'Roboto';
+  color: white;
+  text-shadow: 1px 1px black;
+  padding: 3% 0;
   transition: all ease 0.6s;
+  margin: 0 2px;
+  background-color:#333;
 
   &:hover {
+    
+    backdrop-filter: blur(4px);
+    color:black;
     cursor: pointer;
-    background: $orange;
-    color: black;
-    text-decoration: none;
-    border: 4px solid $grey;
-    box-shadow: none;
+    background: rgba(246, 171, 74, 1);
+  }
+
+  &:active {
+    background: rgba(246, 171, 74, 1);
   }
 }
 
+#btn-main {
+  transition: all 1s;
+  background-position: 10% 90%;
+  background-image: url("../public/livre.jpg");
+}
+#btn-cv {
+  transition: all 1s;
+  background-position: 28% 28%;
+  background-image: url("../public/rouage.webp");
+}
+#btn-project {
+  transition: all 1s;
+  background-position: 50% 50%;
+ background-image: url("../public/projet.jpg");
+}
+#btn-contact{
+  transition: all 1s;
+  background-position: 40% 60%;
+  background-image: url("../public/contact.jpg");
+}
+
+@media screen and (max-width : 730px) {
+
+  .btn {
+    padding: 28px 0 !important;
+  }
+
+}
 </style>

@@ -27,6 +27,7 @@
 </template>
 
 <script>
+
 export default {
 
 }
@@ -39,18 +40,24 @@ $darkred : #AB6C82;
 $red : #D8737F;
 $orange : #FCB860;
 $cream : #dbd5ce;
+$bgcolor : #e8d0b6;
 
+.headerWelcome {
+    color: #333;
+    font-family: 'Shadows Into Light';
+  }
 .links {
     display: flex;
     justify-content: center;
     font-size: xxx-large;
-    margin-bottom:16px;
+    padding:24px;
 
     & a {
+        transition: all ease 0.4s;
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        color: $cream;
+        color: #333;
         margin: 16px;
         height:42px;
 
@@ -59,6 +66,7 @@ $cream : #dbd5ce;
         }
 
         & p {
+            color:#333;
             text-align: center;
             font-size: x-small;
         }

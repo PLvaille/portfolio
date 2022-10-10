@@ -47,13 +47,14 @@ $darkred : #AB6C82;
     right:8px;
 }
 .footer {
-    padding-top:32px;
+    border-top:solid 2px $orange;
+    display:flex;
+    flex-grow: 1;
+    padding-top:18px;
     margin-block: 0;
-    margin-top: 24px;
-    background: #111;
+    background: #333;
     display: flex;
     justify-content: space-around;
-    border-top:solid 2px $darkred;
     & a{
         text-decoration: none;
         color: inherit;
@@ -78,20 +79,5 @@ $darkred : #AB6C82;
     }
 
 }
-
-@media screen and (max-width : 730px) {
-    .footer {
-        border-top:solid 2px $orange;
-        margin-top:2px;
-        width:100%;
-        height: 200px;
-    }
-}
-
-// @media screen and (max-width : 420px) {
-//     .footer {
-//     display: none;
-//     }
-// }
 
 </style>
