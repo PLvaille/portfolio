@@ -4,13 +4,6 @@
   </header>
 
   <div classs="fullContainer">
-    <!-- <div class="navContainer">
-      <button class="btn filter-btn" id="btn-main" @click="handleMain(), btnColorFilter()">Portfolio</button>
-      <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">Resume</button>
-      <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projects</button>
-      <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">More</button>
-    </div> -->
-
 
     <div class="landing-container bg-img2" v-if="toogleMain">
       <LandingPage />
@@ -64,10 +57,10 @@ export default {
     btnColorFilter() {
       let butons = document.querySelectorAll(".btn");
       butons.forEach(buton => {
-        buton.classList.remove("filter-btn");
+        buton.classList.remove("filtered-btn");
       });
       let butonToStyle = document.querySelector(`#${event.target.id}`);
-      butonToStyle.classList.add("filter-btn");
+      butonToStyle.classList.add("filtered-btn");
     },
     handleMain() {
 
@@ -137,22 +130,14 @@ $bgcolor : #e8d0b6;
 $bgcolor2: whitesmoke;
 
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
 }
 
 .fullContainer {
   margin: 0;
   padding: 0;
-}
-
-.landing-container,
-.cv-container {
-  background-position: 0%;
-  animation: translateY_bg 1.2s ease forwards;
-  width: 100%;
-
 }
 
 .bg-img,
@@ -168,14 +153,6 @@ body {
   background-size: cover;
 }
 
-
-.header {
-  background: #333;
-  // rgb(246, 171, 74)
-  //background: linear-gradient(to top, #e8d0b6, white 99%);
-  padding-bottom: 42px;
-}
-
 #app {
   background: #333;
   position: relative;
@@ -187,20 +164,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.navContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2px 0;
-  //background: linear-gradient(to left, $bgcolor, whitesmoke 50%, $bgcolor);
-  margin: 0 auto 24px;
-  max-width: 1100px;
+
+p {
+  margin: 0;
 }
 
 
 //-----------btns---
 
-.filter-btn {
+.filtered-btn {
   background: rgba(252, 184, 96, 1) !important;
   border: 1px solid white !important;
   text-shadow: 2px 2px $cream !important;
@@ -284,10 +256,12 @@ body {
   }
 
 }
+
 @media screen and (max-width : 530px) {
-  .btn:hover { 
+  .btn:hover {
     letter-spacing: normal;
   }
+
   .filter-btn {
     letter-spacing: normal !important;
   }
