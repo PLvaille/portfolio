@@ -135,7 +135,7 @@ $bgcolor : #e8d0b6;
         border-left: 87px solid transparent;
 
         //anim triangle
-        animation: anim_triangle 24s linear;
+        animation: anim_triangle 12s linear;
         animation-delay: $delay;
         animation-iteration-count: infinite;
 

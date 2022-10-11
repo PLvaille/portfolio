@@ -181,10 +181,12 @@ $bgcolor : #e8d0b6;
   padding:24px 0 0 0;
 
   // anim hover off
+  transition: all ease 1.2s;
   animation: project_hover_reverse ease-out 0.7s forwards;
-  transition: all ease 2s;
+  
 
   &:hover {
+    transform : translateY(-8px);
     animation: project_hover ease-out 0.7s forwards 0.2s;
   }
 }
@@ -209,7 +211,6 @@ $bgcolor : #e8d0b6;
 
 .project-name {
   font-family: 'Shadows Into Light', cursive;
-  //font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 800;
   margin: 4px 0;
   color: $orange;
@@ -220,7 +221,7 @@ $bgcolor : #e8d0b6;
   font-family: 'Bebas Neue', cursive;
   color: whitesmoke;
   font-size: x-large;
-  // margin-bottom: 24px;
+  padding:12px;
 }
 
 
@@ -230,7 +231,6 @@ $bgcolor : #e8d0b6;
 }
 
 .card-link {
-  //@debugfont-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family: 'Shadows Into Light', cursive;
   font-weight: 400;
   border: 1px solid $cream;
