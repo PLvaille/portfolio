@@ -7,8 +7,8 @@
     <div class="navContainer">
       <button class="btn filter-btn" id="btn-main" @click="handleMain(), btnColorFilter()">Portfolio</button>
       <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">Resume</button>
-      <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projets</button>
-      <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">Infos</button>
+      <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projects</button>
+      <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">More</button>
       <!-- <h2 class="btn" id="btn-link" @click="handleLink(), btnColorFilter()">Liens</h2> -->
     </div>
 
@@ -279,5 +279,13 @@ $bgcolor2: whitesmoke;
     padding: 28px 0 !important;
   }
 
+}
+@media screen and (max-width : 530px) {
+  .btn:hover { 
+    letter-spacing: normal;
+  }
+  .filter-btn {
+    letter-spacing: normal !important;
+  }
 }
 </style>

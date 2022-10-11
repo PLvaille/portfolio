@@ -124,9 +124,10 @@ $bgcolor : #e8d0b6;
   margin:24px auto;
 
   &:hover {
-    width:220px;
-    border-radius:28px;
-    background: #e8d0b6 !important;
+    letter-spacing: normal;
+    width:230px;
+    background: #333 !important;
+    color:$orange;
   }
 }
 
