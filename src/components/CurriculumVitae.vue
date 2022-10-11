@@ -122,7 +122,7 @@
             diplôme de niveau 5 (bac+2), je
             cherche à intégrer une équipe
             dynamique dès que possible afin
-            d'approfondir mes connaissances, en acquérir de nouvelles et contribuer à de beaux projets.
+            de mettre à contribution mes connaissances, en acquérir de nouvelles et participer à de beaux projets.
           </span>
         </div>
         <div class="experience block">

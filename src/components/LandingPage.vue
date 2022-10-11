@@ -17,15 +17,15 @@
                 que possible afin de mettre à contribution mes connaissances et participer à de beaux projets !
                 <br>
                 <br>
-                Sportif, j'ai le mindset d'un champion d'ultra trail, hyper motivé, fixé sur mon objectif et prêt à en découdre.
+                Sportif, j'aime le challenge et les nouveaux défis ne me font pas peur.
                 <br>
                 <br>
-                Mon plus bel atout en tant que développeur est ma curiosisté car l'apprentissage est continu dans ce domaine.
+                Ma curiosisté inhérente est un atout dans le développement car l'apprentissage est continu dans ce domaine.
                 <br>
                 <br>
                 Ancien commercial, en plus de la facilité que j'ai aquise dans les relations humaines, j'ai développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait d'évoluer au plus vite dans mon domaine.
                 <br>
-                Pour ce faire, je suis bien-sûr intéressé par l'aquisition de nouveaux skills pour répondre plus aisément aux requête qui me seront adressées.
+                Pour ce faire, je suis bien-sûr intéressé par l'aquisition de nouveaux skills pour répondre plus aisément aux requêtes qui me seront adressées.
                 <br>
                 <br>
                 Voici mon stack actuel :
