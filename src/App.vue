@@ -4,13 +4,12 @@
   </header>
 
   <div classs="fullContainer">
-    <div class="navContainer">
+    <!-- <div class="navContainer">
       <button class="btn filter-btn" id="btn-main" @click="handleMain(), btnColorFilter()">Portfolio</button>
       <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">Resume</button>
       <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projects</button>
       <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">More</button>
-      <!-- <h2 class="btn" id="btn-link" @click="handleLink(), btnColorFilter()">Liens</h2> -->
-    </div>
+    </div> -->
 
 
     <div class="landing-container bg-img2" v-if="toogleMain">
@@ -137,6 +136,11 @@ $cream : #dbd5ce;
 $bgcolor : #e8d0b6;
 $bgcolor2: whitesmoke;
 
+body {
+  margin:0;
+  padding:0;
+
+}
 
 .fullContainer {
   margin: 0;

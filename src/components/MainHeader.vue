@@ -19,11 +19,35 @@
         </a>
     </div>
 
+    <div class="navContainer">
+        <button class="btn filter-btn" id="btn-main" @click="handleMain(), btnColorFilter()">Portfolio</button>
+        <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">Resume</button>
+        <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projects</button>
+        <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">More</button>
+    </div>
+
 </template>
 
 <script>
 
 export default {
+    methods : {
+        btnColorFilter(){
+            this.$parent.btnColorFilter();
+        },
+        handleMain() {
+            this.$parent.handleMain();
+        },
+        handleCV() {
+            this.$parent.handleCV();
+        },
+        handleProject() {
+            this.$parent.handleProject();
+        },
+        handleInfo() {
+            this.$parent.handleInfo();
+        },
+    }
 
 }
 </script>
@@ -40,28 +64,29 @@ $bgcolor : #e8d0b6;
 .headerWelcome {
     color: $cream;
     font-family: 'Shadows Into Light';
-  }
+}
+
 .links {
     display: flex;
     justify-content: center;
     font-size: xxx-large;
-    padding:24px;
+    padding: 24px;
 
     & a {
         transition: all ease 0.4s;
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        color:$cream;
+        color: $cream;
         margin: 16px;
-        height:42px;
+        height: 42px;
 
         &:hover {
             color: $orange;
         }
 
         & p {
-            color:white;
+            color: white;
             text-align: center;
             font-size: x-small;
         }
@@ -73,7 +98,8 @@ p {
 }
 
 h1 {
-    margin-top: 1%;
+    margin-top: 0;
+    padding-top:1%;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
