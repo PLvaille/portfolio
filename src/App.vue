@@ -8,13 +8,13 @@
     <div class="landing-container bg-img2" v-if="toogleMain">
       <LandingPage />
     </div>
-    <div class="cv-container bg-img " v-if="toogleCv">
+    <div class="cv-container bg-img" v-if="toogleCv">
       <CurriculumVitae />
     </div>
-    <div class="projects-container bg-img " v-if="toogleProjects">
+    <div class="projects-container bg-img" v-if="toogleProjects">
       <ProjectsList :cardsData="projectsData" />
     </div>
-    <div class="bg-img " v-if="toogleInfo">
+    <div class="bg-img info-contenair" v-if="toogleInfo">
       <InfoPage />
     </div>
 
@@ -132,7 +132,6 @@ $bgcolor2: whitesmoke;
 body {
   margin: 0;
   padding: 0;
-
 }
 
 .fullContainer {
@@ -140,8 +139,7 @@ body {
   padding: 0;
 }
 
-.bg-img,
-.projects-container {
+.bg-img {
   border-top: 2px solid $orange;
   background-image: url("../public/bg2.webp");
   background-size: cover;
@@ -164,14 +162,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 p {
   margin: 0;
 }
 
-
 //-----------btns---
-
 .filtered-btn {
   background: rgba(252, 184, 96, 1) !important;
   border: 1px solid white !important;
@@ -180,7 +175,6 @@ p {
   color: #333 !important;
   letter-spacing: 3px !important;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.4) !important;
-
 }
 
 .btn {

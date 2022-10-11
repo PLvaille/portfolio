@@ -30,9 +30,6 @@
                 <div class="tri-24"></div>
                 <div class="tri-25"></div>
                 <div class="tri-26"></div>
-
-
-
             </div>
 
 
@@ -112,7 +109,8 @@ $bgcolor : #e8d0b6;
 
 .tri-container {
     position: relative;
-    top: -70px;
+    top: -30px;
+    left: -60px;
 }
 
 @for $i from 1 through 26 {
@@ -195,29 +193,32 @@ $bgcolor : #e8d0b6;
 
 @media screen and (max-width : 1300px) {
     .tri-container {
-        top: -120px;
+        top: -40px;
         left: -100px;
     }
 }
 
 @media screen and (max-width : 1000px) {
-
     .tri-container {
-        top: -140px;
-        left: -180px;
+        top: -20px;
+        left: -260px;
     }
 }
 
 @media screen and (max-width : 800px) {
-
     .tri-container {
-        top: -160px;
-        left: -260px;
+        top: -60px;
+        left: -220px;
     }
 }
 
 
 @media screen and (max-width : 600px) {
+    .tri-container {
+        top: -50px;
+        left: -240px;
+    }
+
     h1 {
         font-size: xx-large;
     }
