@@ -140,11 +140,12 @@ $bgcolor : #e8d0b6;
     font-family: "Roboto";
 
     //background: #f8f0e8;
-    background: linear-gradient(190deg, #e8d0b6, #222 17%);
+    background: linear-gradient(190deg, #e8d0b6, #333 17%);
     color: $cream;
     padding: 4% 3% 4% 132px;
     margin-right:2%;
     text-align: justify;
+    border:1px solid $cream;
     border-radius: 32px;
 
     &-container {
