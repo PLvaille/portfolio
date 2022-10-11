@@ -233,7 +233,7 @@ $bgcolor : #e8d0b6;
   //@debugfont-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family: 'Shadows Into Light', cursive;
   font-weight: 400;
-  border: 1px solid $orange;
+  border: 1px solid $cream;
   border-radius: 8px;
   padding: 8px;
   text-decoration: none;
@@ -247,8 +247,8 @@ $bgcolor : #e8d0b6;
   &:hover {
     cursor: pointer;
     color: $orange;
-    border: 2px solid $cream;
-    background: $grey;
+    border: 1px solid $orange;
+    background: lighten($dark-main, 10%);
   }
 }
 
