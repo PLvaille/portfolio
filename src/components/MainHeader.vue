@@ -47,7 +47,7 @@
                     </a>
                     <a href="https://github.com/PLvaille?tab=repositories" target="_blank">
                         <font-awesome-icon icon="fa-brands fa-github" />
-                        <p>Repo github</p>
+                        <p>Github</p>
                     </a>
                     <a href="mailto: pierrelouis.vaille@gmail.com">
                         <font-awesome-icon icon="fa-solid fa-envelope" />
@@ -109,8 +109,8 @@ $bgcolor : #e8d0b6;
 
 .tri-container {
     position: relative;
-    top: -30px;
-    left: -60px;
+    top: -20px;
+    left: -40px;
 }
 
 @for $i from 1 through 26 {
@@ -120,8 +120,8 @@ $bgcolor : #e8d0b6;
 
     .tri-#{$i} {
         position: absolute;
-        top: ($i*18px);
-        left: ($i*72px);
+        top: ($i/12) *($i*10px);
+        left:  ($i*72px);
 
         opacity: $opa;
 
@@ -143,7 +143,7 @@ $bgcolor : #e8d0b6;
 }
 
 .header-frame {
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(6px);
     padding: 12px;
 }
 
@@ -161,7 +161,7 @@ $bgcolor : #e8d0b6;
     padding: 24px;
 
     & a {
-        transition: all ease 0.4s;
+        transition: all ease 0.8s;
         display: flex;
         flex-direction: column;
         text-decoration: none;

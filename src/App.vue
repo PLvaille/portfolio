@@ -11,10 +11,10 @@
     <div class="cv-container bg-img" v-if="toogleCv">
       <CurriculumVitae />
     </div>
-    <div class="projects-container bg-img" v-if="toogleProjects">
+    <div class="projects-container bg-img2" v-if="toogleProjects">
       <ProjectsList :cardsData="projectsData" />
     </div>
-    <div class="bg-img info-contenair" v-if="toogleInfo">
+    <div class="bg-img more-container" v-if="toogleInfo">
       <InfoPage />
     </div>
 
@@ -63,7 +63,6 @@ export default {
       butonToStyle.classList.add("filtered-btn");
     },
     handleMain() {
-
       if (this.toogleMain == false)
         this.toogleMain = !this.toogleMain;
       this.toogleInfo = false;
@@ -129,12 +128,7 @@ $cream : #dbd5ce;
 $bgcolor : #e8d0b6;
 $bgcolor2: whitesmoke;
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.fullContainer {
+body, .fullContainer {
   margin: 0;
   padding: 0;
 }

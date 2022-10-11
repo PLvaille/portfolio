@@ -75,10 +75,10 @@ $cream : #dbd5ce;
     transform: rotate3d(0, 0, 1, 0deg) translateX(0) translateY(0) ;
   }
   24%{
-    transform : rotate3d(0, 0, 1, 90deg) translateX(-10%) translateY(10%);
+    transform : rotate3d(0, 0, 1, 90deg) translateX(-10%) translateY(20%);
   }
   50% {
-    transform : rotate3d(0, 0, 1, 135deg) translateX(-20%) translateY(20%);
+    transform : rotate3d(0, 0, 1, 135deg) translateX(-20%) translateY(40%);
   }
   66% {
     transform : rotate3d(0, 0, 1, 180deg) translateX(-10%) translateY(10%);

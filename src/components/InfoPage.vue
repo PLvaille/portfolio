@@ -32,6 +32,7 @@ $cream : #dbd5ce;
 
 .info {
     &-main-container {
+        backdrop-filter: brightness(0.5);
         padding: 32px 0;
         display: flex;
         justify-content: center;
