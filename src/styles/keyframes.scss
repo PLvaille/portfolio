@@ -29,54 +29,22 @@ $cream : #dbd5ce;
 
 @keyframes project_hover {
   from {
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.5);
-    scale: 1;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.5);
+    //scale: 1;
   }
   to {
-    box-shadow: 6px 10px rgba(0, 0, 0, 0.5);
-    scale: 1.03;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.8);
+   // scale: 1.03;
   }
 }
 @keyframes project_hover_reverse {
   from {
-    box-shadow: 6px 10px rgba(0, 0, 0, 0.5);
-    scale: 1.03;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.8);
+   // scale: 1.03;
   }
   to {
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.5);
-    scale: 1;
-  }
-}
-
-@keyframes img_pop {
-  to {
-    margin: 0 4px;
-   // height: 500px;
-  }
-}
-@keyframes img_pop_reverse {
-  to {
-    margin: 12px 12px;
-    //height: 430px;
-  }
-}
-
-@keyframes img_scroll {
-  to {
-    object-position: 50% 100%;
-  }
-}
-
-@keyframes card_anim {
-  from {
-    height: 0;
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(100%);
-    height: fit-content;
-
-    max-height: fit-content;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.5);
+   // scale: 1;
   }
 }
 

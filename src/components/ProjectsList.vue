@@ -171,7 +171,7 @@ $bgcolor : #e8d0b6;
   flex-direction: column;
 
   background: linear-gradient(190deg,  #e8d0b6, #222 17%);
-  box-shadow: 4px 8px rgba(0, 0, 0, .5);
+  box-shadow: 3px 5px rgba(0, 0, 0, .5);
   border-radius: 4px;
   border-top-right-radius: 24px;
 
@@ -202,16 +202,6 @@ $bgcolor : #e8d0b6;
     margin: 12px 12px;
     object-position: 50% 0%;
     cursor: pointer;
-
-
-    //img anim hover off
-    transition: all linear 2s;
-    animation: img_pop_reverse 0.8s ease-in-out forwards;
-
-    &:hover {
-      //img anim
-      animation: img_pop 0.8s ease-in-out forwards, img_scroll 3s ease-in-out alternate infinite;
-    }
   }
 }
 
