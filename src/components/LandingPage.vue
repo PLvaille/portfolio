@@ -215,7 +215,7 @@ strong {
 
 }
 
-@media screen and (max-width : 1130px) {
+@media screen and (max-width : 1330px) {
     .about{
         padding-bottom:10%;
     }
