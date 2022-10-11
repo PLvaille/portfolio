@@ -142,7 +142,7 @@ $bgcolor : #e8d0b6;
     //background: #f8f0e8;
     background: linear-gradient(190deg, #e8d0b6, #333 17%);
     color: $cream;
-    padding: 4% 3% 4% 132px;
+    padding: 4% 3% 6% 132px;
     margin-right:2%;
     text-align: justify;
     border:1px solid $cream;
@@ -216,6 +216,12 @@ strong {
 }
 
 @media screen and (max-width : 1130px) {
+    .about{
+        padding-bottom:10%;
+    }
+}
+
+@media screen and (max-width : 1130px) {
     .skills-container {
         width: 100% !important;
     }
@@ -236,9 +242,9 @@ strong {
     }
 
     .about {
-        padding: 24px;
-        width: 100%;
-        border: none;
+        padding:32px;
+        margin:0 auto;
+        width: 80%;
         text-align: center;
 
         &-container {
@@ -251,13 +257,20 @@ strong {
 
 @media screen and (max-width : 730px) {
     .about {
-        border-radius: 0;
+        padding:32px;
+        width: fit-content;
+        margin:0 1%;
         margin-bottom: 32px;
         animation: none;
 
     }
 
     .skills-container {
+        position:relative;
+        left:0;
+        padding:12px 0;
+        width:90%;
+        margin:0 auto;
         transform: translateY(0);
         animation: skill_pop 1s ease forwards 0.5s;
     }
