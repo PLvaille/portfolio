@@ -151,9 +151,7 @@ body, .fullContainer {
   //background: linear-gradient(#222, #222, #444, #444, #555);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: $cream;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
 p {

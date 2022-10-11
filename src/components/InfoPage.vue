@@ -4,7 +4,9 @@
 
         <div class="info-container">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40492.58593492475!2d3.0468978!3d50.631080600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1665509991393!5m2!1sfr!2sfr" width="300" height="275" style="border:0;" loading="lazy" ></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40492.58593492475!2d3.0468978!3d50.631080600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1665509991393!5m2!1sfr!2sfr"
+                    width="300" height="275" style="border:0;" loading="lazy"></iframe>
             </div>
             <div class="info-text">
                 <p>
@@ -12,8 +14,8 @@
                 </p>
                 <p> Disponibilité immédiate </p>
                 <p>06.59.01.24.87</p>
-                <a href = "mailto: pierrelouis.vaille@gmail.com">
-                        <p>pierrelouis.vaille@gmail.com</p>
+                <a href="mailto: pierrelouis.vaille@gmail.com">
+                    <p>pierrelouis.vaille@gmail.com</p>
                 </a>
             </div>
         </div>
@@ -61,10 +63,15 @@ $cream : #dbd5ce;
 
 
     &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
         padding: 32px;
-        color:  $cream;
+        color: $cream;
+
         & a {
-            color : $cream;
+            color: $cream;
         }
     }
 }
@@ -78,8 +85,8 @@ $cream : #dbd5ce;
     }
 
     .info-container {
-        max-width:380px;
-        padding-top:24px;
+        max-width: 380px;
+        padding-top: 24px;
     }
 }
 </style>

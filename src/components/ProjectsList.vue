@@ -117,6 +117,8 @@ $bgcolor : #e8d0b6;
 
 // btn back to top
 #topBtn {
+  color:#333;
+  text-shadow:none;
   background: rgba(252, 184, 96, 1) !important;
   font-size: x-large;
   border-radius:24px;
@@ -164,6 +166,7 @@ $bgcolor : #e8d0b6;
 
 
 .project-card {
+  color:$cream;
   border: 1px solid white;
   height: fit-content;
   max-height: fit-content;

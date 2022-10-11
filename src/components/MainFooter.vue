@@ -39,7 +39,7 @@ export default {
 <style lang="scss" >
 $orange : #FCB860;
 $darkred : #AB6C82;
-
+$cream : #dbd5ce;
 .vueCredit {
     font-size:x-small;
     position:absolute;
@@ -47,6 +47,7 @@ $darkred : #AB6C82;
     right:8px;
 }
 .footer {
+    color: $cream;
     border-top:solid 2px $orange;
     display:flex;
     flex-grow: 1;
