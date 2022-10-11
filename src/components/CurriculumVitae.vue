@@ -201,7 +201,7 @@ font-awesome-icon {
 .cv {
     //voir styles/keyframes
     opacity: 0;
-   animation: cv_pop ease-in-out 1.2s forwards;
+   animation: cv_pop ease-in-out 1s forwards;
    transform: translateX(20%);
   overflow:hidden;
 
