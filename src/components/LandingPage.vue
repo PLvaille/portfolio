@@ -168,7 +168,7 @@ strong {
 
     & .img {
         left: 0;
-        border: 3px solid $cream;
+        border: 1px solid $cream;
         object-fit: cover;
         width: 320px;
         height: 320px;
