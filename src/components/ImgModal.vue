@@ -73,6 +73,7 @@ $cream : #dbd5ce;
 }
 
 .modal-container {
+    border: 1px solid white;
     z-index: 9999;
     width: 60%;
     margin: 0px auto;

@@ -164,6 +164,7 @@ $bgcolor : #e8d0b6;
 
 
 .project-card {
+  border: 1px solid white;
   height: fit-content;
   max-height: fit-content;
   max-width: fit-content;

@@ -41,6 +41,7 @@ $cream : #dbd5ce;
     }
 
     &-container {
+        border: 1px solid white;
         width: fit-content;
         height: fit-content;
         display: flex;
