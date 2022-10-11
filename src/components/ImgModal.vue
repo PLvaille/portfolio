@@ -78,7 +78,6 @@ $cream : #dbd5ce;
     margin: 0px auto;
     padding: 16px 24px;
     background-color: #333;
-    border: 4px solid $grey;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
     transition: all 0.3s ease;
@@ -89,6 +88,7 @@ $cream : #dbd5ce;
     margin: 0 auto;
 
     & img {
+        border-radius:16px;
         max-height: 1000px;
         width: 100%;
         height: fit-content;

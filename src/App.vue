@@ -6,7 +6,7 @@
   <div classs="fullContainer">
     <div class="navContainer">
       <button class="btn filter-btn" id="btn-main" @click="handleMain(), btnColorFilter()">Portfolio</button>
-      <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">CV</button>
+      <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">Resume</button>
       <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projets</button>
       <button class="btn" id="btn-contact" @click="handleInfo(), btnColorFilter()">Infos</button>
       <!-- <h2 class="btn" id="btn-link" @click="handleLink(), btnColorFilter()">Liens</h2> -->
@@ -151,34 +151,29 @@ $bgcolor2: whitesmoke;
 
 }
 
-.bg-img {
-  display: flex;
-  justify-content: center;
-  background-clip: content-box;
-  background-image: url("../public/test02.jpg");
+.bg-img,
+.projects-container {
+  border-top: 2px solid $orange;
+  background-image: url("../public/bg2.webp");
   background-size: cover;
 }
 
 .bg-img2 {
-
-  background-image: url("../public/test03.jpg");
+  border-top: 2px solid $orange;
+  background-image: url("../public/bg1.webp");
   background-size: cover;
 }
 
-.projects-container {
-  background-image: url("../public/test02.jpg");
-  background-size: cover;
-}
 
 .header {
-  background: #e8d0b6;
+  background: #333;
   // rgb(246, 171, 74)
-  background: linear-gradient(to top, #e8d0b6, white 99%);
+  //background: linear-gradient(to top, #e8d0b6, white 99%);
   padding-bottom: 42px;
 }
 
 #app {
-  background: #e8d0b6;
+  background: #333;
   position: relative;
   //background: linear-gradient(#222, #222, #444, #444, #555);
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -192,9 +187,8 @@ $bgcolor2: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // background: $bgcolor;
   padding: 2px 0;
-  background: linear-gradient(to left, $bgcolor, whitesmoke 50%, $bgcolor);
+  //background: linear-gradient(to left, $bgcolor, whitesmoke 50%, $bgcolor);
   margin: 0 auto 24px;
   max-width: 1100px;
 }
@@ -205,57 +199,78 @@ $bgcolor2: whitesmoke;
 .filter-btn {
   background: rgba(252, 184, 96, 1) !important;
   border: 1px solid white !important;
-  color:#333 !important;
-  text-shadow: 1px 1px transparent;
+  text-shadow: 2px 2px $cream !important;
+  border-radius: 12px !important;
+  color: #333 !important;
+  letter-spacing: 3px !important;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.4) !important;
+
 }
 
 .btn {
-  font-size:large;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  //flex-grow: 1;
-  width: 240px;
-  //font-family: 'Shadows Into Light';
+  font-size: large;
   font-family: 'Roboto';
-  color: white;
-  text-shadow: 1px 1px black;
+  color: $cream;
+  text-shadow: 2px 2px black;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  letter-spacing: normal;
+  background-color: #333;
+  border-radius: 16px;
+  border: 1px solid $cream;
+  width: 240px;
   padding: 3% 0;
+  margin: 0 4px;
   transition: all ease 0.6s;
-  margin: 0 2px;
-  background-color:#333;
+
 
   &:hover {
-    
-    backdrop-filter: blur(4px);
-    color:black;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 3px;
+    border-radius: 12px;
     cursor: pointer;
-    background: rgba(246, 171, 74, 1);
   }
 
-  &:active {
-    background: rgba(246, 171, 74, 1);
-  }
 }
 
 #btn-main {
   transition: all 1s;
-  background-position: 10% 90%;
+  background-position: 40% 40%;
   background-image: url("../public/livre.jpg");
+
+  &:hover {
+    background-position: 35% 90%;
+  }
 }
+
 #btn-cv {
-  transition: all 1s;
   background-position: 28% 28%;
+  transition: all 1s;
   background-image: url("../public/rouage.webp");
+
+  &:hover {
+    background-position: 65% 65%;
+
+  }
 }
+
 #btn-project {
+  background-position: 50% 5%;
   transition: all 1s;
-  background-position: 50% 50%;
- background-image: url("../public/projet.jpg");
+  background-image: url("../public/projet.jpg");
+
+  &:hover {
+    background-position: 90% 80%;
+  }
 }
-#btn-contact{
+
+#btn-contact {
   transition: all 1s;
-  background-position: 40% 60%;
   background-image: url("../public/contact.jpg");
+
+  &:hover {
+    background-position: 40% 60%;
+
+  }
 }
 
 @media screen and (max-width : 730px) {

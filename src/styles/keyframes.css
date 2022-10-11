@@ -117,28 +117,24 @@
 @-webkit-keyframes img_pop {
   to {
     margin: 0 4px;
-    height: 500px;
   }
 }
 
 @keyframes img_pop {
   to {
     margin: 0 4px;
-    height: 500px;
   }
 }
 
 @-webkit-keyframes img_pop_reverse {
   to {
     margin: 12px 12px;
-    height: 430px;
   }
 }
 
 @keyframes img_pop_reverse {
   to {
     margin: 12px 12px;
-    height: 430px;
   }
 }
 

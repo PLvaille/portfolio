@@ -51,13 +51,13 @@ $cream : #dbd5ce;
 @keyframes img_pop {
   to {
     margin: 0 4px;
-    height: 500px;
+   // height: 500px;
   }
 }
 @keyframes img_pop_reverse {
   to {
     margin: 12px 12px;
-    height: 430px;
+    //height: 430px;
   }
 }
 
@@ -114,7 +114,6 @@ $cream : #dbd5ce;
     }
   }
 }
-
 
 @media screen and (max-width : 1024px) {
   @keyframes about_anim {

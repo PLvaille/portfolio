@@ -6,24 +6,29 @@
                 <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille"
                     src="../../public/me.webp">
             </div>
-            <span class="about">Hello ! Moi c'est <strong>Pierre-louis</strong>, un lillois en reconversion
-                professionnelle dans le developpement web et passionné de musique.
+            <span class="about">Bonjour, je suis <strong>Pierre-louis</strong>, un lillois, <strong>Développeur Web Fullstack</strong> et passionné de musique.
                 <br>
                 <br>
-                J'ai été diplômé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
-                diplôme de niveau 5 (bac+2), en juin 2022.
+                Je suis diplômé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
+                diplôme de niveau 5 (bac+2), obtenu en juin 2022.
                 <br>
                 <br>
-                Je cherche donc à intégrer une équipe dynamique dès
-                que possible afin d'approfondir mes connaissances, en acquérir de nouvelles et contribuer à de beaux
-                projets !
+                Je cherche à rejoindre une équipe dynamique dès
+                que possible afin de mettre à contribution mes connaissances et participer à de beaux projets !
                 <br>
                 <br>
-                Je suis hyper motivé et prêt à me former sur toute techno qui me permettrait d'intégrer de belles
-                missions.
+                Sportif, j'ai le mindset d'un champion d'ultra trail, hyper motivé, fixé sur mon objectif et prêt à en découdre.
                 <br>
                 <br>
-                Voici celles que je sais déjà utiliser :
+                Mon plus bel atout en tant que développeur est ma curiosisté car l'apprentissage est continu dans ce domaine.
+                <br>
+                <br>
+                Ancien commercial, en plus de la facilité que j'ai aquise dans les relations humaines, j'ai développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait d'évoluer au plus vite dans mon domaine.
+                <br>
+                Pour ce faire, je suis bien-sûr intéressé par l'aquisition de nouveaux skills pour répondre plus aisément aux requête qui me seront adressées.
+                <br>
+                <br>
+                Voici mon stack actuel :
                 <div class="myskills">
                     <div class="skills-container">
 
@@ -137,14 +142,16 @@ $bgcolor : #e8d0b6;
     //background: #f8f0e8;
     background: linear-gradient(190deg, #e8d0b6, #222 17%);
     color: $cream;
-    padding: 4% 3% 4% 142px;
+    padding: 4% 3% 4% 132px;
+    margin-right:2%;
     text-align: justify;
     border-radius: 32px;
 
     &-container {
+        backdrop-filter: brightness(0.6);
         margin: 0 auto;
         padding: 8% 0;
-        width: 87%;
+        width: 100%;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -180,9 +187,7 @@ strong {
         & .skills-container {
             transform: translateY(400px);
             overflow: hidden;
-            animation: skill_pop 2s ease-in-out forwards 2s;
-
-            padding-top: 32px;
+            animation: skill_pop 2s ease-out forwards 2s;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -245,13 +250,9 @@ strong {
 
 @media screen and (max-width : 730px) {
     .about {
+        border-radius: 0;
         margin-bottom: 32px;
         animation: none;
-
-        &-container {
-            width: 84%;
-        }
-
 
     }
 

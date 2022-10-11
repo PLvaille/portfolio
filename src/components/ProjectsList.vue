@@ -139,11 +139,12 @@ $bgcolor : #e8d0b6;
   animation: project_pop ease-out 0.3s forwards;
   transition: all ease 2s;
 
-  padding:32px;
+  padding:0 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  
 
 
   & p {
@@ -157,28 +158,25 @@ $bgcolor : #e8d0b6;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 180px;
+  height: fit-content;
 }
 
 
 .project-card {
-  padding:24px;
   height: fit-content;
   max-height: fit-content;
   max-width: fit-content;
-  width: 26%;
-
+  width: 30%;
   display: flex;
   flex-direction: column;
 
   background: linear-gradient(190deg,  #e8d0b6, #222 17%);
   box-shadow: 4px 8px rgba(0, 0, 0, .5);
-
   border-radius: 4px;
   border-top-right-radius: 24px;
 
   margin:42px auto;
-
+  padding:24px 0 0 0;
 
   // anim hover off
   animation: project_hover_reverse ease-out 0.7s forwards;
@@ -325,11 +323,13 @@ $bgcolor : #e8d0b6;
 //----------- Media query -----------
 // ---- laptop ----
 @media screen and (max-width : 1400px) {
-
+  .cards-container {
+    padding : 24px 0;
+  }
   .project-card {
-    width: 70%;
+    height:fit-content;
+    width: 80%;
     margin: 32px auto 24px;
-    padding:2px;
   }
 
   .card-title {
@@ -366,7 +366,7 @@ $bgcolor : #e8d0b6;
 
   .project-card {
   
-    width: 74%;
+    width: 94%;
     margin: 32px auto;
   }
 
@@ -393,7 +393,6 @@ $bgcolor : #e8d0b6;
 
   .project-card {
     padding:0;
-    width:55%;
     background: linear-gradient(190deg, #dbd5ce, #222 10%);
     margin: 32px auto;
   }
@@ -414,19 +413,5 @@ $bgcolor : #e8d0b6;
   }
 }
 
-@media screen and (max-width : 520px) {
-  .project-card {
-    width:45%;
-  }
-}
-@media screen and (max-width : 438px) {
-  .project-card {
-    width:40%;
-  }
-}
-@media screen and (max-width : 384px) {
-  .project-card {
-    width:32%;
-  }
-}
+
 </style>

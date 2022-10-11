@@ -9,6 +9,11 @@ import {  faGithub, faLinkedin, faVuejs } from '@fortawesome/free-brands-svg-ico
  import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
  library.add(faGithub, faLinkedin, faEnvelope, faVuejs  )
 
+ //import VueSocialSharing from 'vue-social-sharing'
+
+ 
+
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
+
 .mount('#app')

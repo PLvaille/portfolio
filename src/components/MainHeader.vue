@@ -1,11 +1,6 @@
 <template>
     <h1 class="headerWelcome">
-        <div class="dot dot1">•</div>
-        <div class="dot dot2">•</div>
-        <div class="dot dot3">•</div> Bienvenue sur mon Portfolio
-        <div class="dot dot4">•</div>
-        <div class="dot dot2">•</div>
-        <div class="dot dot1">•</div>
+        Pierre-louis Vaille
     </h1>
 
     <div class="links">
@@ -43,7 +38,7 @@ $cream : #dbd5ce;
 $bgcolor : #e8d0b6;
 
 .headerWelcome {
-    color: #333;
+    color: $cream;
     font-family: 'Shadows Into Light';
   }
 .links {
@@ -57,7 +52,7 @@ $bgcolor : #e8d0b6;
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        color: #333;
+        color:$cream;
         margin: 16px;
         height:42px;
 
@@ -66,7 +61,7 @@ $bgcolor : #e8d0b6;
         }
 
         & p {
-            color:#333;
+            color:white;
             text-align: center;
             font-size: x-small;
         }
@@ -86,29 +81,6 @@ h1 {
     font-size: xxx-large;
 }
 
-.dot1 {
-    margin: -2px 1px;
-    color: $orange;
-}
-
-.dot2 {
-    margin: -1px 1px;
-    color: $red;
-}
-
-.dot3,
-.dot4 {
-    color: $darkred;
-    margin: 0 1px;
-}
-
-.dot3 {
-    margin-right: 4px;
-}
-
-.dot4 {
-    margin-left: 4px;
-}
 
 @media screen and (max-width : 600px) {
     h1 {

@@ -192,19 +192,20 @@ font-awesome-icon {
 
 .main-container {
   overflow: hidden;
-  transform: translateX(20%);
-  opacity: 0;
-  //voir styles/keyframes
-  animation: cv_pop ease-in-out 1.2s forwards;
-  width: 60%;
-  min-width: 867px;
-  margin: 0 auto;
-  padding: 12px;
+  backdrop-filter: brightness(0.5);
+  width: 100%;
+  padding-bottom: 32px;
+
 }
 
 .cv {
+    //voir styles/keyframes
+    opacity: 0;
+   animation: cv_pop ease-in-out 1.2s forwards;
+   transform: translateX(20%);
   overflow:hidden;
-  //background: linear-gradient(130deg, rebeccapurple, #dbd5ce);
+
+
   background: lighten(#e8d0b6,13%);
   box-shadow: 8px 10px rgba(0, 0, 0, .5);
   font-family: 'Roboto', sans-serif;
