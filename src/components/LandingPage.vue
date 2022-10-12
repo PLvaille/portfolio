@@ -23,7 +23,7 @@
                 Ma curiosisté inhérente est un atout dans le développement car l'apprentissage est continu dans ce domaine.
                 <br>
                 <br>
-                Ancien commercial, en plus de la facilité que j'ai aquise dans les relations humaines, j'ai développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait d'évoluer au plus vite dans mon domaine.
+                Commercial reconverti, en plus de la facilité que j'ai acquise dans les relations humaines, j'ai développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait d'évoluer au plus vite dans mon domaine.
                 <br>
                 Pour ce faire, je suis bien-sûr intéressé par l'acquisition de nouvelles compétences pour répondre plus aisément aux requêtes qui me seront adressées.
                 <br>

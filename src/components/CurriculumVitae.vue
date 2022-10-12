@@ -259,6 +259,7 @@ aside {
   }
 
   & h2 {
+    letter-spacing: 1px;
     color: white;
     padding: 4px 0 4px 3%;
    // background: #333;
@@ -366,6 +367,7 @@ li {
   }
 
   & h2 {
+    letter-spacing: 1px;
     position: relative;
     top: -6px;
     z-index: 999;
