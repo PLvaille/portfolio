@@ -6,7 +6,7 @@
                 <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille"
                     src="../../public/me.webp">
             </div>
-            <span class="about">Bonjour, je suis <strong>Pierre-louis</strong>, un lillois, <strong>Développeur Web Fullstack</strong> et passionné de musique.
+            <span class="about">Bonjour, je suis <strong>Pierre-louis</strong>, Lillois, <strong>Développeur Web Fullstack</strong> et passionné de musique.
                 <br>
                 <br>
                 Je suis diplômé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
@@ -25,7 +25,7 @@
                 <br>
                 Ancien commercial, en plus de la facilité que j'ai aquise dans les relations humaines, j'ai développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait d'évoluer au plus vite dans mon domaine.
                 <br>
-                Pour ce faire, je suis bien-sûr intéressé par l'acquisition de nouveaux skills pour répondre plus aisément aux requêtes qui me seront adressées.
+                Pour ce faire, je suis bien-sûr intéressé par l'acquisition de nouvelles compétences pour répondre plus aisément aux requêtes qui me seront adressées.
                 <br>
                 <br>
                 Voici mon stack actuel :
