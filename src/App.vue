@@ -194,47 +194,6 @@ p {
 
 }
 
-#btn-main {
-  transition: all 1s;
-  background-position: 40% 40%;
-  background-image: url("../public/livre.jpg");
-
-  &:hover {
-    background-position: 35% 90%;
-  }
-}
-
-#btn-cv {
-  background-position: 28% 28%;
-  transition: all 1s;
-  background-image: url("../public/rouage.webp");
-
-  &:hover {
-    background-position: 65% 65%;
-
-  }
-}
-
-#btn-project {
-  background-position: 50% 5%;
-  transition: all 1s;
-  background-image: url("../public/projet.jpg");
-
-  &:hover {
-    background-position: 90% 80%;
-  }
-}
-
-#btn-contact {
-  transition: all 1s;
-  background-image: url("../public/contact.jpg");
-
-  &:hover {
-    background-position: 40% 60%;
-
-  }
-}
-
 @media screen and (max-width : 730px) {
 
   .btn {

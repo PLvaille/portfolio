@@ -191,6 +191,48 @@ $bgcolor : #e8d0b6;
     max-width: 1100px;
 }
 
+// bouttons ----
+#btn-main {
+  transition: all 1s;
+  background-position: 40% 40%;
+  background-image: url("../../public/livre.webp");
+
+  &:hover {
+    background-position: 35% 90%;
+  }
+}
+
+#btn-cv {
+  background-position: 28% 28%;
+  transition: all 1s;
+  background-image: url("../../public/rouage.webp");
+
+  &:hover {
+    background-position: 65% 65%;
+
+  }
+}
+
+#btn-project {
+  background-position: 50% 5%;
+  transition: all 1s;
+  background-image: url("../../public/projet.webp");
+
+  &:hover {
+    background-position: 90% 80%;
+  }
+}
+
+#btn-contact {
+  transition: all 1s;
+  background-image: url("../../public/contact.webp");
+
+  &:hover {
+    background-position: 40% 60%;
+
+  }
+}
+
 @media screen and (max-width : 1300px) {
     .tri-container {
         top: -40px;
@@ -211,7 +253,6 @@ $bgcolor : #e8d0b6;
         left: -220px;
     }
 }
-
 
 @media screen and (max-width : 600px) {
     .tri-container {
