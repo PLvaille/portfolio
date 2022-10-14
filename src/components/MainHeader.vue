@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="navContainer">
-                    <button class="btn filter-btn" id="btn-main"
+                    <button class="btn filtered-btn" id="btn-main"
                         @click="handleMain(), btnColorFilter()">Portfolio</button>
                     <button class="btn" id="btn-cv" @click="handleCV(), btnColorFilter()">Resume</button>
                     <button class="btn" id="btn-project" @click="handleProject(), btnColorFilter()">Projects</button>
