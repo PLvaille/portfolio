@@ -104,6 +104,11 @@ $cream : #dbd5ce;
 $bgcolor : #e8d0b6;
 
 .anim-container {
+  
+    background: linear-gradient(217deg, rgba(252, 184, 96, 0.30), rgba(0, 0, 0, 0.9) 90%),
+     linear-gradient(127deg, rgba(252, 184, 96, 00), rgba(0, 0, 0, 0.9) 4%),
+      linear-gradient(336deg, rgba(252, 184, 96, 0.6), rgba(0, 0, 0, 0.4) 80%);
+      
     overflow: hidden;
 }
 
@@ -121,7 +126,7 @@ $bgcolor : #e8d0b6;
     .tri-#{$i} {
         position: absolute;
         top: ($i/12) *($i*10px);
-        left:  ($i*72px);
+        left: ($i*72px);
 
         opacity: $opa;
 
@@ -193,44 +198,44 @@ $bgcolor : #e8d0b6;
 
 // bouttons ----
 #btn-main {
-  transition: all 1s;
-  background-position: 40% 40%;
-  background-image: url("../../public/livre.webp");
+    transition: all 1s;
+    background-position: 40% 40%;
+    background-image: url("../../public/livre.webp");
 
-  &:hover {
-    background-position: 35% 90%;
-  }
+    &:hover {
+        background-position: 35% 90%;
+    }
 }
 
 #btn-cv {
-  background-position: 28% 28%;
-  transition: all 1s;
-  background-image: url("../../public/rouage.webp");
+    background-position: 28% 28%;
+    transition: all 1s;
+    background-image: url("../../public/rouage.webp");
 
-  &:hover {
-    background-position: 65% 65%;
+    &:hover {
+        background-position: 65% 65%;
 
-  }
+    }
 }
 
 #btn-project {
-  background-position: 50% 5%;
-  transition: all 1s;
-  background-image: url("../../public/projet.webp");
+    background-position: 50% 5%;
+    transition: all 1s;
+    background-image: url("../../public/projet.webp");
 
-  &:hover {
-    background-position: 90% 80%;
-  }
+    &:hover {
+        background-position: 90% 80%;
+    }
 }
 
 #btn-contact {
-  transition: all 1s;
-  background-image: url("../../public/contact.webp");
+    transition: all 1s;
+    background-image: url("../../public/contact.webp");
 
-  &:hover {
-    background-position: 40% 60%;
+    &:hover {
+        background-position: 40% 60%;
 
-  }
+    }
 }
 
 @media screen and (max-width : 1300px) {
@@ -249,14 +254,14 @@ $bgcolor : #e8d0b6;
 
 @media screen and (max-width : 800px) {
     .tri-container {
-        top: -60px;
+        top: -30px;
         left: -220px;
     }
 }
 
 @media screen and (max-width : 600px) {
     .tri-container {
-        top: -50px;
+        top: -20px;
         left: -240px;
     }
 

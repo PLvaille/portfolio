@@ -131,7 +131,9 @@ $bgcolor2: whitesmoke;
 body, .fullContainer {
   margin: 0;
   padding: 0;
+
 }
+
 
 .bg-img {
   border-top: 2px solid $orange;
@@ -171,6 +173,7 @@ p {
 
 .btn {
   font-size: large;
+  font-weight: bold;
   font-family: 'Roboto';
   color: $cream;
   text-shadow: 2px 2px black;

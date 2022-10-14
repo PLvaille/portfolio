@@ -150,6 +150,13 @@ $bgcolor : #e8d0b6;
 
     &-container {
         backdrop-filter: brightness(0.6);
+
+
+        // background: linear-gradient(217deg, rgba(252, 184, 96, 0.2), rgba(0,0,0,0.5) 50.71%),
+        //     linear-gradient(127deg, rgba(252, 184, 96, 0.2), rgba(0,0,0,0.5) 50.71%),
+        //     linear-gradient(336deg, rgba(252, 184, 96, 0.1), rgba(0,0,0,0.5) 50.71%);
+
+
         margin: 0 auto;
         padding: 8% 0;
         width: 100%;
