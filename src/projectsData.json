@@ -1,6 +1,21 @@
-[
+[ {
+  "id": 9,
+  "projectName": "• Z Quiz •",
+  "summary": "Quiz en react",
+  "skills": ["React", "Sass", "Responsive", "Animation"],
+  "ressources": "",
+  "description": "Projet en React réalisé en autonomie",
+  "specs": "\n\n",
+  "realisation": "Récupération et mise en forme dynamique des données. Options du quiz. Désign responsive. Animations.",
+  "img": "quiz01.webp",
+  "alt": "Projet Z Quiz",
+  "site": "https://plvaille.github.io/Zquiz/",
+  "github" : "https://github.com/PLvaille/Zquiz",
+  "carousel": ["quiz01.webp","quiz02.webp", "quiz03.webp", "quiz04.webp"],
+  "projetperso" : true
+},
   {
-    "id": 2,
+    "id": 8,
     "projectName": "• La maison jungle •",
     "summary": "Débuter avec React",
     "skills": ["React", "Css3", "Responsive"],
@@ -16,7 +31,7 @@
     "projetperso" : true
   },
   {
-    "id": 1,
+    "id": 7,
     "projectName": "• Portfolio •",
     "summary": "Realisation d'un CV et d'un Portfolio",
     "skills": ["Vue", "Sass", "Responsive", "Animation"],
