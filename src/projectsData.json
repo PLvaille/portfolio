@@ -95,7 +95,7 @@
     "id": 3,
     "projectName": "• La Chouette Agence - Projet 4 •",
     "summary": "Optimiser un site web existant",
-    "skills": ["Seo", "Lighthouse", "Accessibilité"],
+    "skills": ["Seo", "Lighthouse", "Accessibilité", "Bootstrap"],
     "ressources": "Site web de base de la Chouette Agence.",
     "description": "Pour valider ce projet je devais présenter via un support de présentation les améliorations apportées au site concernant son référencement ainsi que son accessibilité.",
     "specs": "Améliorer le code HTML/CSS tout en conservant les framework bootstrap et JavaScript utilisés. Améliorer les scores SEO et d'accessibilité du site à l'aide d'un outil de diagnostic",
