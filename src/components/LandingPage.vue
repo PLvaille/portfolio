@@ -3,32 +3,53 @@
 
         <div class="about-container">
             <div class="img-container">
-                <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille"
-                    src="../../public/me.webp">
-            </div>
-            <span class="about">Bonjour, je suis <strong>Pierre-louis</strong>, Lillois, <strong>Développeur Web Fullstack</strong> et passionné de musique.
-                <br>
-                <br>
-                Je suis diplômé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
-                diplôme de niveau 5 (bac+2), obtenu en juin 2022.
-                <br>
-                <br>
-                Je cherche à rejoindre une équipe dynamique dès
-                que possible afin de mettre à contribution mes connaissances et participer à de beaux projets !
-                <br>
-                <br>
-                Sportif, j'aime le challenge et les nouveaux défis ne me font pas peur.
-                <br>
-                <br>
-                Ma curiosisté inhérente est un atout dans le développement car l'apprentissage est continu dans ce domaine.
-                <br>
-                <br>
-                Commercial reconverti, en plus de la facilité que j'ai acquise dans les relations humaines, j'ai développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait d'évoluer au plus vite dans mon domaine.
-                <br>
-                Pour ce faire, je suis bien-sûr intéressé par l'acquisition de nouvelles compétences pour répondre plus aisément aux requêtes qui me seront adressées.
-                <br>
-                <br>
-                Voici mon stack actuel :
+                    <img class="img" title="Vaille Pierre-louis" alt="photo de Piere-louis Vaille"
+                        src="../../public/me.webp">
+                </div>
+            <div class="about">              
+                <span class="about-text">Bonjour, je suis <strong>Pierre-louis</strong>, Lillois, <strong>Développeur
+                        Web Fullstack</strong> et passionné de musique.
+                    <br>
+                    <br>
+                    Je suis diplômé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web
+                        Fullstack</strong>,
+                    diplôme de niveau 5 (bac+2), obtenu en juin 2022.
+                    <br>
+                    <br>
+                    Je cherche à rejoindre une équipe dynamique dès
+                    que possible afin de mettre à contribution mes connaissances et participer à de beaux projets !
+                    <br>
+                    <br>
+                    Sportif, j'aime le challenge et les nouveaux défis ne me font pas peur.
+                    <br>
+                    <br>
+                    Je suis très intéressé par les sciences exactes, la biologie, la physique et l'astronomie notamment.
+                    <br>
+                    <br>
+                    Ma curiosisté inhérente est un atout dans le développement car l'apprentissage est continu dans ce
+                    domaine.
+                    <br>
+                    <br>
+                    Concernant les relations humaines, j'ai la chance d'avoir une nature diplomate et conciliante me
+                    permettant de maintenir des relations saines.
+                    <br>
+                    J'ai, par ailleurs, été volontaire en service civique à l'AFEV Lille, à cette occasion j'ai dû développer
+                    ma coordination et mon travail d'équipe avec les autres volontaires afin de mener à bien différents projets
+                    à porté socio-culturel tout au long de l'année.
+                    <br>
+                    <br>
+                    Commercial reconverti, en plus d'avoir développé une grande facilité à m'exprimer et à expliquer, je
+                    suis devenu chef d'équipe et formateur,
+                    j'ai également développé l'ambition de la réussite qui se traduit aujourd'hui par mon souhait
+                    d'évoluer au plus vite dans mon domaine.
+                    <br>
+                    <br>
+                    Pour ce faire, je suis bien-sûr intéressé par l'acquisition de nouvelles compétences pour répondre
+                    plus aisément aux requêtes qui me seront adressées.
+                    <br>
+                    <br>
+                    Voici mon stack actuel :
+                </span>
                 <div class="myskills">
                     <div class="skills-container">
 
@@ -46,55 +67,55 @@
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-brands fa-sass" /> -->
-                            <img src="Sass.svg" alt="Sass" title="Sass"/>
+                            <img src="Sass.svg" alt="Sass" title="Sass" />
                             <span>SASS</span>
                         </div>
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-brands fa-bootstrap" /> -->
-                            <img src="Bootstrap.svg" alt="Bootstrap"  title="Bootstrap"/>
+                            <img src="Bootstrap.svg" alt="Bootstrap" title="Bootstrap" />
                             <span>Bootstrap</span>
                         </div>
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-brands fa-js" /> -->
-                            <img src="Javascript.svg" alt="JavaScript" title="JavaScript"/>
+                            <img src="Javascript.svg" alt="JavaScript" title="JavaScript" />
                             <span>JavaScript</span>
 
                         </div>
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-brands fa-vuejs" /> -->
-                            <img src="Vue.svg" alt="VueJS" title="VueJS"/>
+                            <img src="Vue.svg" alt="VueJS" title="VueJS" />
                             <span>VueJS</span>
                         </div>
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-brands fa-react" /> -->
-                            <img src="React.svg" alt="ReactJS" title="ReactJS"/>
+                            <img src="React.svg" alt="ReactJS" title="ReactJS" />
                             <span>ReactJS</span>
                         </div>
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-brands fa-node-js" /> -->
-                            <img src="Nodejs.svg" alt="NodeJS" title="NodeJS"/>
+                            <img src="Nodejs.svg" alt="NodeJS" title="NodeJS" />
                             <span>NodeJS</span>
                         </div>
 
                         <div class="icon-container">
-                            <img src="Mysql.svg" alt="Mysql" title="Mysql"/>
+                            <img src="Mysql.svg" alt="Mysql" title="Mysql" />
                             <span>MySQL</span>
                         </div>
 
                         <div class="icon-container">
-                            <img src="Mongo.svg" alt="Mongodb" title="Mongodb"/>
+                            <img src="Mongo.svg" alt="Mongodb" title="Mongodb" />
                             <span>MongoDB</span>
                         </div>
 
 
                         <div class="icon-container">
                             <!-- <font-awesome-icon icon="fa-solid fa-eye" /> -->
-                            <img src="Seo.svg" alt="SEO" title="SEO"/>
+                            <img src="Seo.svg" alt="SEO" title="SEO" />
                             <span>SEO</span>
                         </div>
 
@@ -107,8 +128,7 @@
                     </div>
                 </div>
 
-            </span>
-
+            </div>
         </div>
 
 
@@ -134,28 +154,28 @@ $bgcolor : #e8d0b6;
 //#f8f0e8
 
 .about {
-    animation: about_anim ease-in-out 2s forwards;
     overflow: hidden;
 
     font-family: "Roboto";
 
+    display:flex;
+    flex-direction: column;
+
+
     //background: #f8f0e8;
     background: linear-gradient(190deg, #e8d0b6, #333 17%);
     color: $cream;
-    padding: 4% 3% 6% 132px;
-    margin-right:2%;
+    padding: 4% 3% 4% 132px;
+    margin-right: 6%;
     text-align: justify;
-    border:1px solid $cream;
+    border: 1px solid $cream;
     border-radius: 32px;
 
     &-container {
         backdrop-filter: brightness(0.6);
-
-
         // background: linear-gradient(217deg, rgba(252, 184, 96, 0.2), rgba(0,0,0,0.5) 50.71%),
         //     linear-gradient(127deg, rgba(252, 184, 96, 0.2), rgba(0,0,0,0.5) 50.71%),
         //     linear-gradient(336deg, rgba(252, 184, 96, 0.1), rgba(0,0,0,0.5) 50.71%);
-
 
         margin: 0 auto;
         padding: 8% 0;
@@ -195,12 +215,12 @@ strong {
         & .skills-container {
             transform: translateY(400px);
             overflow: hidden;
-            animation: skill_pop 2s ease-out forwards 2s;
+            animation: skill_pop 2s ease-out forwards 3s;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin: 0 auto;
+            margin: 2% auto 0;
 
             & .icon-container {
                 display: flex;
@@ -222,15 +242,9 @@ strong {
 
 }
 
-@media screen and (max-width : 1330px) {
-    .about{
-        padding-bottom:10%;
-    }
-}
-
 @media screen and (max-width : 1130px) {
     .skills-container {
-        width: 100% !important;
+        width: 80%;
     }
 
     .landing-page {
@@ -249,8 +263,8 @@ strong {
     }
 
     .about {
-        padding:32px;
-        margin:0 auto;
+        padding:32px 16px;
+        margin: 0 auto;
         width: 80%;
         text-align: center;
 
@@ -264,20 +278,20 @@ strong {
 
 @media screen and (max-width : 730px) {
     .about {
-        padding:32px;
+        padding: 32px;
         width: fit-content;
-        margin:0 1%;
+        margin: 0 3%;
         margin-bottom: 32px;
         animation: none;
 
     }
 
     .skills-container {
-        position:relative;
-        left:0;
-        padding:12px 0;
-        width:90%;
-        margin:0 auto;
+        position: relative;
+        left: 0;
+        padding: 12px 0;
+        width: 90%;
+        margin: 0 auto;
         transform: translateY(0);
         animation: skill_pop 1s ease forwards 0.5s;
     }

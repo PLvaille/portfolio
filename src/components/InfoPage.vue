@@ -80,7 +80,6 @@ $cream : #dbd5ce;
 
     .info-main-container {
         margin: 0 auto;
-        width: 70%;
 
     }
 

@@ -167,7 +167,7 @@ p {
   text-shadow: 2px 2px $cream !important;
   border-radius: 12px !important;
   color: #333 !important;
-  letter-spacing: 3px !important;
+  letter-spacing: 2px ;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -182,7 +182,7 @@ p {
   background-color: #333;
   border-radius: 16px;
   border: 1px solid $cream;
-  width: 240px;
+  width: 250px;
   padding: 3% 0;
   margin: 0 4px;
   transition: all ease 0.6s;
@@ -206,12 +206,17 @@ p {
 }
 
 @media screen and (max-width : 530px) {
+  .btn {
+    font-size: 16px !important;
+    min-width: 70px;
+    margin:0 2px;
+  }
   .btn:hover {
-    letter-spacing: normal;
+    letter-spacing: 0px !important;
   }
 
   .filter-btn {
-    letter-spacing: normal !important;
+    letter-spacing: 0px !important;
   }
 }
 </style>

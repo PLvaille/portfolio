@@ -149,7 +149,7 @@ $bgcolor : #e8d0b6;
 
 .header-frame {
     backdrop-filter: blur(6px);
-    padding: 12px;
+    padding: 12px 2px;
 }
 
 .headerWelcome {
@@ -190,9 +190,11 @@ $bgcolor : #e8d0b6;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 2px 0;
+    align-items: center;
+    padding: 2% 0;
     //background: linear-gradient(to left, $bgcolor, whitesmoke 50%, $bgcolor);
     margin: 0 auto;
+    width:94%;
     max-width: 1100px;
 }
 
@@ -260,6 +262,9 @@ $bgcolor : #e8d0b6;
 }
 
 @media screen and (max-width : 600px) {
+    .navContainer {
+        width:99%;
+    }
     .tri-container {
         top: -20px;
         left: -240px;

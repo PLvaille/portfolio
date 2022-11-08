@@ -153,11 +153,9 @@
         <div class="softskills block">
           <h2><strong>Soft-skills</strong></h2>
           <ul>
-            <li>Curiosité</li>
-            <li>Sociabilité</li>
-            <li>Polyvalence</li>
-            <li>Autonomie</li>
-            <li>Communication</li>
+            <li>Curiosité et polyvalence</li>
+            <li>Sociabilité et travail d'équipe</li>
+            <li>Communication</li>        
           </ul>
         </div>
       </main>

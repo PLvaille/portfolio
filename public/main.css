@@ -94,38 +94,6 @@
   }
 }
 
-@-webkit-keyframes about_anim {
-  from {
-    height: 40px;
-    width: 400px;
-    color: transparent;
-  }
-  70% {
-    color: transparent;
-  }
-  to {
-    height: 500px;
-    color: #dbd5ce;
-    width: 800px;
-  }
-}
-
-@keyframes about_anim {
-  from {
-    height: 40px;
-    width: 400px;
-    color: transparent;
-  }
-  70% {
-    color: transparent;
-  }
-  to {
-    height: 500px;
-    color: #dbd5ce;
-    width: 800px;
-  }
-}
-
 @-webkit-keyframes skill_pop {
   from {
     -webkit-transform: translateY(400px);
@@ -199,32 +167,6 @@
   100% {
     -webkit-transform: rotate3d(0, 0, 1, 360deg) translateX(0) translateY(0);
             transform: rotate3d(0, 0, 1, 360deg) translateX(0) translateY(0);
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  @-webkit-keyframes about_anim {
-    to {
-      height: 620px;
-    }
-  }
-  @keyframes about_anim {
-    to {
-      height: 620px;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  @-webkit-keyframes about_anim {
-    to {
-      width: 500px;
-    }
-  }
-  @keyframes about_anim {
-    to {
-      width: 500px;
-    }
   }
 }
 /*# sourceMappingURL=main.css.map */
