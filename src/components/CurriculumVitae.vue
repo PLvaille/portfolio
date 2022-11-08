@@ -416,12 +416,10 @@ li {
 
   .cv {
     width: 90%;
-    min-width: auto;
-    max-width: auto;
+    min-width: fit-content;
     font-family: 'Roboto' !important;
-    margin: 32px auto;
+    margin: 32px 2%;
     box-shadow: none;
-
   }
 
   aside .contact {
