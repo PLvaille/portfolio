@@ -9,7 +9,7 @@
         </div>
 
         <div class="contact">
-          <p class="contact-list">Lille, 30 ans</p>
+          <p class="contact-list">Lille</p>
           <p class="contact-list">06.59.01.24.87</p>
           <p class="contact-list"> <a href="mailto: pierrelouis.vaille@gmail.com">pierrelouis.vaille@gmail.com</a></p>
         </div>
@@ -98,8 +98,7 @@
           <h2><strong>Langues</strong></h2>
           <ul>
             <li>🇫🇷 <span><strong>Français</strong> maternel</span></li>
-            <li>🇬🇧 <span><strong>Anglais</strong> courant</span></li>
-            <li>🇪🇸 <span><strong>Espagnol</strong> débutant</span></li>
+            <li>🇬🇧 <span><strong>Anglais</strong> lu, écrit, parlé</span></li>
           </ul>
         </div>
 
@@ -118,23 +117,35 @@
         <div class="presentation">
           <h1><strong>Vaille</strong> <strong>Pierre-Louis</strong></h1>
           <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
-          <span>Diplomé d'un titre <strong>RNCP</strong>, parcours <strong>Développeur Web Fullstack</strong>,
-            diplôme de niveau 5 (bac+2), je
-            cherche à intégrer une équipe
+          <span>Je cherche à intégrer une équipe
             dynamique dès que possible afin
             de mettre à contribution mes connaissances, en acquérir de nouvelles et participer à de beaux projets.
           </span>
         </div>
         <div class="experience block">
           <h2><strong>Expérience Professionnelle</strong></h2>
-          <ul>
+          <ul class="sub-list">
             <li><strong>Commercial VRP</strong>, <span>Ranger, Stratygo, DMF</span>, Hauts-de-france : 2018-2021</li>
+            <ul class="sub-list">
+              <li>recrutement et formation de commerciaux</li>
+              <li>coordination d'équipe</li>
+            </ul>
             <li><strong>Employé en vente</strong>, <span>Auchan</span>, Arras : 2017</li>
+            <ul class="sub-list">
+              <li>animation commerciale</li>
+              <li>polyvalence</li>
+            </ul>
             <li><strong>Préparateur de commande</strong>, <span>Dispeo</span>, Wasquehal : 2016</li>
             <li><strong>Recruteur de donnateur</strong>, <span>ONG Conseil</span>, Lille : 2015</li>
             <li><strong>Employé de Rayon</strong>, <span>Auchan, Leclerc</span>, V.d'ascq, Templeuve : 2014</li>
             <li><strong>Vendanges</strong>, <span>Domaine Carage</span>, Beaujolais : 2013</li>
             <li><strong>Volontaire</strong>, Service Civique, <span>AFEV Lille</span>, V.d'ascq : 2012</li>
+            <ul class="sub-list">
+              <li>mise en place et suivi de projets sociaux-culturels</li>
+              <li>animation de réunions</li>
+              <li>coordination d'équipe</li>
+              <li>recrutement de bénévoles</li>
+            </ul>
             <li><strong>Manutention</strong>, <strong>Employé Polyvalent</strong>, <span>Phildar, Auchan, Quick</span>,
               <br>
               Métropole Lilloise : 2010-2011
@@ -144,7 +155,8 @@
         <div class="formation block">
           <h2>Formation</h2>
           <ul>
-            <li><strong>Développeur Web</strong>, titre RNCP niveau 5 (bac+2),<br> remote : Novembre 2021 - Juin 2022</li>
+            <li><strong>Développeur Web</strong>, titre <strong>RNCP 5</strong> (bac+2) : Nov. 2021 - Juin 2022
+            </li>
             <li>Formation commerciale interne, Ranger France : Janvier 2018</li>
             <li>DUT Informatique, IUT A Lille 1 (1<sup>ere</sup> année) : 2011</li>
             <li>Baccalauréat Scientifique (spé. bio.), Lycée R. Queneau : Juin 2009</li>
@@ -155,7 +167,7 @@
           <ul>
             <li>Curiosité et polyvalence</li>
             <li>Sociabilité et travail d'équipe</li>
-            <li>Communication</li>        
+            <li>Communication</li>
           </ul>
         </div>
       </main>
@@ -197,14 +209,14 @@ font-awesome-icon {
 }
 
 .cv {
-    //voir styles/keyframes
-    opacity: 0;
-   animation: cv_pop ease-in-out 1s forwards;
-   transform: translateX(20%);
-  overflow:hidden;
+  //voir styles/keyframes
+  opacity: 0;
+  animation: cv_pop ease-in-out 1s forwards;
+  transform: translateX(20%);
+  overflow: hidden;
 
 
-  background: lighten(#e8d0b6,13%);
+  background: lighten(#e8d0b6, 13%);
   box-shadow: 8px 10px rgba(0, 0, 0, .5);
   font-family: 'Roboto', sans-serif;
   text-align: start;
@@ -239,7 +251,7 @@ font-awesome-icon {
 }
 
 aside {
-  border-right:1px solid;
+  border-right: 1px solid;
   margin: 0;
   color: #333;
   display: flex;
@@ -260,7 +272,7 @@ aside {
     letter-spacing: 1px;
     color: white;
     padding: 4px 0 4px 3%;
-   // background: #333;
+    // background: #333;
     background: linear-gradient(to right, #333, #e8d0b6 99%);
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -348,6 +360,10 @@ li {
   margin: 8px 0;
 }
 
+.sub-list {
+  padding-left:14px;
+}
+
 .cv-main {
   color: black;
   margin-block: 0;
@@ -392,7 +408,7 @@ li {
   }
 
   & h1 {
-    color : #222;
+    color: #222;
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
@@ -451,17 +467,17 @@ li {
     flex-direction: column;
     justify-content: space-around;
   }
+
 }
 
 @media screen and (max-width : 730px) {
   .main-container {
-    animation:none;
-    transform:translateX(0);
-    opacity:1;
+    animation: none;
+    transform: translateX(0);
+    opacity: 1;
   }
+
   .cv {
-  
-    
     margin: 32px auto;
     width: 84%;
     border: none;
@@ -469,8 +485,9 @@ li {
     box-shadow: none;
 
     aside {
-      border : none;
+      border: none;
       width: 100%;
+
       & h2 {
         margin-right: 55%;
       }
@@ -484,11 +501,11 @@ li {
       }
 
       & .skills {
- 
+
 
         &-container {
-          width:80%;
-          margin:0 auto;
+          width: 80%;
+          margin: 0 auto;
           justify-content: center;
         }
       }
@@ -539,19 +556,15 @@ li {
         margin-bottom: 16px;
       }
 
-      ul {
-        list-style: none;
-        padding-left: 8px;
-      }
-
     }
   }
+
 }
 
 @media screen and (max-width : 430px) {
-.cv {
-  width:100%;
-  margin:0;
-}
+  .cv {
+    width: 100%;
+    margin: 0;
+  }
 }
 </style>
