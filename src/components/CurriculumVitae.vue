@@ -118,7 +118,7 @@
           <h1><strong>Vaille</strong> <strong>Pierre-Louis</strong></h1>
           <h2 id="poste"><strong>Développeur Web Fullstack</strong></h2>
           <span>Je cherche à intégrer une équipe
-            dynamique dès que possible afin
+            dynamique afin
             de mettre à contribution mes connaissances, en acquérir de nouvelles et participer à de beaux projets.
           </span>
         </div>
@@ -136,7 +136,7 @@
               <li>polyvalence</li>
             </ul>
             <li><strong>Préparateur de commande</strong>, <span>Dispeo</span>, Wasquehal : 2016</li>
-            <li><strong>Recruteur de donnateur</strong>, <span>ONG Conseil</span>, Lille : 2015</li>
+            <li><strong>Recruteur de donateur</strong>, <span>ONG Conseil</span>, Lille : 2015</li>
             <li><strong>Employé de Rayon</strong>, <span>Auchan, Leclerc</span>, V.d'ascq, Templeuve : 2014</li>
             <li><strong>Vendanges</strong>, <span>Domaine Carage</span>, Beaujolais : 2013</li>
             <li><strong>Volontaire</strong>, Service Civique, <span>AFEV Lille</span>, V.d'ascq : 2012</li>
@@ -221,6 +221,7 @@ font-awesome-icon {
   font-family: 'Roboto', sans-serif;
   text-align: start;
   // border: solid 1px $orange;
+  height: 1100px;
   width: 827px;
   min-width: 827px;
   max-width: 1200px;
@@ -431,6 +432,7 @@ li {
   }
 
   .cv {
+    height: auto;
     width: 90%;
     min-width: fit-content;
     font-family: 'Roboto' !important;

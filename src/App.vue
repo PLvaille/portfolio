@@ -26,6 +26,7 @@
 
 <script>
 import CurriculumVitae from "./components/CurriculumVitae.vue";
+//import CurriculumVitae from "./components/cvVente.vue";
 import ProjectsList from './components/ProjectsList.vue';
 import MainHeader from './components/MainHeader.vue';
 import projectsData from './projectsData.json';
